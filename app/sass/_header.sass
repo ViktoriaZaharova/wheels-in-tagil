@@ -1,0 +1,119 @@
+.header
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 2
+  .header-menu__links-icon
+    stroke: #fff
+
+  .header-menu__links
+    color: #fff
+
+
+.header-menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-family: 'Inter', sans-serif
+  font-size: 15px
+  font-weight: 600
+
+.header-menu__links
+  display: flex
+  align-items: center
+  text-align: center
+  &:hover
+    color: $accent
+
+
+.header-menu__links-icon
+  fill: none
+  stroke: #282E2C
+  width: 24px
+  min-width: 24px
+  height: 24px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 10px 0 0
+
+.stroke-none
+  stroke: none
+  fill: #fff
+
+
+.header-menu__item
+  margin: 0 40px 0 0
+  &:last-child
+    margin: 0
+
+.header-top
+  padding: 28px 65px
+
+.header-bottom
+  padding: 20px 65px
+
+.header-box-contacts
+  font-family: 'Inter', sans-serif
+  font-size: 17px
+  font-weight: 600
+  .links
+    font-size: 15px
+  a
+    &:hover
+      color: $accent
+
+.links-callback
+  margin: 0 30px
+  display: flex
+  align-items: center
+
+.header-box
+  width: 100%
+  display: flex
+  align-items: stretch
+  justify-content: flex-end
+  flex-wrap: wrap
+
+
+.header-box__links
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 5px
+  width: 80px
+  height: 70px
+  position: relative
+  color: $text
+  margin: 0 10px 0 0
+  background: #5B6063
+  &:last-child
+    margin: 0
+  .svg-icon
+    width: 32px
+    height: 32px
+    fill: none
+    stroke: #fff
+  &:hover
+    background: $accent
+
+.btn-basket
+  background: $accent
+
+.header-box__links-val
+  position: absolute
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3)
+  width: 26px
+  height: 26px
+  background: #fff
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  right: -9px
+  top: -9px
+  font-size: 10px
+  font-weight: bold
+  font-family: 'Inter', sans-serif
+

@@ -1,0 +1,785 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+//*::-webkit-input-placeholder
+//  color: #666
+//  opacity: 1
+//
+//*:-moz-placeholder
+//  color: #666
+//  opacity: 1
+//
+//*::-moz-placeholder
+//  color: #666
+//  opacity: 1
+//
+//*:-ms-input-placeholder
+//  color: #666
+//  opacity: 1
+//
+//body input:focus:required:invalid,
+//body textarea:focus:required:invalid
+//  color: #666
+//
+//body input:required:valid,
+//body textarea:required:valid
+//  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  background: #fff
+  color: #282E2C
+
+html, body
+  overflow-x: hidden
+  min-height: 100%
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+    
+input, textarea, select
+  outline: none
+  appearance: none
+  box-sizing: border-box
+  font-family: 'Inter', sans-serif
+  font-size: 16px
+  text-align: center
+  letter-spacing: 0.005em
+  color: #000
+  box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.04)
+  width: 100%
+  border: 2px solid #F2F2F2
+  background: #fff
+  border-radius: 4px
+  padding: 0 24px
+  &::placeholder
+    color: #828282
+  &:hover, &:focus
+    outline: none
+
+input
+  height: 56px
+
+label
+  display: block
+  width: 100%
+
+
+button
+  outline: none
+  cursor: pointer
+  transition: .3s ease
+  border: none
+    radius: 0
+  padding: 0
+  &:hover, &:focus
+    outline: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  font-size: 18px
+  font-family: 'Inter', sans-serif
+  font-weight: 500
+  border: none
+  width: 100%
+  letter-spacing: 0.005em
+  border-radius: 4px
+
+.btn-accent
+  padding: 18.5px 24px
+  background: #FD700B
+  color: #fff
+  &:hover
+    background: #282E2C
+    color: #fff
+
+.btn-border
+  border: 2px solid #E0E0E0
+  padding: 16.5px 50px
+  &:hover
+    background: $accent
+    border-color: $accent
+    color: #fff
+
+
+
+.container
+  max-width: 1650px
+
+.wrapper
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+.sidebar-wrapper
+  width: 150px
+  background: #000000
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.14)
+
+.content-wrapper
+  background: #fff
+  width: calc(100% - 150px)
+  min-height: 100%
+  position: relative
+
+.svg-icon
+  display: inline-block
+  width: 100%
+  height: 100%
+  transition: .3s ease
+
+.mb-30
+  margin-bottom: 30px
+
+//navigation
+.navigation
+  width: 100%
+  font-size: 15px
+  font-weight: 600
+  .nav-item
+    width: 100%
+    border-bottom: 1px solid #242424
+    padding: 10px
+    height: 192px
+    &:last-child
+      border: none
+
+.nav-links
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  text-align: center
+  border-radius: 5px
+  color: #fff
+  height: 100%
+  &:before
+    content: ''
+    position: absolute
+    left: -10px
+    top: -10px
+    height: 0
+    width: 4px
+    transition: .3s ease
+    background: $accent
+  &__icon
+    width: 76px
+    height: 76px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto 14px
+  &:hover
+    background: $accent
+    color: #fff
+
+.nav-links.active
+  color: #fff
+  &:before
+    height: calc(100% + 20px)
+
+.p-65
+  padding: 0 65px
+
+h1
+  font-size: 40px
+  font-weight: bold
+
+
+h2
+  width: 100%
+  text-align: center
+  font-size: 46px
+  font-weight: 800
+
+.img-logo
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 80px auto
+  .svg-icon
+    width: 773px
+    height: 87px
+    fill: #000
+
+.description-text
+  text-align: center
+  font-size: 18px
+
+.bg-white
+  background: #fff
+  color: #000000
+
+.color-white
+  color: #fff
+
+.w-100
+  width: 100%
+
+
+//slick
+.slider-nav
+  width: 100%
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+
+.slick-slide
+  outline: none
+
+.slick-arrow
+  opacity: 1
+  transition: .3s ease
+  outline: none
+  width: 17px
+  height: 10px
+  position: relative
+  left: 0
+  top: 0
+  right: 0
+  transform: none
+  background: transparent
+  border: none
+    radius: 0
+  svg
+    stroke: #E0E0E0
+    transition: .3s ease
+    display: flex
+    align-items: center
+    justify-content: center
+  &:before
+    display: none
+  &:hover, &:focus
+    svg
+      stroke: $accent
+
+.slick-next
+  order: 1
+
+.slick-dots
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  bottom: 0
+  margin: 0 40px
+  width: fit-content
+  li
+    margin: 0 40px 0 0
+    background: #4F4F4F
+    border-radius: 50%
+    width: 8px
+    height: 8px
+    transition: .3s ease
+    &:last-child
+      margin: 0
+    button
+      display: none
+  .slick-active
+    background: $accent
+
+.slick-dotted.slick-slider
+  margin-bottom: 0
+
+.nav-tabs
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  border: none
+  .nav-item
+    margin-bottom: 0
+    border: none
+    width: auto
+    &:last-child
+      .nav-link
+        border-radius: 0 4px 4px 0
+      .nav-link.active
+        border-radius: 4px
+  .nav-link
+    border-radius: 4px
+    padding: 20px 24px
+    letter-spacing: 0.005em
+    font-family: 'Inter', sans-serif
+    color: #282E2C
+    font-size: 16px
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.07)
+    border: 1px solid rgba(210, 210, 210, 0.24)
+    background: #fff
+  .nav-link.active
+    color: #fff
+    background: linear-gradient(0deg, #000000, #000000), #282E2C
+    box-shadow: none
+    border-color: #000000
+
+.links-dashed
+  letter-spacing: 0.005em
+  font-size: 15px
+  font-family: 'Inter', sans-serif
+  color: #282E2C
+  padding: 0 0 4px
+  border-bottom: 2px dashed #E1E1E1
+  width: fit-content
+  &:hover
+    color: $accent
+
+.bg-grey
+  background: #F7F7F7
+
+.title-line
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+.links
+  display: flex
+  align-items: center
+
+.links-icon
+  stroke: #fff
+  fill: none
+  width: 24px
+  height: 24px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 10px 0 0
+
+//.form-filter
+.form-filter
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  max-width: 1450px
+  margin: 0 auto
+
+.form-group
+  margin: 0 0 40px
+  &__title
+    margin: 0 0 20px
+    font-weight: 600
+    display: flex
+    align-items: center
+
+.form-filter-footer
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  position: relative
+
+.btn-filter-result
+  max-width: 400px
+  span
+    margin: 0 0 0 5px
+
+.links-question
+  position: absolute
+  right: 0
+  top: 50%
+  transform: translate(0,-50%)
+  width: fit-content
+  display: flex
+  align-items: center
+  color: #fff
+  border-bottom: 2px dashed rgba(#E1E1E1, .2)
+  &__icon
+    width: 24px
+    height: 24px
+    margin: 0 5px 0 0
+    stroke: #fff
+
+.list-radio
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    &:last-child
+      .radio
+        border-radius: 0 4px 4px 0
+
+//radio
+.radio-inp
+  display: none
+
+.radio-custom
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  display: inline-block
+  border-radius: 4px
+  transition: .3s ease
+
+
+.label
+  position: relative
+  z-index: 1
+  display: inline-block
+
+.radio
+  cursor: pointer
+  width: 100%
+  height: 78px
+  border-radius: 4px 0 0 4px
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  padding: 30px 24px
+  background: #5B6063
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.07)
+  font-family: $font
+  letter-spacing: 0.005em
+  position: relative
+  font-size: 16px
+
+.radio-inp:checked
+  + .radio-custom
+      background: #fff
+  ~ .label
+      color: $text
+
+//checkbox
+.checkbox
+  display: flex
+  align-items: center
+  font-family: $font
+  color: $font
+  cursor: pointer
+  font-size: 16px
+
+.checkbox-inp
+  display: none
+
+.checkbox-filter
+  padding: 20px
+  justify-content: space-between
+  .checkbox-custom
+    order: 1
+    width: 12px
+    height: 10px
+    fill: none
+    stroke: $accent
+    opacity: 0
+
+
+.checkbox-custom
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: .3s ease
+
+.checkbox-inp:checked
+  + .checkbox-custom
+      opacity: 1
+
+.dropdown-menu
+  padding: 0
+  border-radius: 4px
+  background: #fff
+  outline: none
+  border: none
+  min-width: 278px
+  margin: 2px 0 0
+
+.dropdown-toggle
+  padding: 24px 24px
+  height: 78px
+  font-size: 16px
+  font-family: $font
+  font-weight: normal
+  letter-spacing: 0.005em
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.05)
+  outline: none
+  border-radius: 4px
+  background: #5B6063
+  justify-content: space-between
+  span
+    margin: 0 5px 0 auto
+  &:after
+    border-left: 5.5px solid transparent
+    border-right: 5.5px solid transparent
+    border-top: 8px solid #fff
+    margin: 0
+
+
+
+.dropdown-toggle-filter
+  min-width: 179px
+
+.dropdown-toggle-filter2
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.07)
+  background: #fff
+  color: $text
+  &:after
+    border-top-color: $text
+
+.list-checkbox
+  width: 100%
+  li
+    border-bottom: 1px solid #F2F2F2
+    &:last-child
+      border: none
+
+.show>.btn-secondary.dropdown-toggle:focus, .btn-secondary.focus, .btn-secondary:focus
+  box-shadow: none
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle, .btn-secondary:hover
+  background: $accent
+  color: #fff
+  &:after
+    border-top-color: #fff
+
+.dropdown-menu-btn
+  border-top: 1px solid #F2F2F2
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 11px
+  font-size: 15px
+  color: $text
+  font-family: $font
+  letter-spacing: 0.005em
+  &__icon
+    width: 12px
+    height: 12px
+    margin: 0 10px 0 0
+    display: flex
+    align-items: center
+    justify-content: center
+  &:hover
+    color: $accent
+
+.btn-confirm
+  .dropdown-menu-btn__icon
+    width: 12px
+    height: 10px
+    fill: none
+    stroke: #000
+
+.btn-reset
+  color: #828282
+  .dropdown-menu-btn__icon
+    fill: #828282
+
+.dropdown-menu__body
+  width: 100%
+
+.dropdown-menu-filter2
+  max-width: 278px
+  .dropdown-menu__body
+    padding: 20px
+  .list-checkbox
+    display: flex
+    align-items: stretch
+    flex-wrap: wrap
+    width: 100%
+    li
+      border: none
+      margin: 0 10px 10px 0
+
+      &:last-child
+        margin-right: 0
+    .checkbox
+      padding: 10px 20px
+      position: relative
+    .checkbox-inp
+      display: block
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      border: 1px solid #E0E0E0
+        radius: 4px
+      background: transparent
+      box-shadow: none
+    .checkbox-custom
+      order: -1
+      display: none
+      z-index: 1
+    .checkbox-inp:checked
+      border-color: $accent
+      background: $accent
+      ~ .label
+        color: #fff
+      ~ .checkbox-custom
+        display: flex
+        align-items: center
+        justify-content: center
+        order: -1
+        margin: 0 10px 0 0
+        stroke: #fff
+        opacity: 1
+
+.tooltip-wrapper
+  position: relative
+
+.tooltip-btn
+  fill: #fff
+  width: 16px
+  height: 16px
+  display: flex
+  align-items: center
+  justify-content: center
+  background: rgba(247, 247, 247, 0.12)
+  border-radius: 50%
+  padding: 3px
+  margin: 0 0 0 10px
+  cursor: pointer
+
+.tooltip-box
+  display: none
+  position: absolute
+  left: 0
+  top: calc(100% + 5px)
+  z-index: 2
+  background: #fff
+  border: 1px solid #F2F2F2
+  border-radius: 4px
+  padding: 30px
+  min-width: 675px
+  color: $text
+  h4
+    font-weight: 600
+    font-size: 15px
+
+.tooltip-box__header
+  width: 100%
+  margin: 0 0 20px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+.btn-close
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 32px
+  height: 32px
+  background: #F2F2F2
+  border-radius: 50%
+  padding: 10px
+  fill: #000
+  cursor: pointer
+
+.tooltip-box__img
+  display: flex
+  align-items: center
+  justify-content: center
+
+.tooltip-box__content
+  .box-text
+    letter-spacing: 0.005em
+    font-size: 14px
+    line-height: 24px
+    font-weight: normal
+  .description
+    margin: 0 0 20px
+    letter-spacing: 0.005em
+    font-size: 18px
+    line-height: 25px
+    font-weight: normal
+    strong
+      font-weight: bold
+
+.bg-accent
+  background: $accent
+
+.color-accent
+  color: $accent
+
+.tooltip-box__footer
+  margin: 20px 0 0
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  a
+    margin: 0 15px 0 0
+    font-weight: normal
+    font-family: $font
+    font-size: 14px
+    &:last-child
+      margin: 0
+
+
+@import "header"
+@import "footer"
+@import "home"
+@import "media"
+// Всегда в конце
