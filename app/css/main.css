@@ -389,8 +389,8 @@ h2 {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   border: none; }
   .nav-tabs .nav-item {
     margin-bottom: 0;
@@ -1004,10 +1004,10 @@ h2 {
     margin: 0; }
 
 .header-top {
-  padding: 28px 65px; }
+  padding: 28px 35px; }
 
 .header-bottom {
-  padding: 20px 65px; }
+  padding: 20px 35px; }
 
 .header-box-contacts {
   font-family: 'Inter', sans-serif;
@@ -1095,7 +1095,7 @@ h2 {
   font-family: 'Inter', sans-serif; }
 
 footer {
-  padding: 40px 65px;
+  padding: 40px 35px;
   font-size: 15px; }
   footer .logo {
     margin: 0 0 60px;
@@ -1258,11 +1258,14 @@ footer {
           justify-content: center;
   fill: none; }
 
+.footer-row-info {
+  margin: 0 167px 0 0; }
+
 .main-home {
   background: url("../img/bg1.jpg") no-repeat center;
     background-size: cover;
   color: #fff;
-  padding: 386px 65px 80px; }
+  padding: 386px 35px 80px; }
 
 .main-home__title {
   display: -webkit-box;
@@ -1311,7 +1314,7 @@ footer {
 .advantages-section {
   background: #000;
   color: #fff;
-  padding: 40px 65px 102px; }
+  padding: 40px 35px 102px; }
 
 .advantages-box {
   padding: 0 0 0 50px;
@@ -1333,6 +1336,9 @@ footer {
 
 .sales-slider.slick-dotted {
   margin: 0 0 40px; }
+
+.sales-slider .slick-slide {
+  margin: 0 15px; }
 
 .sales-slider-box {
   position: relative;
@@ -1398,7 +1404,7 @@ footer {
           justify-content: center; }
 
 .callback-manager {
-  padding: 118px 65px 119px;
+  padding: 118px 35px 119px;
   background: url("../img/bg-callback.png") no-repeat center;
     background-size: cover;
   margin: 0 0 0; }
@@ -1482,7 +1488,7 @@ footer {
     z-index: 1; }
 
 .about {
-  padding: 52px 65px 66px; }
+  padding: 52px 35px 66px; }
   .about h2 {
     color: #BDBDBD; }
   .about .description-text {
@@ -1564,7 +1570,7 @@ footer {
 
 .scores {
   margin: 40px 0;
-  padding: 0 0 69px; }
+  padding: 0 35px 69px; }
   .scores h2 {
     text-align: left;
     margin: 0 0 50px; }
@@ -1613,7 +1619,7 @@ footer {
     height: 100%; }
 
 .reviews {
-  padding: 59px 65px 55px; }
+  padding: 59px 35px 55px; }
   .reviews h2 {
     width: auto; }
   .reviews .title-line {
@@ -1672,7 +1678,7 @@ footer {
     font-weight: 600; }
 
 .seo-section {
-  padding: 90px 0; }
+  padding: 90px 35px; }
   .seo-section .box-text {
     color: #828282;
     font-size: 14px;
@@ -1685,8 +1691,46 @@ footer {
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
-  /**/ }
+@media only screen and (max-width: 1700px) {
+  .header-bottom {
+    padding: 20px 15px; }
+  .header-top {
+    padding: 28px 15px; }
+  .header-menu__item {
+    margin: 0 20px 0 0; }
+  .links-callback {
+    margin: 0 20px; }
+  .main-home {
+    padding: 210px 15px 80px; }
+  .advantages-section {
+    padding: 40px 15px 90px; }
+  .sales-slider .slick-slide {
+    margin: 0 12.5px; }
+  .sales-slider-box {
+    padding: 10px 40px; }
+    .sales-slider-box h3 {
+      margin: 0 0 10px;
+      line-height: 34px;
+      font-size: 33.5px; }
+  .box-condition {
+    font-size: 13px;
+    padding: 10px 19px; }
+  .callback-manager {
+    padding: 118px 40px; }
+  .advantages-wrapper {
+    padding: 0; }
+  .about {
+    padding: 90px 15px 74px; }
+  .scores {
+    padding: 0 15px 63px; }
+  .reviews {
+    padding: 59px 15px 55px; }
+  .seo-section {
+    padding: 90px 15px; }
+  footer {
+    padding: 0 15px 63px; }
+  .footer-row-info {
+    margin: 0 100px 0 0; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -1702,25 +1746,4 @@ footer {
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  /**/ }
-
-/*==========  Mobile First  ==========*/
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-  /**/ }
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  /**/ }
-
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  /**/ }
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  /**/ }
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
   /**/ }
