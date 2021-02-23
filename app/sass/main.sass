@@ -131,6 +131,7 @@ button
   padding: 0
   &:hover, &:focus
     outline: none
+    box-shadow: none
 
 .btn
   display: flex
@@ -686,6 +687,31 @@ h2
         stroke: #fff
         opacity: 1
 
+header
+  .dropdown-menu-header
+    min-width: 282px
+    background: $text
+    border: 1px solid #F2F2F2
+    background: #FFFFFF
+    box-shadow: 0px 80px 150px rgba(0, 0, 0, 0.2)
+    border-radius: 4px
+    padding: 0 20px
+    .header-menu__links
+      padding: 20px 0
+      font-size: 15px
+      font-weight: 500
+      color: $text
+      letter-spacing: 0.005em
+      font-family: $font
+    .header-menu__links-icon
+      stroke: #000
+    .header-menu__item
+      border-bottom: 1px solid #E6E6E6
+      &:last-child
+        border: none
+    .stroke-none
+      fill: #000
+
 .tooltip-wrapper
   position: relative
 
@@ -705,7 +731,8 @@ h2
 .tooltip-box
   display: none
   position: absolute
-  left: 0
+  left: 50%
+  transform: translate(-50%,0)
   top: calc(100% + 5px)
   z-index: 2
   background: #fff

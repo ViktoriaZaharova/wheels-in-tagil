@@ -10,11 +10,33 @@
   .header-menu__links
     color: #fff
 
+header .navbar, .navbar-expand .navbar-nav .nav-link
+  padding: 0
 
-.header-menu
+.navbar-toggler-icon
+  fill: #fff
+  width: 18px
+  height: 16px
   display: flex
   align-items: center
-  flex-wrap: wrap
+  justify-content: center
+  margin: 0 13px 0 0
+
+
+.header-menu__item.dropdown
+  display: flex
+  align-items: center
+  &:after
+    content: ''
+    display: inline-block
+    margin: 0 0 0 10px
+    border-top: 8px solid #fff
+    border-right: 5.5px solid transparent
+    border-left: 5.5px solid transparent
+
+
+
+.header-menu
   font-family: 'Inter', sans-serif
   font-size: 15px
   font-weight: 600
@@ -23,6 +45,7 @@
   display: flex
   align-items: center
   text-align: center
+  padding: 0
   &:hover
     color: $accent
 
@@ -44,7 +67,7 @@
 
 
 .header-menu__item
-  margin: 0 40px 0 0
+  margin: 0 37px 0 0
   &:last-child
     margin: 0
 
