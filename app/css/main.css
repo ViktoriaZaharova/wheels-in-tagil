@@ -1206,6 +1206,9 @@ footer {
   .links-calc:hover {
     color: #FD700B; }
 
+.footer-menu-last {
+  margin: 0 0 50px; }
+
 .footer-menu {
   font-size: 15px;
   margin: 0 0 50px; }
