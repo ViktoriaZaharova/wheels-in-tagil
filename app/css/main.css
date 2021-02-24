@@ -150,7 +150,8 @@ button {
     color: #fff; }
 
 .container {
-  max-width: 1650px; }
+  padding: 0 65px;
+  max-width: 1750px; }
 
 .wrapper {
   width: 100%;
@@ -1059,10 +1060,10 @@ header .navbar, .navbar-expand .navbar-nav .nav-link {
     margin: 0; }
 
 .header-top {
-  padding: 28px 35px; }
+  padding: 28px 0; }
 
 .header-bottom {
-  padding: 20px 35px; }
+  padding: 20px 0; }
 
 .header-box-contacts {
   font-family: 'Inter', sans-serif;
@@ -1147,7 +1148,8 @@ header .navbar, .navbar-expand .navbar-nav .nav-link {
   top: -9px;
   font-size: 10px;
   font-weight: bold;
-  font-family: 'Inter', sans-serif; }
+  font-family: 'Inter', sans-serif;
+  z-index: 2; }
 
 footer {
   padding: 40px 35px;
@@ -1320,7 +1322,7 @@ footer {
   background: url("../img/bg1.jpg") no-repeat center;
     background-size: cover;
   color: #fff;
-  padding: 386px 35px 80px; }
+  padding: 386px 0 80px; }
 
 .main-home__title {
   display: -webkit-box;
@@ -1369,7 +1371,7 @@ footer {
 .advantages-section {
   background: #000;
   color: #fff;
-  padding: 40px 35px 102px; }
+  padding: 40px 0 102px; }
 
 .advantages-box {
   padding: 0 0 0 50px;
@@ -1459,7 +1461,7 @@ footer {
           justify-content: center; }
 
 .callback-manager {
-  padding: 118px 35px 119px;
+  padding: 118px 0 119px;
   background: url("../img/bg-callback.png") no-repeat center;
     background-size: cover;
   margin: 0 0 0; }
@@ -1543,7 +1545,7 @@ footer {
     z-index: 1; }
 
 .about {
-  padding: 52px 35px 66px; }
+  padding: 52px 0 66px; }
   .about h2 {
     color: #BDBDBD; }
   .about .description-text {
@@ -1625,7 +1627,7 @@ footer {
 
 .scores {
   margin: 40px 0;
-  padding: 0 35px 69px; }
+  padding: 0 0 69px; }
   .scores h2 {
     text-align: left;
     margin: 0 0 50px; }
@@ -1674,7 +1676,7 @@ footer {
     height: 100%; }
 
 .reviews {
-  padding: 59px 35px 55px; }
+  padding: 59px 0 55px; }
   .reviews h2 {
     width: auto; }
   .reviews .title-line {
@@ -1701,6 +1703,8 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 0 0 20px;
     font-size: 15px; }
   .reviews-box__name {
@@ -1733,7 +1737,7 @@ footer {
     font-weight: 600; }
 
 .seo-section {
-  padding: 90px 35px; }
+  padding: 90px 0; }
   .seo-section .box-text {
     color: #828282;
     font-size: 14px;
@@ -1747,18 +1751,20 @@ footer {
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1700px) {
+  .container {
+    padding: 0 45px; }
   .header-bottom {
-    padding: 20px 15px; }
+    padding: 20px 0; }
   .header-top {
-    padding: 28px 15px; }
+    padding: 28px 0; }
   .header-menu__item {
     margin: 0 20px 0 0; }
   .links-callback {
     margin: 0 20px; }
   .main-home {
-    padding: 210px 15px 80px; }
+    padding: 210px 0 80px; }
   .advantages-section {
-    padding: 40px 15px 90px; }
+    padding: 40px 0 90px; }
   .sales-slider .slick-slide {
     margin: 0 12.5px; }
   .sales-slider-box {
@@ -1775,15 +1781,15 @@ footer {
   .advantages-wrapper {
     padding: 0; }
   .about {
-    padding: 90px 15px 74px; }
+    padding: 90px 0 74px; }
   .scores {
-    padding: 0 15px 63px; }
+    padding: 0 0 63px; }
   .reviews {
-    padding: 59px 15px 55px; }
+    padding: 59px 0 55px; }
   .seo-section {
-    padding: 90px 15px; }
+    padding: 90px 0; }
   footer {
-    padding: 0 15px 63px; }
+    padding: 0 0 63px; }
   .footer-row-info {
     margin: 0 100px 0 0; }
   .tooltip-box {
@@ -1806,9 +1812,9 @@ footer {
   .content-wrapper {
     width: calc(100% - 102px); }
   .header-bottom {
-    padding: 0 15px; }
+    padding: 0; }
   .header-top {
-    padding: 28px 15px; }
+    padding: 28px 0; }
   .form-filter {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
@@ -1826,18 +1832,24 @@ footer {
     margin: 0 10px; } }
 
 @media only screen and (max-width: 1440px) {
-  .links-callback {
-    display: none; }
   header .phone {
     font-size: 17px;
     margin: 0 20px 0 0; }
+  header .links-callback {
+    display: none; }
   .btn-accent {
     padding: 11.5px 24px; }
   .tooltip-box {
     left: auto;
     right: 0;
     -webkit-transform: none;
-            transform: none; } }
+            transform: none; }
+  .footer-row-info {
+    margin: 0; } }
+
+@media only screen and (max-width: 1300px) {
+  .footer-col {
+    margin: 0 40px 0 0; } }
 
 @media only screen and (max-width: 1200px) {
   .header-box__links {
@@ -1859,7 +1871,7 @@ footer {
   .nav-tabs-filter, h1 {
     font-size: 30px; }
   .main-home {
-    padding: 160px 15px 25px; }
+    padding: 160px 0 25px; }
   .links-question {
     position: relative;
     margin: 0 0 0 auto;
@@ -1875,9 +1887,9 @@ footer {
     .advantages-box p {
       font-size: 25px; }
   .advantages-section {
-    padding: 40px 15px 94px; }
+    padding: 40px 0 94px; }
   .about {
-    padding: 40px 15px 32px; }
+    padding: 40px 0 32px; }
   .img-logo {
     margin: 40px auto;
     max-width: 773px; }
@@ -1888,11 +1900,37 @@ footer {
     .reviews-col:nth-child(-n+2) {
       display: block; }
   .scores {
-    padding: 0 15px; }
+    padding: 0; }
     .scores h2 {
       margin: 0 0 25px; }
     .scores .tab-content {
-      margin: 25px 0 40px; } }
+      margin: 25px 0 40px; }
+  .footer-row-menu {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+  .footer-col {
+    margin: 0; }
+  .footer-row-info {
+    width: 100%;
+    margin: 0 0 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
 
 @media only screen and (max-width: 992px) {
   .form-filter {
@@ -1914,7 +1952,7 @@ footer {
     font-size: 16px;
     padding: 12px 24px; }
   .callback-manager {
-    padding: 58px 15px 80px; }
+    padding: 58px 0 80px; }
   .callback-manager__form {
     max-width: 330px; }
   .callback-manager__item {
@@ -1950,20 +1988,178 @@ footer {
   .about-box__top {
     margin: 0 0 24px; }
   .about {
-    padding: 40px 15px 0; }
+    padding: 40px 0 0; }
   .map {
     height: 350px; }
   .reviews {
-    padding: 59px 15px 70px; }
+    padding: 59px 0 70px; }
     .reviews .load-more {
       margin: 40px auto 0; }
   .btn-border {
     padding: 9.5px 50px; }
   .seo-section {
-    padding: 40px 15px; } }
+    padding: 40px 0; }
+  footer {
+    padding: 0 0 45px; }
+  .header-box__links-val {
+    top: -19px;
+    right: -24px; }
+  .advantages-box {
+    padding: 0 0 0 20px; } }
+
+@media only screen and (max-width: 850px) {
+  .reviews-opinion {
+    padding: 12px 30px; }
+    .reviews-opinion img {
+      max-width: 76px; }
+    .reviews-opinion h3 {
+      font-size: 25px; } }
 
 @media only screen and (max-width: 768px) {
-  /**/ }
+  .sidebar-wrapper {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 110px;
+    z-index: 3; }
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 10px; }
+    .navigation .nav-item {
+      height: 110px;
+      border-bottom: none;
+      border-right: 1px solid #242424; }
+      .navigation .nav-item:last-child {
+        border: none; }
+    .navigation .active:before {
+      height: 4px;
+      width: calc(100% + 20px);
+      top: auto;
+      bottom: -10px;
+      left: -10px; }
+  .wrapper {
+    padding: 0 0 110px; }
+  .content-wrapper {
+    width: 100%; }
+  footer .box-text {
+    font-size: 14px;
+    line-height: 24px; }
+  .dropdown-toggle-filter {
+    min-width: 150px; }
+  .dropdown-toggle {
+    font-size: 14px; }
+  header .phone {
+    font-size: 15px; }
+  .main-home__title {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .main-home {
+    padding: 220px 0 80px; }
+  .btn-filter-result {
+    max-width: 209px; }
+  .btn-accent {
+    padding: 20px; }
+  .btn {
+    font-size: 14px; }
+  .advantages-section {
+    padding: 40px 0 60px; }
+  .advantages-box {
+    margin: 0 0 40px; }
+  .sales-slider-box {
+    padding: 7px 40px; }
+    .sales-slider-box h3 {
+      font-size: 34px;
+      margin: 0 0 6px; }
+  .box-condition {
+    padding: 10px 20px;
+    font-size: 14px; }
+  .callback-manager__avatar {
+    width: 144px;
+    margin: -20px 0 0 -20px; }
+    .callback-manager__avatar:before {
+      width: 144px;
+      height: 144px; }
+  .callback-manager__form button {
+    font-size: 18px; }
+  .btn-accent {
+    padding: 11.5px 20px; }
+  .advantages-box-about {
+    margin: 0 0 22px; }
+  .about-box {
+    font-size: 15px;
+    line-height: 18px; }
+    .about-box h3 {
+      font-size: 24px;
+      line-height: 32px; }
+    .about-box__top {
+      margin: 0 0 30px; }
+  .scores {
+    margin: 10px 0 0; }
+  .reviews-opinion {
+    margin: 0 0 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .reviews-opinion img {
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1;
+      margin: 0 20px 0 0;
+      max-width: 76px; }
+    .reviews-opinion h3 {
+      text-align: left; }
+    .reviews-opinion .btn {
+      max-width: 256px;
+      font-size: 15px; }
+  .reviews {
+    padding: 59px 0 78px; }
+  .btn-border {
+    font-size: 18px; }
+  .footer-item .phone {
+    font-size: 16px; }
+  footer .logo {
+    max-width: 100%;
+    margin: 0 0 30px; }
+  .links-doc {
+    font-size: 14px; }
+  .developer {
+    margin: 30px 0 0; }
+  .footer-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .footer-menu-last {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 34px 0 0; }
+  .footer-menu {
+    margin: 0 0 34px; }
+  footer {
+    padding: 0 0 80px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {

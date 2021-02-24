@@ -72,7 +72,8 @@
             <div class="col-6 col-lg-7 col-xl-8 d-none d-sm-flex align-items-center">
 
               <nav class="navbar navbar-expand">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
@@ -116,7 +117,8 @@
                     <li class="header-menu__item nav-item dropdown d-none">
                       <a class="header-menu__links nav-link" href="#" id="navbarDropdownMenu" role="button"
                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="navbar-toggler-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#burger"></use></svg></span>
+                        <span class="navbar-toggler-icon"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#burger"></use></svg></span>
                         <span class="navbar-toggle-text">Еще</span>
                       </a>
                       <ul class="dropdown-menu dropdown-menu-header" aria-labelledby="navbarDropdownMenu">
@@ -893,7 +895,8 @@
                     <a href="#" class="links-dashed links-question">
                       <span class="links-question__icon"><svg class="svg-icon"><use
                           xlink:href="img/sprite.svg#reviews-icon"></use></svg></span>
-                      <span class="links-question__text">Как правильно измерить шину</span>
+                      <span class="links-question__text d-none d-md-flex">Как правильно измерить шину</span>
+                      <span class="links-question__text d-flex d-md-none">Как измерить шину</span>
                     </a>
                   </div>
                 </form>
@@ -1310,7 +1313,7 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-xl-4 col-lg-5 col-md-5">
+          <div class="col-12 col-xl-4 col-lg-5 col-sm-5">
             <a href="index.html" class="logo">
               <svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#logo"></use>
@@ -1328,7 +1331,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-xl-8 col-lg-7 col-md-7">
+          <div class="col-12 col-xl-8 col-lg-7 col-sm-7">
             <div class="footer-wrapper">
               <div class="footer-row-menu">
                 <div class="footer-col">
@@ -1338,11 +1341,13 @@
                     <li><a href="#">Диски</a></li>
                   </ul>
 
-                  <h3>Услуги</h3>
-                  <ul class="footer-menu">
-                    <li><a href="#">Шиномонтажный сервис</a></li>
-                    <li><a href="#">Сервис по хранению колес</a></li>
-                  </ul>
+                  <div class="footer-menu-last">
+                    <h3>Услуги</h3>
+                    <ul class="footer-menu">
+                      <li><a href="#">Шиномонтажный сервис</a></li>
+                      <li><a href="#">Сервис по хранению колес</a></li>
+                    </ul>
+                  </div>
 
                   <a href="#" class="links-calc">Шинный калькулятор</a>
                 </div>
