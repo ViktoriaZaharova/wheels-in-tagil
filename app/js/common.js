@@ -15,6 +15,13 @@ $('.sales-slider').slick({
             settings: {
                 slidesToShow: 1,
             }
+        },
+        {
+            breakpoint: 575,
+            settings: {
+                arrows: false,
+                slidesToShow: 1,
+            }
         }
     ]
 });

@@ -103,7 +103,7 @@ input, textarea, select
   text-align: center
   letter-spacing: 0.005em
   color: #000
-  box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.04)
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.04)
   width: 100%
   border: 2px solid #F2F2F2
   background: #fff
@@ -704,6 +704,14 @@ header
       color: $text
       letter-spacing: 0.005em
       font-family: $font
+      &:after
+        content: ''
+        display: inline-block
+        border:
+          left: 8px solid #000
+          top: 5.5px solid transparent
+          bottom: 5.5px solid transparent
+        margin: 0 0 0 auto
     .header-menu__links-icon
       stroke: #000
     .header-menu__item
@@ -805,6 +813,38 @@ header
     &:last-child
       margin: 0
 
+.form-search
+  width: 100%
+  position: relative
+  margin: 10px 0 0
+  input
+    background: rgba(255, 255, 255, 0.2)
+    border-radius: 5px
+    border: none
+    padding: 10px 15px
+    height: 40px
+    text-align: left
+    color: #FFFFFF
+    font-size: 12px
+    font-weight: 600
+    font-family: $font
+    &::placeholder
+      color: #FFFFFF
+
+  button
+    position: absolute
+    top: 50%
+    transform: translate(0,-50%)
+    right: 21px
+    display: flex
+    align-items: center
+    justify-content: center
+    background: transparent
+    padding: 0
+    width: 15px
+    height: 15px
+    stroke: #fff
+    fill: none
 
 @import "header"
 @import "footer"

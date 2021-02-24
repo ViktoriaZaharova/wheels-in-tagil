@@ -76,8 +76,8 @@ input, textarea, select {
   text-align: center;
   letter-spacing: 0.005em;
   color: #000;
-  -webkit-box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.04);
-          box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.04);
+  -webkit-box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.04);
+          box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.04);
   width: 100%;
   border: 2px solid #F2F2F2;
   background: #fff;
@@ -840,6 +840,13 @@ header .dropdown-menu-header {
     color: #282E2C;
     letter-spacing: 0.005em;
     font-family: "Inter", sans-serif; }
+    header .dropdown-menu-header .header-menu__links:after {
+      content: '';
+      display: inline-block;
+      border-left: 8px solid #000;
+      border-top: 5.5px solid transparent;
+      border-bottom: 5.5px solid transparent;
+      margin: 0 0 0 auto; }
   header .dropdown-menu-header .header-menu__links-icon {
     stroke: #000; }
   header .dropdown-menu-header .header-menu__item {
@@ -971,6 +978,51 @@ header .dropdown-menu-header {
     font-size: 14px; }
     .tooltip-box__footer a:last-child {
       margin: 0; }
+
+.form-search {
+  width: 100%;
+  position: relative;
+  margin: 10px 0 0; }
+  .form-search input {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 15px;
+    height: 40px;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif; }
+    .form-search input::-webkit-input-placeholder {
+      color: #FFFFFF; }
+    .form-search input::-moz-placeholder {
+      color: #FFFFFF; }
+    .form-search input::-ms-input-placeholder {
+      color: #FFFFFF; }
+    .form-search input::placeholder {
+      color: #FFFFFF; }
+  .form-search button {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    right: 21px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: transparent;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    stroke: #fff;
+    fill: none; }
 
 .header {
   position: absolute;
@@ -2164,10 +2216,229 @@ footer {
   footer {
     padding: 0 0 80px; } }
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-  /**/ }
+@media only screen and (max-width: 640px) {
+  header .phone {
+    margin: 0 auto 0 0; }
+  .container {
+    padding: 0 30px; } }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /**/ }
+@media only screen and (max-width: 575px) {
+  .header-top {
+    padding: 30px 0 7px; }
+  .header-box-contacts .links {
+    border-bottom: 2px dashed #5E5E5E; }
+    .header-box-contacts .links .links-icon {
+      display: none; }
+  header .logo {
+    max-width: 260px;
+    margin: 0 auto; }
+  .main-home {
+    padding: 170px 0 40px;
+    background: #000000 url("../img/bg1.jpg") no-repeat center top;
+      background-size: 100%; }
+  .navigation {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 12px; }
+    .navigation .nav-item {
+      width: calc(50% - 2px);
+      height: 148px;
+      padding: 0;
+      border: none;
+      margin: 0 0 4px; }
+    .navigation .nav-links {
+      background: #333333;
+      border-radius: 4px; }
+      .navigation .nav-links:before {
+        display: none; }
+  .sidebar-wrapper {
+    display: none; }
+  .header-menu {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif; }
+  .header-menu__item {
+    margin: 0 0 4px;
+    width: calc(50% - 2px); }
+  .header-menu__links {
+    background: #191919;
+    border-radius: 4px;
+    padding: 8px 15px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    color: #fff;
+    text-align: left;
+    height: 50px; }
+  .header-menu__links-icon {
+    stroke: #fff; }
+  .advantages-box {
+    padding: 0; }
+  .sales-slider-wrapper {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin: 0 0 40px; }
+  .advantages-section {
+    padding: 0 0 40px; }
+    .advantages-section .container {
+      padding: 0; }
+  .advantages-boxes {
+    padding: 0 30px; }
+  .advantages-box {
+    font-size: 12px;
+    margin: 0 0 20px; }
+    .advantages-box p {
+      font-size: 18px;
+      margin: 0 0 10px;
+      line-height: 18px; }
+  .sales-slider-box {
+    padding: 9px 20px; }
+    .sales-slider-box h3 {
+      font-size: 17px;
+      max-width: 170px;
+      margin: 0 auto 3px;
+      line-height: normal; }
+  .box-condition {
+    padding: 4px 9px;
+    font-size: 6px; }
+  .callback-manager {
+    padding: 33px 0 49px;
+    background: #000 url("../img/bg-callback.png") no-repeat center top;
+      background-size: 100%; }
+  .callback-manager__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+  .callback-manager__avatar {
+    margin: 0 0 25.5px;
+    width: 125px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1; }
+    .callback-manager__avatar:before {
+      width: 140px;
+      height: 140px;
+      left: -8px; }
+  .callback-manager__form {
+    margin: 0 auto; }
+    .callback-manager__form button {
+      max-width: none;
+      font-size: 12px; }
+  .callback-manager__item {
+    font-size: 12px;
+    padding: 12px 17px; }
+    .callback-manager__item strong {
+      font-size: 12px;
+      margin: 12px 0 0; }
+  input, textarea, select {
+    font-size: 12px; }
+  .advantages-box-about {
+    width: calc(50% - 15px); }
+  .about {
+    padding: 40px 0; }
+  h2 {
+    font-size: 25px; }
+  .img-logo {
+    margin: 20px auto;
+    max-width: 260px; }
+    .img-logo .svg-icon {
+      width: 100%;
+      height: 30px; }
+  .description-text {
+    font-size: 12px; }
+  .advantages-wrapper {
+    margin: 20px 0 0; }
+  .advantages-box-about {
+    margin: 0 0 30px;
+    font-size: 12px; }
+    .advantages-box-about h3 {
+      font-size: 14px;
+      margin: 0 0 10px; }
+  .advantages-box-about__body {
+    margin: 10px 0 0; }
+  .about-box {
+    margin: 0 0 15px;
+    padding: 27px 20px;
+    font-size: 12px;
+    line-height: 12px; }
+    .about-box__top {
+      margin: 0 0 15px; }
+    .about-box h3 {
+      font-size: 14px;
+      line-height: 14px; }
+  .scores {
+    margin: 0; }
+    .scores .map {
+      width: calc(100% + 60px);
+      margin: 0 0 0 -30px; }
+  .map {
+    height: 230px; }
+  .nav-tabs .nav-link {
+    padding: 12px 18px;
+    text-align: center;
+    font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 60px; }
+  .scores .tab-content h3 {
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0 0 20px; }
+  .address-score__list {
+    font-size: 12px; }
+    .address-score__list li {
+      margin: 0 0 15px; }
+  .address-score .links-dashed {
+    margin: 20px 0 0; }
+  .links-dashed {
+    font-size: 12px; }
+  .reviews {
+    padding: 23px 0 50px; }
+    .reviews .title-line {
+      margin: 0 0 20px; }
+  .reviews-opinion {
+    padding: 17.5px 28px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0 0 10px; }
+    .reviews-opinion img {
+      max-width: 36px;
+      margin: 0 20px 0 0; }
+    .reviews-opinion h3 {
+      font-size: 14px; }
+    .reviews-opinion .btn {
+      max-width: none;
+      margin: 10px 0 0;
+      font-size: 12px; } }

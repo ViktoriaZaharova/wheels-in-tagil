@@ -69,7 +69,7 @@
       <div class="header-top">
         <div class="container">
           <div class="row d-flex align-items-center">
-            <div class="col-6 col-lg-7 col-xl-8 d-none d-sm-flex align-items-center">
+            <div class="col-12 col-sm-6 col-lg-7 col-xl-8 d-none d-sm-flex align-items-center">
 
               <nav class="navbar navbar-expand">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -129,7 +129,7 @@
               </nav>
             </div>
 
-            <div class="col-6 col-lg-5 col-xl-4 d-sm-flex align-items-center justify-content-end header-box-contacts">
+            <div class="col-12 col-sm-6 col-lg-5 col-xl-4 d-flex align-items-center justify-content-end header-box-contacts">
               <a href="tel:+73435465252" class="phone color-white">+7 3435 46 52 52</a>
               <a href="#" class="links-callback color-white" data-toggle="modal" data-target="#callbackModal">Заказать
                 звонок</a>
@@ -146,6 +146,12 @@
           <div class="row">
             <div class="col-12 col-sm-6 d-sm-flex align-items-center">
               <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            </div>
+            <div class="col-12 d-flex d-sm-none">
+              <form method="post" class="form-search">
+                <label><input type="text" placeholder="Поиск по сайту" name="search" required></label>
+                <button type="submit"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search-icon"></use></svg></button>
+              </form>
             </div>
             <div class="col-12 col-sm-6 d-none d-sm-flex align-items-center justify-content-end">
               <div class="header-box">
@@ -182,7 +188,7 @@
     <main class="main-home">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 d-none d-sm-flex">
             <div class="main-home__title">
               <h1>Подбор</h1>
               <ul class="nav nav-pills nav-tabs-filter" id="form-filter-tab" role="tablist">
@@ -198,7 +204,7 @@
             </div>
           </div>
 
-          <div class="col-12">
+          <div class="col-12 d-none d-sm-flex">
             <div class="tab-content" id="form-filterContent">
               <div class="tab-pane fade show active" id="form-filter1" role="tabpanel" aria-labelledby="pills-home-tab">
                 <form method="post" class="form-filter">
@@ -906,6 +912,72 @@
               </div>
             </div>
           </div>
+
+          <div class="col-12 d-flex d-sm-none flex-wrap">
+            <ul class="navigation">
+              <li class="nav-item">
+                <a href="catalog.html" class="nav-links">
+                  <span class="nav-links__icon"><img src="img/menu2.png" alt=""></span><span class="nav-links__text">Шины</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-links">
+                  <span class="nav-links__icon"><img src="img/menu3.png" alt=""></span><span
+                    class="nav-links__text">Диски</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-links">
+                  <span class="nav-links__icon"><img src="img/menu4.png" alt=""></span><span class="nav-links__text">Шинный калькулятор</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-links">
+                  <span class="nav-links__icon"><img src="img/menu5.png" alt=""></span><span
+                    class="nav-links__text">Услуги</span>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="header-menu">
+              <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                  class="header-menu__links-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#location-icon"></use></svg></span><span
+                  class="header-menu__links-text">Магазины</span></a>
+              </li>
+              <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                  class="header-menu__links-icon"><svg class="svg-icon stroke-none"><use
+                  xlink:href="img/sprite.svg#percent-icon"></use></svg></span><span
+                  class="header-menu__links-text">Акции</span></a>
+              </li>
+              <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                  class="header-menu__links-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#payment-icon"></use></svg></span><span
+                  class="header-menu__links-text">Оплата и доставка</span></a>
+              </li>
+
+              <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                  class="header-menu__links-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#revers-icon"></use></svg></span><span
+                  class="header-menu__links-text">Гарантии и возврат</span></a>
+              </li>
+              <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                  class="header-menu__links-icon"><svg class="svg-icon stroke-none"><use
+                  xlink:href="img/sprite.svg#help-icon"></use></svg></span><span
+                  class="header-menu__links-text">Помощь</span></a>
+              </li>
+              <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                  class="header-menu__links-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#reviews-icon"></use></svg></span><span
+                  class="header-menu__links-text">Отзывы</span></a>
+              </li>
+              <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                  class="header-menu__links-icon"><svg class="svg-icon stroke-none"><use
+                  xlink:href="img/sprite.svg#info-icon"></use></svg></span><span
+                  class="header-menu__links-text">О нас</span></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </main>
@@ -985,9 +1057,7 @@
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-12">
             <div class="slider-nav sales-slider__nav"></div>
           </div>
         </div>
