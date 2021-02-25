@@ -129,7 +129,8 @@
               </nav>
             </div>
 
-            <div class="col-12 col-sm-6 col-lg-5 col-xl-4 d-flex align-items-center justify-content-end header-box-contacts">
+            <div
+                class="col-12 col-sm-6 col-lg-5 col-xl-4 d-flex align-items-center justify-content-end header-box-contacts">
               <a href="tel:+73435465252" class="phone color-white">+7 3435 46 52 52</a>
               <a href="#" class="links-callback color-white" data-toggle="modal" data-target="#callbackModal">Заказать
                 звонок</a>
@@ -150,7 +151,11 @@
             <div class="col-12 d-flex d-sm-none">
               <form method="post" class="form-search">
                 <label><input type="text" placeholder="Поиск по сайту" name="search" required></label>
-                <button type="submit"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search-icon"></use></svg></button>
+                <button type="submit">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#search-icon"></use>
+                  </svg>
+                </button>
               </form>
             </div>
             <div class="col-12 col-sm-6 d-none d-sm-flex align-items-center justify-content-end">
@@ -1350,14 +1355,14 @@
             </div>
           </div>
 
-          <div class="col-12">
+          <div class="col-12 d-none d-sm-flex">
             <a href="#" class="btn btn-border load-more">Показать ещё отзывы</a>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="seo-section">
+    <div class="seo-section d-none d-sm-flex">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -1390,20 +1395,94 @@
               </svg>
             </a>
 
-            <div class="copyright">© 2009-2019 kolesavtagile.ru</div>
-            <div class="box-text"><p>Все предложения на сайте не являются публичной офертой, носят информационный
-              характер и нуждаются в подтверждении по телефону
-            </p></div>
-            <a href="#" class="links-doc">Политика конфиденциальности</a>
-            <div class="developer">
-              <p>Сайт разработан в</p>
-              <a href="#" class="logo-developer"><img src="img/logo-developer.svg" alt=""></a>
+            <div class="d-none d-sm-flex flex-wrap">
+              <div class="copyright">© 2009-2019 kolesavtagile.ru</div>
+              <div class="box-text"><p>Все предложения на сайте не являются публичной офертой, носят информационный
+                характер и нуждаются в подтверждении по телефону
+              </p></div>
+              <a href="#" class="links-doc">Политика конфиденциальности</a>
+              <div class="developer">
+                <p>Сайт разработан в</p>
+                <a href="#" class="logo-developer"><img src="img/logo-developer.svg" alt=""></a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-12 d-flex flex-wrap d-sm-none">
+            <div class="footer-box">
+              <h3>Каталог</h3>
+              <ul class="navigation">
+                <li class="nav-item">
+                  <a href="catalog.html" class="nav-links">
+                    <span class="nav-links__icon"><img src="img/menu2.png" alt=""></span><span class="nav-links__text">Шины</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-links">
+                    <span class="nav-links__icon"><img src="img/menu3.png" alt=""></span><span
+                      class="nav-links__text">Диски</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 d-flex flex-wrap d-sm-none">
+            <div class="footer-box">
+              <h3>Покупателям</h3>
+              <ul class="header-menu">
+                <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                    class="header-menu__links-icon"><img src="img/menu4.png" alt=""></span><span
+                    class="header-menu__links-text">Шинный калькулятор</span></a>
+                </li>
+                <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                    class="header-menu__links-icon"><img src="img/menu5.png" alt=""></span><span
+                    class="header-menu__links-text">Услуги</span></a>
+                </li>
+                <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                    class="header-menu__links-icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#location-icon"></use></svg></span><span
+                    class="header-menu__links-text">Магазины</span></a>
+                </li>
+                <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                    class="header-menu__links-icon"><svg class="svg-icon stroke-none"><use
+                    xlink:href="img/sprite.svg#percent-icon"></use></svg></span><span
+                    class="header-menu__links-text">Акции</span></a>
+                </li>
+                <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                    class="header-menu__links-icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#payment-icon"></use></svg></span><span
+                    class="header-menu__links-text">Оплата и доставка</span></a>
+                </li>
+
+                <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                    class="header-menu__links-icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#revers-icon"></use></svg></span><span
+                    class="header-menu__links-text">Гарантии и возврат</span></a>
+                </li>
+                <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                    class="header-menu__links-icon"><svg class="svg-icon stroke-none"><use
+                    xlink:href="img/sprite.svg#help-icon"></use></svg></span><span
+                    class="header-menu__links-text">Помощь</span></a>
+                </li>
+                <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                    class="header-menu__links-icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#reviews-icon"></use></svg></span><span
+                    class="header-menu__links-text">Отзывы</span></a>
+                </li>
+                <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                    class="header-menu__links-icon"><svg class="svg-icon stroke-none"><use
+                    xlink:href="img/sprite.svg#info-icon"></use></svg></span><span
+                    class="header-menu__links-text">О нас</span></a>
+                </li>
+              </ul>
             </div>
           </div>
 
           <div class="col-12 col-xl-8 col-lg-7 col-sm-7">
             <div class="footer-wrapper">
-              <div class="footer-row-menu">
+              <div class="footer-row-menu d-none d-sm-flex">
                 <div class="footer-col">
                   <h3>Каталог</h3>
                   <ul class="footer-menu">
@@ -1462,14 +1541,61 @@
                     </a></li>
                   </ul>
                 </div>
+
+                <div class="footer-item d-flex flex-wrap d-sm-none">
+                  <div class="copyright">© 2009-2019 kolesavtagile.ru</div>
+                  <div class="box-text"><p>Все предложения на сайте не являются публичной офертой, носят информационный
+                    характер и нуждаются в подтверждении по телефону
+                  </p></div>
+                  <a href="#" class="links-doc">Политика конфиденциальности</a>
+                  <div class="developer">
+                    <p>Сайт разработан в</p>
+                    <a href="#" class="logo-developer"><img src="img/logo-developer.svg" alt=""></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
-
   </div>
+</div>
+
+<div class="mobile-fixed">
+  <ul class="mobile-menu">
+    <li class="mobile-menu__item">
+      <a href="index.html" class="mobile-menu__links">
+        <span class="mobile-menu__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#menu-icon1"></use></svg></span>
+        <span class="mobile-menu__text">Главная</span>
+      </a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#" class="mobile-menu__links">
+        <span class="mobile-menu__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#menu-icon2"></use></svg></span>
+        <span class="mobile-menu__text">Каталог</span>
+      </a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#" class="mobile-menu__links">
+        <span class="mobile-menu__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#menu-icon3"></use></svg></span>
+        <span class="mobile-menu__text">Еще</span>
+      </a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#" class="mobile-menu__links">
+        <span class="mobile-menu__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#menu-icon4"></use></svg></span>
+        <span class="mobile-menu__text">Кабинет</span>
+      </a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#" class="mobile-menu__links">
+        <span class="mobile-menu__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#menu-icon5"></use></svg></span>
+        <span class="mobile-menu__text">Корзина</span>
+      </a>
+    </li>
+  </ul>
+
 </div>
 
 <script src="js/jquery.min.js"></script>

@@ -26,6 +26,21 @@ $('.sales-slider').slick({
     ]
 });
 
+// slick active
+$(window).on('load resize', function() {
+    if ($(window).width() < 576) {
+        $('.reviews-slider:not(.slick-initialized)').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            arrows: false
+        });
+    } else {
+        $(".reviews-slider.slick-initialized").slick("unslick");
+    }
+});
+// slick active
+
 // mask
 $('[name="phone"]').mask('+7(999)-999-99-99');
 

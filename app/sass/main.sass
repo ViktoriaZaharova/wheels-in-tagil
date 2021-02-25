@@ -846,6 +846,53 @@ header
     stroke: #fff
     fill: none
 
+.mobile-fixed
+  position: fixed
+  left: 50%
+  bottom: 8px
+  transform: translate(-50%,0)
+  width: calc(100% - 20px)
+  background: #fff
+  z-index: 5
+  box-shadow: 0 19px 31px 7px rgba(0, 0, 0, 0.14)
+  border-radius: 4px
+  padding: 5px 21px
+  display: none
+
+.mobile-menu
+  font-size: 8px
+  font-weight: bold
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+
+
+.mobile-menu__item
+  flex: 1
+
+.mobile-menu__links
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  color: $text
+  padding: 6px 0
+  &:hover
+    color: $accent
+    .mobile-menu__icon
+      fill: $accent
+
+.mobile-menu__icon
+  fill: #000
+  width: 24px
+  height: 24px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto 4px
+
+
+
 @import "header"
 @import "footer"
 @import "home"
