@@ -866,7 +866,6 @@ header
   align-items: stretch
   justify-content: space-between
 
-
 .mobile-menu__item
   flex: 1
 
@@ -890,6 +889,47 @@ header
   align-items: center
   justify-content: center
   margin: 0 auto 4px
+
+.mobile-menu__dropdown
+  width: 100%
+  bottom: 0
+  left: 50%
+  transform: translate(-50%,0)
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #282E2C
+  box-shadow: 0 28px 28px 23px rgba(0, 0, 0, 0.24)
+  border-radius: 4px 4px 0 0
+  position: fixed
+  z-index: 3
+  padding: 20px 10px 88px
+  display: none
+  .navigation
+    .nav-links
+      background: #F7F7F7
+      color: $text
+  .header-menu__links
+    background: #F7F7F7
+    color: $text
+    .header-menu__links-icon
+      stroke: $text
+    .stroke-none
+      fill: $text
+
+.mobile-menu__dropdown.active
+  display: block
+
+.mobile-menu__header
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 0 20px
+  h4
+    font-size: 18px
+    font-weight: 700
+
+.mobile-menu__body
+  width: 100%
 
 
 
