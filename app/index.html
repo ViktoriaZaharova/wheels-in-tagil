@@ -1566,31 +1566,36 @@
   <ul class="mobile-menu">
     <li class="mobile-menu__item">
       <a href="index.html" class="mobile-menu__links">
-        <span class="mobile-menu__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#menu-icon1"></use></svg></span>
+        <span class="mobile-menu__icon"><svg class="svg-icon"><use
+            xlink:href="img/sprite.svg#menu-icon1"></use></svg></span>
         <span class="mobile-menu__text">Главная</span>
       </a>
     </li>
     <li class="mobile-menu__item">
       <a href="#" class="mobile-menu__links mobile-menu__drop-item" data-item="mobile-menu1">
-        <span class="mobile-menu__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#menu-icon2"></use></svg></span>
+        <span class="mobile-menu__icon"><svg class="svg-icon"><use
+            xlink:href="img/sprite.svg#menu-icon2"></use></svg></span>
         <span class="mobile-menu__text">Каталог</span>
       </a>
     </li>
     <li class="mobile-menu__item">
       <a href="#" class="mobile-menu__links mobile-menu__drop-item" data-item="mobile-menu2">
-        <span class="mobile-menu__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#menu-icon3"></use></svg></span>
+        <span class="mobile-menu__icon"><svg class="svg-icon"><use
+            xlink:href="img/sprite.svg#menu-icon3"></use></svg></span>
         <span class="mobile-menu__text">Еще</span>
       </a>
     </li>
     <li class="mobile-menu__item">
       <a href="#" class="mobile-menu__links">
-        <span class="mobile-menu__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#menu-icon4"></use></svg></span>
+        <span class="mobile-menu__icon"><svg class="svg-icon"><use
+            xlink:href="img/sprite.svg#menu-icon4"></use></svg></span>
         <span class="mobile-menu__text">Кабинет</span>
       </a>
     </li>
     <li class="mobile-menu__item">
       <a href="#" class="mobile-menu__links">
-        <span class="mobile-menu__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#menu-icon5"></use></svg></span>
+        <span class="mobile-menu__icon"><svg class="svg-icon"><use
+            xlink:href="img/sprite.svg#menu-icon5"></use></svg></span>
         <span class="mobile-menu__text">Корзина</span>
       </a>
     </li>
@@ -1683,7 +1688,11 @@
   </div>
 </div>
 
-<div class="btn-scroll-up"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-top"></use></svg></div>
+<div class="btn-scroll-up">
+  <svg class="svg-icon">
+    <use xlink:href="img/sprite.svg#arrow-top"></use>
+  </svg>
+</div>
 
 <a href="#" class="btn-basket btn-basket-fixed header-box__links">
   <svg class="svg-icon">
@@ -1691,6 +1700,38 @@
   </svg>
   <span class="header-box__links-val">1</span>
 </a>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Заказ звонка</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button>
+      </div>
+
+      <div class="modal-body">
+        <form method="post" class="form-callback">
+          <label>
+            <span class="input-title">Имя</span>
+            <input type="text" placeholder="Введите ваше имя" name="name" required>
+          </label>
+          <label class="label-phone">
+            <span class="input-title">Телефон <span class="necessarily-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#snowflake"></use></svg></span></span>
+            <input type="text" placeholder="+7 (___) ___-__-__" name="phone" required>
+          </label>
+
+          <div class="necessarily"><span class="necessarily-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#snowflake"></use></svg></span> Поля обязательные для заполнения</div>
+          <div class="consent">Нажимая кнопку «Перезвонить мне», я даю свое согласие на обработку моих персональных
+            данных, в соответствии с <a href="#" class="links">политикой конфиденциальности</a>
+          </div>
+
+          <button type="submit" class="btn btn-accent">Перезвонить мне</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/libs.min.js"></script>
