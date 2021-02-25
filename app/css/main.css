@@ -2337,7 +2337,10 @@ button.close {
     top: -19px;
     right: -24px; }
   .advantages-box {
-    padding: 0 0 0 20px; } }
+    padding: 0 0 0 20px; }
+  .btn-scroll-up {
+    width: 50px;
+    height: 50px; } }
 
 @media only screen and (max-width: 850px) {
   .reviews-opinion {
@@ -2492,9 +2495,6 @@ button.close {
     margin: 0 0 34px; }
   footer {
     padding: 0 0 80px; }
-  .btn-scroll-up {
-    width: 50px;
-    height: 50px; }
   .btn-basket-fixed .header-box__links-val {
     right: -10px;
     top: -10px; } }
@@ -2839,4 +2839,6 @@ button.close {
   .label-phone {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
-            order: -1; } }
+            order: -1; }
+  .header-menu-cabinet li {
+    width: 100%; } }
