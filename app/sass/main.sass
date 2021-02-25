@@ -931,7 +931,27 @@ header
 .mobile-menu__body
   width: 100%
 
-
+.btn-scroll-up
+  display: flex
+  align-items: center
+  justify-content: center
+  background: $accent
+  position: fixed
+  z-index: 6
+  right: 20px
+  bottom: 20px
+  border-radius: 4px
+  width: 80px
+  height: 70px
+  cursor: pointer
+  transition: .3s ease
+  &:hover
+    background: $text
+  .svg-icon
+    stroke: #fff
+    fill: none
+    width: 18px
+    height: 23px
 
 @import "header"
 @import "footer"
