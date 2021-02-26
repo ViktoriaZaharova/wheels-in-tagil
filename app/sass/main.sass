@@ -690,7 +690,6 @@ h2
 
 header
   .dropdown-menu-header
-    min-width: 282px
     background: $text
     border: 1px solid #F2F2F2
     background: #FFFFFF
@@ -720,6 +719,18 @@ header
         border: none
     .stroke-none
       fill: #000
+
+.navbar-expand
+  .navbar-nav
+    .dropdown-menu-header
+      .header-menu__links
+        padding: 20px 0
+
+.dropdown-menu-header
+  min-width: 282px
+
+  .header-menu__item
+    margin: 0
 
 .tooltip-wrapper
   position: relative
