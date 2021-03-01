@@ -59,6 +59,10 @@ $('.tooltip-box .btn-close').on('click', function () {
     $(this).parents('.tooltip-box').fadeOut();
 });
 
+$('.btn-basket-click').on('click', function () {
+   $('.tooltip-box-basket').fadeToggle();
+});
+
 // mobile sub menu
 $('.mobile-menu__drop-item').on('click', function (e) {
     e.preventDefault();
@@ -81,6 +85,21 @@ $("body").on("click", ".btn-scroll-up", function () {
     }, "slow")
 });
 
+// amount
+$('.down').on("click", function () {
+    let $input = $(this).parent().find('input');
+    let count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+});
+$('.up').on("click",function () {
+    let $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+});
 
 
 // menu mobile dropdown

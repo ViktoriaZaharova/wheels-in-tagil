@@ -1,3 +1,5 @@
+@import "vars"
+
 .header
   position: absolute
   left: 0
@@ -121,6 +123,27 @@ header .navbar, .navbar-expand .navbar-nav .nav-link
   &:hover
     background: $accent
 
+.btn-user
+  position: relative
+  padding: 0
+  &:after
+    display: none
+    transition: .3s ease
+    position: absolute
+    left: 50%
+    transform: translate(-50%,0)
+    bottom: -8px
+    border:
+      left: 4px solid transparent
+      right: 4px solid transparent
+      top: 8px solid $accent
+
+.dropdown-cabinet.show
+  .btn-user
+    background: $accent
+    &:after
+      display: block
+
 .btn-basket
   background: $accent
 
@@ -147,4 +170,5 @@ header .navbar, .navbar-expand .navbar-nav .nav-link
   font-weight: bold
   font-family: 'Inter', sans-serif
   z-index: 2
+
 

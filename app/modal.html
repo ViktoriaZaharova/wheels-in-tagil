@@ -172,7 +172,8 @@
                   <span class="header-box__links-val">12</span>
                 </a>
                 <div class="dropdown-cabinet dropdown">
-                  <a href="#" class="btn-user header-box__links dropdown-toggle" id="dropdownMenuCabinet" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a href="#" class="btn-user header-box__links dropdown-toggle" id="dropdownMenuCabinet"
+                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <svg class="svg-icon">
                       <use xlink:href="img/sprite.svg#user-icon"></use>
                     </svg>
@@ -203,12 +204,57 @@
                     </ul>
                   </div>
                 </div>
-                <a href="#" class="btn-basket header-box__links">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#basket-icon"></use>
-                  </svg>
-                  <span class="header-box__links-val">1</span>
-                </a>
+                <div class="btn-basket-wrap">
+                  <a href="#" class="btn-basket btn-basket-click header-box__links">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#basket-icon"></use>
+                    </svg>
+                    <span class="header-box__links-val">1</span>
+                  </a>
+                  <div class="tooltip-box tooltip-box-basket">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="tooltip-box__header">
+                            <div class="successfully-icon">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#checkbox"></use>
+                              </svg>
+                            </div>
+                            <h4>Товар добавлен в корзину</h4>
+                            <div class="btn-close">
+                              <svg class="svg-icon">
+                                <use xlink:href="img/sprite.svg#close"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="tooltip-box__content">
+                            <div class="basket-card">
+                              <a href="#" class="basket-card__img"><img src="img/product1.png" alt=""></a>
+                              <div class="basket-card__body">
+                                <a href="#" class="basket-card__name">Автошина R18 235/50R18 Nokian Hakka Black 2 XL
+                                  101Y</a>
+                                <div class="amount">
+                                  <span class="down"></span>
+                                  <input type="text" value="1"/>
+                                  <span class="up"></span>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="tooltip-box__footer">
+                            <a href="#" class="links-dashed">Перейти в корзину</a>
+                            <a href="#" class="links-dashed color-accent">Оформить заказ</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -346,11 +392,11 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="col-12 col-sm-4">
+                              <div class="col-12 col-md-4">
                                 <div class="tooltip-box__img"><img src="img/tooltip1.png" alt=""></div>
                               </div>
 
-                              <div class="col-12 col-sm-8">
+                              <div class="col-12 col-md-8">
                                 <div class="tooltip-box__content">
                                   <div class="description">
                                     <p>Маркировка на шине:</p>
@@ -525,11 +571,11 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="col-12 col-sm-4">
+                              <div class="col-12 col-md-4">
                                 <div class="tooltip-box__img"><img src="img/tooltip1.png" alt=""></div>
                               </div>
 
-                              <div class="col-12 col-sm-8">
+                              <div class="col-12 col-md-8">
                                 <div class="tooltip-box__content">
                                   <div class="description">
                                     <p>Маркировка на шине:</p>
@@ -704,11 +750,11 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="col-12 col-sm-4">
+                              <div class="col-12 col-md-4">
                                 <div class="tooltip-box__img"><img src="img/tooltip1.png" alt=""></div>
                               </div>
 
-                              <div class="col-12 col-sm-8">
+                              <div class="col-12 col-md-8">
                                 <div class="tooltip-box__content">
                                   <div class="description">
                                     <p>Маркировка на шине:</p>
@@ -1620,7 +1666,7 @@
       </a>
     </li>
     <li class="mobile-menu__item">
-      <a href="#" class="mobile-menu__links">
+      <a href="#" class="mobile-menu__links btn-basket-click">
         <span class="mobile-menu__icon"><svg class="svg-icon"><use
             xlink:href="img/sprite.svg#menu-icon5"></use></svg></span>
         <span class="mobile-menu__text">Корзина</span>
@@ -1628,6 +1674,34 @@
     </li>
   </ul>
 
+</div>
+
+<!--mobile basket-->
+<div class="tooltip-box tooltip-box-basket">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="tooltip-box__header">
+          <div class="successfully-icon">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#checkbox"></use>
+            </svg>
+          </div>
+          <h4>Товар успешно добавлен в корзину</h4>
+          <div class="btn-close">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="tooltip-box__footer">
+          <a href="#" class="links-dashed">Перейти в корзину</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="mobile-menu__dropdown" data-item="mobile-menu1">
@@ -1801,6 +1875,264 @@
     </div>
   </div>
 </div>
+<div class="modal fade modal-thanks" id="callbackModalThanks" tabindex="-1" aria-labelledby="callbackModalThanksLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+
+      <div class="modal-img"><img src="img/good-icon.png" alt=""></div>
+      <div class="modal-header">
+        <h2>Вы успешно зарегистрировались</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="box-text">
+          <p>Добро пожаловать в интернет-магазин шин и дисков “Колеса в Тагиле”</p>
+        </div>
+
+        <button class="btn btn-accent btn-close-modal" type="button" data-dismiss="modal">Ок</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade modal-thanks" id="callbackModalThanks2" tabindex="-1" aria-labelledby="callbackModalThanks2Label"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+
+      <div class="modal-img"><img src="img/good-icon.png" alt=""></div>
+      <div class="modal-header">
+        <h2>Заявка принята</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="box-text">
+          <p>Мы перезвоним Вам в ближайшее время, ожидайте звонка</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade modal-thanks" id="callbackModalThanks3" tabindex="-1" aria-labelledby="callbackModalThanks3Label"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+
+      <div class="modal-img"><img src="img/good-icon.png" alt=""></div>
+      <div class="modal-header">
+        <h2>Заявка принята</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="box-text">
+          <p>В ближайшее время мы проверим указанную информацию и обязательно с Вами свяжемся</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade modal-sentence" id="sentenceModal" tabindex="-1" aria-labelledby="sentenceModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Нашли дешевле? <br>
+          Мы предложим цену лучше!</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form method="post" class="form-callback">
+          <div class="form-group">
+            <label>
+            <span class="input-title">Телефон <span class="necessarily-icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#snowflake"></use></svg></span></span>
+              <input type="text" placeholder="+7 (___) ___-__-__" name="phone" required>
+            </label>
+
+            <label>
+              <span class="input-title">Имя</span>
+              <input type="text" placeholder="Введите ваше имя" name="name">
+            </label>
+          </div>
+          <label>
+            <span class="input-title">Ссылка на товар <span class="necessarily-icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#snowflake"></use></svg></span></span>
+            <input type="text" placeholder="Вставьте ссылку на такой же товар с другого сайта" name="link_web" required>
+          </label>
+
+          <label>
+            <span class="input-title">Комментарий</span>
+            <input type="text" placeholder="Оставьте комментарий (необязательно)" name="comment">
+          </label>
+
+          <div class="necessarily"><span class="necessarily-icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#snowflake"></use></svg></span> Поля обязательные для заполнения
+          </div>
+          <div class="form-callback__footer">
+            <button type="submit" class="btn btn-accent">Отправить</button>
+            <div class="consent">Нажимая кнопку «Перезвонить мне», я даю свое согласие на обработку моих персональных
+              данных, в соответствии с <a href="#" class="links">политикой конфиденциальности</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade modal-entrance" id="entranceModal" tabindex="-1" aria-labelledby="entranceModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <ul class="nav nav-pills nav-tabs-filter" id="modal-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="modal-tab1-tab" data-toggle="pill" href="#modal-tab1" role="tab"
+               aria-controls="modal-tab1" aria-selected="true">Вход</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="modal-tab2-tab" data-toggle="pill" href="#modal-tab2" role="tab"
+               aria-controls="modal-tab2" aria-selected="false">Регистарция</a>
+          </li>
+        </ul>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="tab-content" id="modal-tabContent">
+          <div class="tab-pane fade show active" id="modal-tab1" role="tabpanel" aria-labelledby="modal-tab1-tab">
+            <form method="post" class="form-callback">
+              <div class="form-group">
+                  <label>
+                    <span class="input-title">E-mail <span class="necessarily-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#snowflake"></use></svg></span></span>
+                    <input type="text" placeholder="Адрес электронной почты" name="mail" required>
+                  </label>
+
+                  <label>
+                    <span class="input-title">Пароль <span class="necessarily-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#snowflake"></use></svg></span></span>
+                    <input type="text" placeholder="Не менее 6 символов" name="password" required>
+                  </label>
+              </div>
+
+              <a href="#" class="links-border link-reset-password">Забыли пароль?</a>
+
+              <div class="necessarily"><span class="necessarily-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#snowflake"></use></svg></span> Поля обязательные для заполнения
+              </div>
+              <div class="form-callback__footer">
+                <button type="submit" class="btn btn-accent">Войти</button>
+              </div>
+              <div class="quick-entry">
+                <p>Войти через соц. сети</p>
+                <div class="img-social-all"><img src="img/social-all.png" alt=""></div>
+              </div>
+            </form>
+          </div>
+
+          <div class="tab-pane fade" id="modal-tab2" role="tabpanel" aria-labelledby="modal-tab2-tab">
+            <form method="post" class="form-callback">
+              <div class="form-group">
+                <label>
+                    <span class="input-title">E-mail <span class="necessarily-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#snowflake"></use></svg></span></span>
+                  <input type="text" placeholder="Введите адрес электронной почты" name="mail" required>
+                </label>
+
+                <label>
+                    <span class="input-title">Телефон</span>
+                  <input type="text" placeholder="+7 (___) ___ - __" name="phone">
+                </label>
+
+                <label>
+                  <span class="input-title">ФИО</span>
+                  <input type="text" placeholder="Введите вашу фамилию, имя, отчество" name="first_name">
+                </label>
+                <label>
+                    <span class="input-title">Дата рождения</span>
+                  <input type="text" placeholder="Выберите дату рождения" name="date">
+                </label>
+
+                <label>
+                    <span class="input-title">Пароль <span class="necessarily-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#snowflake"></use></svg></span></span>
+                  <input type="text" placeholder="Не менее 6 символов" name="password" required>
+                </label>
+                <label>
+                    <span class="input-title">Повторите пароль <span class="necessarily-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#snowflake"></use></svg></span></span>
+                  <input type="text" placeholder="Повторите пароль" name="double_password" required>
+                </label>
+              </div>
+
+              <div class="necessarily"><span class="necessarily-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#snowflake"></use></svg></span> Поля обязательные для заполнения
+              </div>
+              <div class="consent">Нажимая кнопку «Перезвонить мне», я даю свое согласие на обработку моих персональных
+                данных, в соответствии с <a href="#" class="links">политикой конфиденциальности</a>
+              </div>
+              <div class="form-callback__footer">
+                <button type="submit" class="btn btn-accent">Зарегистрироваться</button>
+              </div>
+              <div class="quick-entry">
+                <p>Зарегистрироваться через соц. сети</p>
+                <div class="img-social-all"><img src="img/social-all.png" alt=""></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button class="btn btn-accent" type="button" data-toggle="modal" data-target="#callbackModalThanks">Вы успешно
+  зарегистрировались
+</button>
+
+<button class="btn btn-accent" type="button" data-toggle="modal" data-target="#callbackModalThanks2">
+  Заявка принята
+</button>
+
+<button class="btn btn-accent" type="button" data-toggle="modal" data-target="#callbackModalThanks3">
+  Заявка принята
+</button>
+
+<button class="btn btn-accent" type="button" data-toggle="modal" data-target="#sentenceModal">
+  Нашли дешевле?
+</button>
+
+<button class="btn btn-accent" type="button" data-toggle="modal" data-target="#entranceModal">
+  Вход
+</button>
+
 
 <script src="js/jquery.min.js"></script>
 <script src="js/libs.min.js"></script>

@@ -145,6 +145,9 @@ button
   width: 100%
   letter-spacing: 0.005em
   border-radius: 4px
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
 
 .btn-accent
   padding: 18.5px 24px
@@ -728,9 +731,41 @@ header
 
 .dropdown-menu-header
   min-width: 282px
-
   .header-menu__item
     margin: 0
+
+.dropdown-menu-cabinet
+  min-width: 245px
+  max-width: 245px
+  margin: 18px 0 0
+  box-shadow: 0px 80px 150px rgba(0, 0, 0, 0.2)
+  border: 1px solid #F2F2F2
+    radius: 4px
+  padding: 0 20px
+  top: 100% !important
+  left: 50% !important
+  transform: translate(-50%,0) !important
+  .header-menu-cabinet
+    font-size: 15px
+    font-family: $font
+    font-weight: 500
+
+    .header-menu__links
+      color: $text
+      padding: 20px 0
+    .header-menu__item
+      margin: 0
+      border-bottom: 1px solid #E6E6E6
+      &:last-child
+        border: none
+    .header-menu__links-icon
+      stroke: #000
+    .stroke-none
+      fill: #000
+      stroke: none
+
+
+
 
 .tooltip-wrapper
   position: relative
@@ -764,14 +799,17 @@ header
   h4
     font-weight: 600
     font-size: 15px
+  .container
+    padding: 0
 
 .tooltip-box__header
   width: 100%
   margin: 0 0 20px
   display: flex
   align-items: center
-  justify-content: space-between
-  flex-wrap: wrap
+  justify-content: flex-start
+  .btn-close
+    margin: 0 0 0 auto
 
 .btn-close
   display: flex
@@ -823,6 +861,89 @@ header
     font-size: 14px
     &:last-child
       margin: 0
+      
+.successfully-icon
+  background: #219653
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  stroke: #fff
+  width: 18px
+  height: 18px
+  fill: none
+  padding: 5px
+  margin: 0 10px 0 0
+
+.basket-card
+  width: 100%
+  display: flex
+  align-items: center
+  &__img
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 67px
+  &__body
+    padding: 0 0 0 20px
+    width: calc(100% - 67px)
+
+.amount
+  display: flex
+  align-items: stretch
+  justify-content: center
+  border: 1px solid #E0E0E0
+    radius: 4px
+  width: 116px
+  height: 40px
+  background: #fff
+  overflow: hidden
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.07)
+  input
+    border: none
+    box-shadow: none
+    width: 48px
+    height: 38px
+    text-align: center
+    font-size: 15px
+    font-family: $font
+    font-weight: normal
+    color: $text
+    padding: 0
+    &::placeholder
+      color: $text
+  span
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 34px
+    position: relative
+    cursor: pointer
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      width: 12px
+      height: 2px
+      background: linear-gradient(0deg, #000000, #000000), #282E2C
+  .up
+    &:after
+      content: ''
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      position: absolute
+      background: linear-gradient(0deg, #000000, #000000), #282E2C
+      width: 2px
+      height: 12px
+
+.basket-card__name
+  color: $text
+  margin: 0 0 15px
+  font-size: 15px
+
 
 .form-search
   width: 100%
@@ -963,6 +1084,11 @@ header
     fill: none
     width: 18px
     height: 23px
+
+.links-border
+  color: #828282
+  text-decoration: underline
+  font-size: 15px
 
 @import "header"
 @import "footer"

@@ -77,7 +77,8 @@
   .dropdown-menu-header
     min-width: 282px
 
-
+  .dropdown-menu-cabinet
+    min-width: 245px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1560px)
@@ -227,6 +228,25 @@
     flex-wrap: wrap
     justify-content: space-between
 
+  .header-box__links
+    padding: 0
+
+  .modal-content
+    padding: 25px 40px
+
+
+  .link-reset-password
+    margin: 0 0 15px
+
+  .quick-entry
+    margin: 15px 0 0
+
+  .modal-entrance .form-callback__footer
+    margin: 15px 0 0
+
+
+
+
 @media only screen and (max-width: 992px)
   .form-filter
     justify-content: space-between
@@ -325,6 +345,13 @@
   .btn-scroll-up
     width: 50px
     height: 50px
+
+  .modal-sentence, .modal-entrance
+    .form-group
+      max-width: none
+
+  .modal-entrance .modal-dialog
+    max-width: 540px
 
 @media only screen and (max-width: 850px)
   .reviews-opinion
@@ -504,12 +531,30 @@
     padding: 0 0 80px
 
 
-
   .btn-basket-fixed
     .header-box__links-val
       right: -10px
       top: -10px
 
+  .tooltip-box
+    min-width: 320px
+    padding: 30px
+
+  .tooltip-box__img
+    max-width: 152px
+
+  .tooltip-box__content
+    margin: 20px 0 0
+
+    .box-text
+      font-size: 12px
+      line-height: 18px
+
+  .tooltip-box__footer a
+    font-size: 12px
+
+  .modal-entrance input, .links-border, .quick-entry
+    font-size: 13px
 
 @media only screen and (max-width: 640px)
   header .phone
@@ -525,6 +570,7 @@
 
   .header-box-contacts .links
     border-bottom: 2px dashed #5E5E5E
+
     .links-icon
       display: none
 
@@ -543,15 +589,18 @@
     flex-wrap: wrap
     justify-content: space-between
     font-size: 12px
+
     .nav-item
       width: calc(50% - 2px)
       height: 148px
       padding: 0
       border: none
       margin: 0 0 4px
+
     .nav-links
       background: #333333
       border-radius: 4px
+
       &:before
         display: none
 
@@ -597,6 +646,7 @@
 
   .advantages-section
     padding: 0 0 40px
+
     .container
       padding: 0
 
@@ -606,6 +656,7 @@
   .advantages-box
     font-size: 12px
     margin: 0 0 20px
+
     p
       font-size: 18px
       margin: 0 0 10px
@@ -613,6 +664,7 @@
 
   .sales-slider-box
     padding: 9px 20px
+
     h3
       font-size: 17px
       max-width: 170px
@@ -636,6 +688,7 @@
     margin: 0 0 25.5px
     width: 125px
     order: -1
+
     &:before
       width: 140px
       height: 140px
@@ -643,6 +696,7 @@
 
   .callback-manager__form
     margin: 0 auto
+
     button
       max-width: none
       font-size: 12px
@@ -650,6 +704,7 @@
   .callback-manager__item
     font-size: 12px
     padding: 12px 17px
+
     strong
       font-size: 12px
       margin: 12px 0 0
@@ -669,6 +724,7 @@
   .img-logo
     margin: 20px auto
     max-width: 260px
+
     .svg-icon
       width: 100%
       height: 30px
@@ -682,6 +738,7 @@
   .advantages-box-about
     margin: 0 0 30px
     font-size: 12px
+
     h3
       font-size: 14px
       margin: 0 0 10px
@@ -694,14 +751,17 @@
     padding: 27px 20px
     font-size: 12px
     line-height: 12px
+
     &__top
       margin: 0 0 15px
+
     h3
       font-size: 14px
       line-height: 14px
 
   .scores
     margin: 0
+
     .map
       width: calc(100% + 60px)
       margin: 0 0 0 -30px
@@ -725,6 +785,7 @@
 
   .address-score__list
     font-size: 12px
+
     li
       margin: 0 0 15px
 
@@ -736,6 +797,7 @@
 
   .reviews
     padding: 23px 0 50px
+
     .title-line
       margin: 0 0 20px
 
@@ -749,8 +811,10 @@
     img
       max-width: 36px
       margin: 0 20px 0 0
+
     h3
       font-size: 14px
+
     .btn
       max-width: none
       margin: 10px 0 0
@@ -760,6 +824,7 @@
     .slick-dots
       justify-content: center
       margin: 40px auto 0
+
     .slick-list
       overflow: visible
 
@@ -775,24 +840,31 @@
 
   footer
     padding: 40px 0 34px
+
     .logo
       margin: 0 auto 30px
       width: 260px
       height: 30px
+
     .navigation
       width: 100%
+
       .nav-links
         height: 148px
         background: #F7F7F7
         color: $text
+
     .header-menu
       .header-menu__links
         background: #F7F7F7
         color: $text
+
       .header-menu__links-icon
         stroke: #000
+
       .stroke-none
         fill: #000
+
     .box-text
       font-size: 12px
       line-height: 100%
@@ -800,6 +872,7 @@
   .footer-box
     width: 100%
     margin: 0 0 30px
+
     h3
       font-size: 18px
       margin: 0 0 30px
@@ -810,6 +883,7 @@
 
   .footer-item
     width: 100%
+
     .phone
       font-size: 26px
       margin: 15px 0 10px
@@ -830,7 +904,8 @@
     bottom: 70px
 
   .modal-content
-    padding: 27px 30px
+    padding: 25px 30px
+
     h2
       font-size: 18px
       text-align: left
@@ -848,11 +923,14 @@
     display: flex
     flex-direction: column
     align-items: flex-start
+
     label
       margin: 0 0 10px
+
     input
       text-align: left
       padding: 0 20px
+
     button
       margin: 10px auto 0
       font-size: 12px
@@ -864,7 +942,7 @@
   .necessarily
     font-size: 12px
     justify-content: flex-start
-      
+
   .consent
     order: 1
     margin: 10px 0 0
@@ -877,3 +955,97 @@
   .header-menu-cabinet
     li
       width: 100%
+
+  button.close
+    top: 25px
+    right: 30px
+
+  .modal-img
+    margin: 0 auto 20px
+
+  .modal-thanks
+    .box-text
+      margin: 10px auto 0
+      font-size: 12px
+      font-weight: normal
+
+    h2
+      text-align: center
+
+  .btn-close-modal
+    width: 100%
+    padding: 11px 20px
+    font-size: 12px
+    margin: 20px auto 0
+
+  .form-callback__footer
+    flex-wrap: wrap
+    margin: 10px 0 0
+
+    button
+      width: 100%
+      margin: 0 auto 10px
+
+    .consent
+      width: 100%
+      padding: 0
+
+  .modal-sentence, .modal-entrance
+    .necessarily
+      margin: 0
+
+    .form-callback
+      .form-group
+        margin: 0 0 10px
+
+        label
+          max-width: none
+
+  .tooltip-box-basket
+    position: fixed
+    left: 50%
+    bottom: 73px
+    top: auto
+    transform: translate(-50%, 0)
+    box-shadow: 0px 80px 150px rgba(0, 0, 0, 0.2)
+    background: linear-gradient(0deg, #000000, #000000), #282E2C
+    border-radius: 5px
+    color: #fff
+    width: calc(100% - 20px)
+    max-width: none
+    border: none
+    padding: 30px
+    .tooltip-box__header
+      margin: 0
+    .links-dashed
+      font-size: 15px
+      color: #fff
+    .btn-close
+      background: #4F4F4F
+      fill: #fff
+    h4
+      font-size: 12px
+    .successfully-icon
+      width: 32px
+      height: 32px
+      min-width: 32px
+      padding: 12px
+
+  .modal-entrance
+    .nav-tabs-filter
+      font-size: 16px
+    input
+      height: 40px
+      padding: 0 16px
+    button
+      margin: 0 auto
+    .consent
+      margin: 15px 0 0
+      order: 0
+
+
+  .links-border
+    font-size: 12px
+
+
+
