@@ -234,4 +234,9 @@
         <path d="M4 17H10.4615" stroke-width="2"/>
     </symbol>
 
+    <symbol id="clock-icon" viewBox="0 0 22 22">
+        <circle cx="11" cy="11" r="10" stroke-width="2"/>
+        <path d="M11 5V11L14 14" stroke-width="2"/>
+    </symbol>
+
 </svg>

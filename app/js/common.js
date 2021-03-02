@@ -26,6 +26,62 @@ $('.sales-slider').slick({
     ]
 });
 
+$('.score-slider-one').slick({
+    slidesToShow: 1,
+    fade: true,
+    prevArrow: '<button type="button" class="slick-prev slick-arrow-my slick-arrow-my-prev"><svg width="17" height="10" viewBox="0 0 17 10" xmlns="http://www.w3.org/2000/svg">\n' +
+        '<path d="M5.62963 9L2 5M2 5L5.62963 1M2 5L17 5" stroke-width="2"/>\n' +
+        '</svg>\n</button>',
+    nextArrow: '<button type="button" class="slick-next slick-arrow-my slick-arrow-my-next"><svg width="17" height="10" viewBox="0 0 17 10" xmlns="http://www.w3.org/2000/svg">\n' +
+        '        <path d="M11.3704 1L15 5M15 5L11.3704 9M15 5L-1.74846e-07 5" stroke-width="2"/>\n' +
+        '    </svg></button>',
+    asNavFor: '.score-slider-preview-one',
+    responsive: [
+        {
+            breakpoint: 575,
+            settings: {
+                arrows: false,
+            }
+        }
+    ]
+});
+
+$('.score-slider-preview-one').slick({
+    slidesToShow: 4,
+    arrows: false,
+    asNavFor: '.score-slider-one',
+    focusOnSelect: true,
+    variableWidth: true,
+});
+
+$('.score-slider-two').slick({
+    slidesToShow: 1,
+    fade: true,
+    prevArrow: '<button type="button" class="slick-prev slick-arrow-my slick-arrow-my-prev"><svg width="17" height="10" viewBox="0 0 17 10" xmlns="http://www.w3.org/2000/svg">\n' +
+        '<path d="M5.62963 9L2 5M2 5L5.62963 1M2 5L17 5" stroke-width="2"/>\n' +
+        '</svg>\n</button>',
+    nextArrow: '<button type="button" class="slick-next slick-arrow-my slick-arrow-my-next"><svg width="17" height="10" viewBox="0 0 17 10" xmlns="http://www.w3.org/2000/svg">\n' +
+        '        <path d="M11.3704 1L15 5M15 5L11.3704 9M15 5L-1.74846e-07 5" stroke-width="2"/>\n' +
+        '    </svg></button>',
+    asNavFor: '.score-slider-preview-two',
+    responsive: [
+        {
+            breakpoint: 575,
+            settings: {
+                arrows: false,
+            }
+        }
+    ]
+});
+
+$('.score-slider-preview-two').slick({
+    slidesToShow: 4,
+    arrows: false,
+    asNavFor: '.score-slider-two',
+    focusOnSelect: true,
+    variableWidth: true,
+});
+
 // slick active
 $(window).on('load resize', function() {
     if ($(window).width() < 576) {
