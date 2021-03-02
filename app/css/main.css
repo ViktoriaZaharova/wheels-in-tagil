@@ -1437,10 +1437,11 @@ header .dropdown-menu-header {
       color: #FD700B; }
 
 .breadcrumb-item + .breadcrumb-item {
-  padding-left: 20px; }
+  padding: 0; }
 
 .breadcrumb-item + .breadcrumb-item::before {
-  padding-right: 20px;
+  padding: 0;
+  margin: 0 20px;
   color: #E6E6E6; }
 
 .header {
@@ -2593,6 +2594,131 @@ button.close {
     -o-object-fit: cover;
        object-fit: cover; }
 
+.contacts {
+  margin: 0 0 84px; }
+
+.contacts-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.contacts-page-content__item {
+  margin: 50px 0 0; }
+  .contacts-page-content__item h3 {
+    margin: 0 0 40px;
+    font-size: 32px;
+    font-weight: 700; }
+  .contacts-page-content__item .callback-manager__item {
+    margin: 0 0 40px; }
+  .contacts-page-content__item .form-callback .input-title, .contacts-page-content__item .form-callback .necessarily {
+    text-align: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .contacts-page-content__item .form-callback input {
+    text-align: left; }
+  .contacts-page-content__item .form-callback label {
+    margin: 0 0 20px; }
+  .contacts-page-content__item .form-callback .form-group {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .contacts-page-content__item .form-callback .form-group label {
+      max-width: 48.5%; }
+  .contacts-page-content__item .form-callback .necessarily {
+    margin: 20px 0 12px; }
+
+.contacts-company {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.03em; }
+  .contacts-company a {
+    color: #000; }
+  .contacts-company p {
+    color: #666666;
+    min-width: 140px; }
+  .contacts-company li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 5px; }
+    .contacts-company li:last-child {
+      margin: 0; }
+
+.map-wrap {
+  width: 100%;
+  position: relative;
+  -webkit-box-shadow: 0 34px 59px -45px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 34px 59px -45px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden; }
+  .map-wrap img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.links-address-map {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  -webkit-box-shadow: 0px 20px 20px -45px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 20px 20px -45px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  padding: 16px 50px;
+  letter-spacing: 0.005em;
+  font-size: 18px;
+  color: #000;
+  white-space: nowrap; }
+  .links-address-map:hover {
+    color: #FD700B; }
+
+.list-requisites {
+  font-size: 15px;
+  font-weight: 500; }
+  .list-requisites span {
+    color: #828282; }
+  .list-requisites li {
+    padding: 20px 0;
+    border-top: 1px solid #E0E0E0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .list-requisites li:last-child {
+      border-bottom: 1px solid #E0E0E0; }
+    .list-requisites li p {
+      min-width: 220px; }
+
+.contacts-page-head .callback-manager__item {
+  margin: 0; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1700px) {
@@ -2893,7 +3019,22 @@ button.close {
   .score-slider__box {
     height: 400px; }
   .score-slider-preview {
-    margin: 25px 0 0; } }
+    margin: 25px 0 0; }
+  .contacts-page-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .contacts-img {
+    max-width: 225px;
+    margin: 0 40px 0 0; }
+  .contacts-page-content__item .form-callback .form-group {
+    max-width: none; } }
 
 @media only screen and (max-width: 850px) {
   .reviews-opinion {
@@ -3516,4 +3657,47 @@ button.close {
     height: 40px;
     margin: 0 14px 0 0; }
   .breadcrumb {
-    font-size: 10px; } }
+    font-size: 10px; }
+  .contacts-page-content__item {
+    margin: 25px 0 0; }
+    .contacts-page-content__item h3 {
+      font-size: 18px;
+      margin: 0 0 20px; }
+  .list-requisites {
+    font-size: 12px; }
+    .list-requisites li {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    .list-requisites p {
+      width: 100%;
+      min-width: auto; }
+  .contacts-page-content__item .form-callback .necessarily {
+    margin: 4px 0 10px; }
+  .contacts-page-content__item .form-callback label {
+    margin: 0 0 16px; }
+  .contacts-page-content__item .form-callback .form-group label {
+    max-width: none; }
+  .contacts-page-content__item .form-callback input {
+    height: 40px;
+    padding: 0 15px; }
+  .contacts-page-content__item .callback-manager__item {
+    margin: 0 0 20px; }
+  .links-address-map {
+    font-size: 12px;
+    padding: 16px 34px; }
+  .map-wrap {
+    width: calc(100% + 60px);
+    margin: 0 -30px; }
+  .contacts-company {
+    font-size: 16px; }
+    .contacts-company p {
+      display: none; }
+  .contacts-img {
+    max-width: 112px;
+    margin: 0 0 10px; }
+  .contacts-page-head {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .contacts-page-head .callback-manager__item {
+      margin: 0;
+      width: 100%; } }

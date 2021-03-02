@@ -1,60 +1,102 @@
 @import "vars"
+.contacts
+  margin: 0 0 84px
 
-.contacts-box
-  margin: 0 0 40px
+.contacts-img
+  display: flex
+  align-items: center
+  justify-content: center
+
+.contacts-page-content__item
+  margin: 50px 0 0
   h3
-    margin: 0 0 50px
+    margin: 0 0 40px
     font-size: 32px
-    font-weight: bold
-
-.list-contacts
-  margin: 0 0 50px
-  li
-    margin: 0 0 30px
-    width: 100%
-    &:last-child
+    font-weight: 700
+  .callback-manager__item
+    margin: 0 0 40px
+  .form-callback
+    .input-title, .necessarily
+      text-align: left
+      justify-content: flex-start
+    input
+      text-align: left
+    label
+      margin: 0 0 20px
+    .form-group
       margin: 0
-  &__item
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+      flex-wrap: wrap
+      label
+        max-width: 48.5%
+    .necessarily
+      margin: 20px 0 12px
+
+.contacts-company
+  font-size: 24px
+  font-weight: bold
+  letter-spacing: 0.03em
+  a
+    color: #000
+  p
+    color: #666666
+    min-width: 140px
+  li
     display: flex
     align-items: center
-  &__icon
-    width: 24px
-    min-width: 24px
-    height: 24px
-    fill: none
-    stroke: #000
-    margin: 0 15px 0 0
+    margin: 0 0 5px
+    &:last-child
+      margin: 0
 
-.score-slider
+.map-wrap
   width: 100%
-
-.score-slider-preview
-  margin: 50px 0 0
-
-.score-slider-preview__item
-  display: flex
-  align-items: center
-  justify-content: center
-  max-width: 108px
-  height: 80px
+  position: relative
+  box-shadow: 0 34px 59px -45px rgba(0, 0, 0, 0.25)
+  border: 1px solid rgba(0, 0, 0, 0.1)
   border-radius: 4px
-  cursor: pointer
   overflow: hidden
-  margin: 0 30px 0 0
   img
     width: 100%
     height: 100%
     object-fit: cover
 
-.score-slider__box
-  width: 100%
-  height: 470px
-  border-radius: 4px
-  overflow: hidden
-  display: flex
-  align-items: center
-  justify-content: center
-  img
-    width: 100%
-    height: 100%
-    object-fit: cover
+
+.links-address-map
+  position: absolute
+  z-index: 1
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  border: 1px solid rgba(0, 0, 0, 0.1)
+    radius: 4px
+  box-shadow: 0px 20px 20px -45px rgba(0, 0, 0, 0.15)
+  background: #fff
+  padding: 16px 50px
+  letter-spacing: 0.005em
+  font-size: 18px
+  color: #000
+  white-space: nowrap
+  &:hover
+    color: $accent
+
+
+.list-requisites
+  font-size: 15px
+  font-weight: 500
+  span
+    color: #828282
+  li
+    padding: 20px 0
+    border-top: 1px solid #E0E0E0
+    display: flex
+    align-items: flex-start
+    &:last-child
+      border-bottom: 1px solid #E0E0E0
+    p
+      min-width: 220px
+
+.contacts-page-head
+  .callback-manager__item
+    margin: 0
