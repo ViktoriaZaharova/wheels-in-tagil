@@ -585,6 +585,24 @@ header
   + .checkbox-custom
       opacity: 1
 
+.checkbox-default
+  .checkbox-custom
+    width: 16px
+    height: 16px
+    min-width: 16px
+    border: 2px solid #000
+      radius: 4px
+    background: #fff
+    margin: 0 10px 0 0
+  .svg-icon
+    fill: none
+    width: 10px
+    height: 6px
+    stroke: #fff
+  .checkbox-inp:checked + .checkbox-custom
+    background: $accent
+    border-color: $accent
+
 .dropdown-menu
   padding: 0
   border-radius: 4px
@@ -1159,7 +1177,7 @@ header
 //breadcrumb
 .breadcrumb
   background: transparent
-  margin: 0 0 40px
+  margin: 0 0 20px
   padding: 0
   font-size: 14px
   font-family: $font
@@ -1179,6 +1197,105 @@ header
   color: #E6E6E6
 
 
+.card-product-col
+  padding: 0 15px
+  max-width: 14.28%
+  flex: 14.28%
+
+.add-favorite
+  position: absolute
+  top: 10px
+  z-index: 1
+  right: 29px
+  cursor: pointer
+  width: 24px
+  height: 24px
+  stroke: #E0E0E0
+  fill: none
+  transition: .3s ease
+  &:hover, &:focus
+    stroke: $accent
+    fill: $accent
+
+.btn-load
+  width: 100%
+  margin: 0 0 50px
+  display: flex
+  align-items: center
+  justify-content: center
+  font-family: $font
+  color: $text
+  box-shadow: 0px 23px 30px -34px rgba(0, 0, 0, 0.25)
+  background: #fff
+  padding: 30px
+  font-size: 16px
+  &:hover
+    color: $accent
+  span
+    border-bottom: 2px dashed #E1E1E1
+    display: block
+    padding: 0 0 10px
+
+.nav-pagination
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.pagination
+  display: flex
+  align-items: center
+  font-size: 18px
+  font-family: $font
+  li
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
+    a, span
+      color: $text
+      border: none
+      border-radius: 4px
+      width: 50px
+      height: 50px
+      display: flex
+      align-items: center
+      justify-content: center
+      &:hover
+        color: #fff
+        background: #000
+  .active
+    a
+      background: linear-gradient(0deg, #000000, #000000), #282E2C
+      color: #fff
+
+.pagination-list-arrow
+  margin: 0 0 0 40px
+  display: flex
+  align-items: center
+  li
+    display: flex
+    align-items: center
+    &:after
+      content: ''
+      display: inline-block
+      width: 1px
+      height: 20px
+      background: #E0E0E0
+      margin: 0 40px
+    &:last-child
+      &:after
+        display: none
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 15px
+      height: 8px
+      stroke: $text
+      &:hover
+        stroke: $accent
+
+
+
 
 @import "header"
 @import "footer"
@@ -1186,5 +1303,6 @@ header
 @import "modal"
 @import "scores"
 @import "contacts"
+@import "catalog"
 @import "media"
 // Всегда в конце

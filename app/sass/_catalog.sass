@@ -1,0 +1,287 @@
+@import "vars"
+
+.catalog
+  margin: 30px 0 150px
+  .title-line
+    margin: 0 0 20px
+  h1
+    margin: 0
+  .links-question
+    color: $text
+    position: relative
+    top: 0
+    right: 0
+    transform: none
+
+    .svg-icon
+      fill: none
+      stroke: #000
+
+
+
+.form-filter-catalog
+  max-width: none
+  box-shadow: 0 20px 30px -20px rgba(0, 0, 0, 0.1)
+  background: #fff
+  margin: 0 0 40px
+  .form-group
+    margin: 0 0 20px
+  .radio
+    height: 50px
+    padding: 16px 24px
+    background: #F7F7F7
+    color: #828282
+    box-shadow: none
+  .radio-inp:checked + .radio-custom
+    border: 1px solid #FD700B
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.07)
+  .form-group__title
+    margin: 0 0 10px
+    font-size: 15px
+  .dropdown-toggle
+    height: 50px
+    padding: 16px 24px
+    min-width: 208px
+    background: #F7F7F7
+    color: #828282
+    box-shadow: none
+    &:after
+      border-top-color: #000
+  .dropdown-toggle-filter2
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.07)
+    border: 1px solid #FD700B
+    background: #fff
+    color: $text
+  .dropdown-menu
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.07)
+
+//form-result-filter
+.form-result-filter
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  font-size: 14px
+  font-family: $font
+  margin: 0 0 25px
+  .clear-filter
+    margin: 0 auto 0 20px
+
+.clear-filter
+  display: flex
+  align-items: center
+  font-size: 14px
+  font-family: $font
+  color: #000
+  &__icon
+    margin: 0 10px 0 0
+    width: 14px
+    height: 14px
+    display: flex
+    align-items: center
+    justify-content: center
+  &:hover
+    color: $accent
+    .svg-icon
+      fill: $accent
+
+.list-form-result
+  display: flex
+  align-items: center
+  li
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin: 0 20px 0 0
+    &:last-child
+      margin: 0
+
+.tagging-filter
+  margin: 0 0 0 10px
+  display: flex
+  align-items: center
+  background: #F7F7F7
+  border-radius: 4px
+  padding: 10px 15px
+  height: 50px
+  .item
+    color: $text
+  &:hover
+    .item
+      color: $accent
+
+.remove
+  margin: 0 0 0 10px
+  width: 10px
+  height: 10px
+  fill: #BDBDBD
+  display: flex
+  align-items: center
+  justify-content: center
+
+.sorting-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 0 50px
+
+.catalog-wrapper
+  margin: 0 0 50px
+  .list-checkbox
+    width: auto
+    display: flex
+    align-items: center
+
+    li
+      border: none
+      margin: 0 20px 0 0
+      &:last-child
+        margin: 0
+
+.sorting-box
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 15px
+
+.sorting-box__title
+  display: flex
+  align-items: center
+  font-size: 15px
+  font-weight: 600
+  .icon
+    margin: 0 5px 0 0
+    fill: #000
+    width: 24px
+    height: 24px
+
+.list-sorting
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-family: $font
+  li
+    margin: 0 0 0 20px
+  a
+    color: $text
+    border-bottom: 2px dashed #E1E1E1
+  .active
+    color: $accent
+    border-bottom-color: $accent
+
+
+//.card-product
+.card-product
+  position: relative
+  width: 100%
+  overflow: hidden
+  transition: .3s ease
+  height: 362px
+  font-size: 15px
+  line-height: 18px
+  margin: 0 0 50px
+  &__img
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    padding: 10px
+    margin: 0 0 10px
+    height: 216px
+    img
+      max-height: 100%
+  &__name
+    color: $text
+    max-width: 185px
+    margin: 0 0 20px
+    &:hover
+      color: $accent
+  &__footer
+    width: 100%
+    display: none
+    align-items: center
+    justify-content: space-between
+    margin: 20px 0 0
+  .amount
+    width: 135px
+    input
+      width: 47px
+    span
+      width: 44px
+  &-wrapper
+    position: relative
+    background: #fff
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      width: calc(100% + 40px)
+      height: calc(100% + 40px)
+      z-index: -1
+      opacity: 0
+      box-shadow: 0 80px 150px rgba(0, 0, 0, 0.2)
+      border-radius: 4px
+      background: #fff
+      transition: .3s ease
+  &:hover
+    z-index: 1
+    overflow: visible
+    .card-product-wrapper
+      &:before
+        opacity: 1
+    .card-product__footer
+      display: flex
+
+.btn-add-card
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 40px
+  height: 40px
+  background: #F2F2F2
+  border-radius: 4px
+  padding: 7px
+  stroke: $text
+  fill: none
+  &:hover
+    background: $accent
+    stroke: #fff
+
+
+.availability-item
+  display: flex
+  align-items: center
+  margin: 0 0 20px
+  font-size: 12px
+  span
+    display: inline-block
+    margin: 0 0 0 5px
+    border-bottom: 2px dashed #E1E1E1
+
+.price
+  font-size: 20px
+  font-weight: 600
+  margin: 20px 0 0
+
+.catalog-footer
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+.select-view
+  cursor: pointer
+  box-shadow: none
+  width: auto
+  font-size: 15px
+  border: none
+    bottom: 2px dashed #E1E1E1
+    radius: 0
+  padding: 0 17px 10px 0
+  background: #fff url("../img/arrow-select.svg") no-repeat right 6px
+    size: 7px

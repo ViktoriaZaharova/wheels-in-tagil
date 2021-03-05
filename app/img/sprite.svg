@@ -239,4 +239,22 @@
         <path d="M11 5V11L14 14" stroke-width="2"/>
     </symbol>
 
+    <symbol id="sorting-icon" viewBox="0 0 24 24">
+        <path d="M10 10L10 8L18 8V10L10 10Z"/>
+        <path d="M10 10L10 8L18 8V10L10 10Z"/>
+        <path d="M10 16L10 14L15 14V16L10 16Z"/>
+        <path d="M10 16L10 14L15 14V16L10 16Z"/>
+        <path d="M6 4H8V20H6V4Z"/>
+        <path d="M6 4H8V20H6V4Z"/>
+    </symbol>
+
+    <symbol id="arrow-right" viewBox="0 0 17 10">
+        <path d="M11.3704 1L15 5M15 5L11.3704 9M15 5L-1.74846e-07 5" stroke-width="2"/>
+        <path d="M11.3704 1L15 5M15 5L11.3704 9M15 5L-1.74846e-07 5" stroke-width="2"/>
+    </symbol>
+    <symbol id="arrow-left" viewBox="0 0 17 10">
+        <path d="M5.62963 9L2 5M2 5L5.62963 1M2 5L17 5" stroke-width="2"/>
+    </symbol>
+
+
 </svg>
