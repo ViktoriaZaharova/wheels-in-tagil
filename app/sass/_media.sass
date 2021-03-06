@@ -163,6 +163,18 @@
       &:nth-child(7)
         margin: 0
 
+  .greeting-manager-box__photo
+    max-width: 100px
+    top: 20px
+    right: -20px
+
+  .greeting-manager-box .callback-manager__item
+    font-size: 12px
+    p
+      max-width: 140px
+    strong
+      font-size: 12px
+
 @media only screen and (max-width: 1200px)
   .header-box__links
     width: 50px
@@ -703,6 +715,29 @@
 
   .catalog
     margin: 30px 0 150px
+
+  .greeting-manager
+    max-width: none
+    margin: 0 0 20px
+
+  .greeting-manager-box
+    padding: 23px 30px 16px
+    .callback-manager__item
+      max-width: none
+      p
+        max-width: none
+        margin: 0 0 20px
+
+      br
+        display: none
+
+  .greeting-manager-box__photo
+    max-width: 133px
+    height: 147px
+    position: relative
+    right: 0
+    top: 0
+    margin: -41px 0 0
 
 @media only screen and (max-width: 680px)
   .card-product-col
@@ -1473,3 +1508,26 @@
     height: 20px
     right: 0
     top: 0
+
+  .greeting-manager-box
+    margin: 10px 0 0
+    padding: 14px 23px 20px
+
+  .greeting-manager-box__photo
+    max-width: 116px
+    margin: -14px -50px 0 0
+
+  .reviews-item
+    margin: 0 0 10px
+    font-size: 12px
+    &__body
+      font-size: 12px
+      line-height: 18px
+      .box-text
+        -webkit-line-clamp: 23
+    &__head
+      margin: 0 0 20px
+
+  .reviews-page
+    .catalog-footer
+      margin: 10px 0 0

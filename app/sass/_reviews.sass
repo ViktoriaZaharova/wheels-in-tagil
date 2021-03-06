@@ -1,0 +1,76 @@
+@import "vars"
+
+.greeting-manager
+  position: relative
+  overflow: hidden
+  max-width: 350px
+  width: 100%
+  margin: 0 0 0 auto
+
+.greeting-manager-box
+  margin: 30px 0 0
+  border: 1px solid rgba(0, 0, 0, 0.1)
+    radius: 4px
+  background: #fff
+  box-shadow: 0 34px 59px -45px rgba(0, 0, 0, 0.25)
+  position: relative
+  padding: 30px 30px 55px
+  display: flex
+  align-items: flex-start
+  &__photo
+    position: absolute
+    max-width: 194px
+    width: 100%
+    right: -50px
+    top: -10px
+
+  .callback-manager__item
+    padding: 0
+    box-shadow: none
+    background: transparent
+    max-width: 245px
+    width: 100%
+    position: relative
+    z-index: 1
+    margin: 0
+    font-size: 16px
+    p
+      max-width: 150px
+      margin: 0 0 28px
+    strong
+      margin: 0
+
+.reviews-item
+  margin: 0 0 30px
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.07)
+  background: #FFFFFF
+  border-radius: 4px
+  border: 1px solid #F2F2F2
+  padding: 30px
+  font-size: 15px
+  &__head
+    margin: 0 0 20px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+  &__name
+    font-weight: 600
+  &__date
+    color: #828282
+  &__body
+    font-size: 14px
+    line-height: 24px
+    letter-spacing: 0.005em
+    .box-text
+      -webkit-line-clamp: 4
+      display: -webkit-box
+      overflow: hidden
+      -webkit-box-orient: vertical
+    .open
+      overflow: visible
+      display: block
+      line-clamp: none
+
+.link-view
+  margin: 20px 0 0

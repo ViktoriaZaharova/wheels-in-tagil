@@ -208,3 +208,25 @@ $(document).ready(function () {
     });
 });
 
+
+// show text
+$('.link-view').on('click', function(e){
+    e.preventDefault();
+
+    let
+        $this = $(this),
+        content = $(this).parent().find('.box-text');
+
+
+    if(!$this.hasClass('trigger')){
+        $this.addClass('trigger');
+        $this.html('Скрыть');
+
+        content.addClass('open');
+    } else {
+        $this.removeClass('trigger');
+        $this.html('Показать целиком');
+
+        content.removeClass('open');
+    }
+});
