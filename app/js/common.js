@@ -230,3 +230,25 @@ $('.link-view').on('click', function(e){
         content.removeClass('open');
     }
 });
+
+// view text
+$('.btn-view-all').on('click', function(e){
+    e.preventDefault();
+
+    let
+        $this = $(this),
+        content = $(this).parent().find('.box-hidden-text');
+
+
+    if(!$this.hasClass('trigger')){
+        $this.addClass('trigger');
+        $this.html('Скрыть полное описание');
+
+        content.addClass('active');
+    } else {
+        $this.removeClass('trigger');
+        $this.html('Читать полное описание');
+
+        content.removeClass('active');
+    }
+});

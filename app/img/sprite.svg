@@ -136,6 +136,11 @@
         <path d="M12 6V12L15 15" stroke-width="2"/>
     </symbol>
 
+    <symbol id="time" viewBox="0 0 5 9">
+        <path d="M4 8L1 6L1 -4.8737e-07" stroke-width="2"/>
+    </symbol>
+
+
     <symbol id="checkbox" viewBox="0 0 14 13">
         <path d="M1 7.66667L5.5 11L13 1" stroke-width="2"/>
     </symbol>
@@ -221,6 +226,14 @@
               stroke-width="2"/>
     </symbol>
 
+    <symbol id="star" viewBox="0 0 33 33">
+        <path d="M16.5 3L20.3353 12.2212L30.2903 13.0193L22.7056 19.5163L25.0229 29.2307L16.5 24.025L7.97711 29.2307L10.2944 19.5163L2.70968 13.0193L12.6647 12.2212L16.5 3Z"
+              stroke-width="2"/>
+        <path d="M16.5 3L20.3353 12.2212L30.2903 13.0193L22.7056 19.5163L25.0229 29.2307L16.5 24.025L7.97711 29.2307L10.2944 19.5163L2.70968 13.0193L12.6647 12.2212L16.5 3Z"
+              stroke-width="2"/>
+    </symbol>
+
+
     <symbol id="list-icon" viewBox="0 0 20 22">
         <rect x="1" y="1" width="18" height="20" stroke-width="2"/>
         <rect x="1" y="1" width="18" height="20" stroke-width="2"/>
@@ -256,5 +269,20 @@
         <path d="M5.62963 9L2 5M2 5L5.62963 1M2 5L17 5" stroke-width="2"/>
     </symbol>
 
+    <symbol id="share" viewBox="0 0 14 16">
+        <circle cx="11" cy="3" r="2" stroke="black" stroke-width="2"/>
+        <path d="M4 7L9.5 3.66602M4 9L9.5 12.3327" stroke="black" stroke-width="2"/>
+        <circle cx="11" cy="13" r="2" stroke="black" stroke-width="2"/>
+        <circle cx="3" cy="8" r="2" stroke="black" stroke-width="2"/>
+    </symbol>
+
+    <symbol id="arrow-up" viewBox="0 0 8 6">
+        <path d="M4 0L0 6H8L4 0Z"/>
+        <path d="M4 0L0 6H8L4 0Z"/>
+    </symbol>
+
+    <symbol id="arrow-down" viewBox="0 0 8 6">
+        <path d="M4 6L0 0H8L4 6Z"/>
+    </symbol>
 
 </svg>

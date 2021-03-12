@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Колёса в Тагиле</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="sidebar-wrapper">
+    <ul class="navigation">
+      <li class="nav-item">
+        <a href="#" class="nav-links active">
+          <span class="nav-links__icon"><img src="img/menu1.png" alt=""></span><span
+            class="nav-links__text">Главная</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="catalog.html" class="nav-links">
+          <span class="nav-links__icon"><img src="img/menu2.png" alt=""></span><span class="nav-links__text">Шины</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-links">
+          <span class="nav-links__icon"><img src="img/menu3.png" alt=""></span><span
+            class="nav-links__text">Диски</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-links">
+          <span class="nav-links__icon"><img src="img/menu4.png" alt=""></span><span class="nav-links__text">Шинный калькулятор</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-links">
+          <span class="nav-links__icon"><img src="img/menu5.png" alt=""></span><span
+            class="nav-links__text">Услуги</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="content-wrapper">
+
+    <!--    header-->
+    <header>
+      <div class="header-top">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-12 col-sm-6 col-lg-7 col-xl-8 d-none d-sm-flex align-items-center">
+
+              <nav class="navbar navbar-expand">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                  <ul class="header-menu navbar-nav align-self-end flex-wrap" id="nav">
+                    <li class="header-menu__item nav-item"><a href="" class="header-menu__links nav-link"><span
+                        class="header-menu__links-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#location-icon"></use></svg></span><span
+                        class="header-menu__links-text">Магазины</span></a>
+                    </li>
+                    <li class="header-menu__item nav-item"><a href="" class="header-menu__links nav-link"><span
+                        class="header-menu__links-icon"><svg class="svg-icon stroke-none"><use
+                        xlink:href="img/sprite.svg#percent-icon"></use></svg></span><span
+                        class="header-menu__links-text">Акции</span></a>
+                    </li>
+                    <li class="header-menu__item nav-item"><a href="" class="header-menu__links nav-link"><span
+                        class="header-menu__links-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#payment-icon"></use></svg></span><span
+                        class="header-menu__links-text">Оплата и доставка</span></a>
+                    </li>
+
+                    <li class="header-menu__item nav-item"><a href="" class="header-menu__links nav-link"><span
+                        class="header-menu__links-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#revers-icon"></use></svg></span><span
+                        class="header-menu__links-text">Гарантии и возврат</span></a>
+                    </li>
+                    <li class="header-menu__item nav-item"><a href="" class="header-menu__links nav-link"><span
+                        class="header-menu__links-icon"><svg class="svg-icon stroke-none"><use
+                        xlink:href="img/sprite.svg#help-icon"></use></svg></span><span
+                        class="header-menu__links-text">Помощь</span></a>
+                    </li>
+                    <li class="header-menu__item nav-item"><a href="" class="header-menu__links nav-link"><span
+                        class="header-menu__links-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#reviews-icon"></use></svg></span><span
+                        class="header-menu__links-text">Отзывы</span></a>
+                    </li>
+                    <li class="header-menu__item nav-item"><a href="" class="header-menu__links nav-link"><span
+                        class="header-menu__links-icon"><svg class="svg-icon stroke-none"><use
+                        xlink:href="img/sprite.svg#info-icon"></use></svg></span><span
+                        class="header-menu__links-text">О нас</span></a>
+                    </li>
+                    <li class="header-menu__item nav-item dropdown d-none">
+                      <a class="header-menu__links nav-link" href="#" id="navbarDropdownMenu" role="button"
+                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="navbar-toggler-icon"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#burger"></use></svg></span>
+                        <span class="navbar-toggle-text">Еще</span>
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-header" aria-labelledby="navbarDropdownMenu">
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+
+            <div
+                class="col-12 col-sm-6 col-lg-5 col-xl-4 d-flex align-items-center justify-content-end header-box-contacts">
+              <a href="tel:+73435465252" class="phone color-black">+7 3435 46 52 52</a>
+              <a href="#" class="links-callback color-black" data-toggle="modal" data-target="#callbackModal">Заказать
+                звонок</a>
+              <a href="contacts.html" class="color-black links">
+                <span class="links-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#phone-icon"></use></svg></span>
+                <span class="links-text">Контакты</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-sm-flex align-items-center">
+              <a href="index.html" class="logo">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#logo"></use>
+                </svg>
+              </a>
+
+              <div class="header-box d-none d-sm-flex">
+                <form method="post" class="form-search form-search-default">
+                  <label><input type="text" placeholder="Поиск" name="search" required></label>
+                  <button type="submit">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#search-icon"></use>
+                    </svg>
+                  </button>
+                </form>
+
+                <a href="#" class="btn-search header-box__links d-none d-md-flex d-lg-none">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#search-icon"></use>
+                  </svg>
+                </a>
+                <a href="#" class="btn-favorite header-box__links">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#favorite-icon"></use>
+                  </svg>
+                  <span class="header-box__links-val">12</span>
+                </a>
+                <div class="dropdown-cabinet dropdown">
+                  <a href="#" class="btn-user header-box__links dropdown-toggle" id="dropdownMenuCabinet"
+                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#user-icon"></use>
+                    </svg>
+                  </a>
+
+                  <div class="dropdown-menu dropdown-menu-cabinet" aria-labelledby="dropdownMenuCabinet">
+                    <ul class="header-menu header-menu-cabinet">
+                      <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                          class="header-menu__links-icon"><svg class="svg-icon stroke-none"><use
+                          xlink:href="img/sprite.svg#menu-icon4"></use></svg></span><span
+                          class="header-menu__links-text">Личные данные</span></a>
+                      </li>
+                      <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                          class="header-menu__links-icon"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#list-icon"></use></svg></span><span
+                          class="header-menu__links-text">Мои заказы</span></a>
+                      </li>
+                      <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                          class="header-menu__links-icon"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#star-icon"></use></svg></span><span
+                          class="header-menu__links-text">Избранные товары</span></a>
+                      </li>
+                      <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                          class="header-menu__links-icon"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#exit-icon"></use></svg></span><span
+                          class="header-menu__links-text">Выйти из профиля</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <a href="#" class="btn-basket header-box__links">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#basket-icon"></use>
+                  </svg>
+                  <span class="header-box__links-val">1</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-12 d-flex d-sm-none">
+              <form method="post" class="form-search">
+                <label><input type="text" placeholder="Поиск по сайту" name="search" required></label>
+                <button type="submit">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#search-icon"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--    header end-->
+
+    <div class="page product">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav aria-label="breadcrumb" class="nav-breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item"><a href="#"> Шины</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Автошина R18 235/50R18 Nokian Hakka Black 2 XL
+                  101Y
+                </li>
+              </ol>
+            </nav>
+          </div>
+          <div class="col-12 d-block d-md-none title-mobile"></div>
+
+          <div class="col-12 product-wrapper">
+            <div class="row">
+              <div class="col-12 col-xl-3 col-lg-5 col-sm-6 col-md-5 order-md-1">
+                <div class="information-product-orders">
+
+                  <div class="purchase-block">
+
+                    <div class="purchase-block__item">
+                      <div class="purchase-block__item-top">
+                        <div class="price-wrapper">
+                          <p>Цена за 1 шт.</p>
+                          <div class="price">10 060 ₽</div>
+                        </div>
+                        <a href="#" class="btn-favorite">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#star"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <a href="#" class="links-dashed color-grey">Нашли дешевле?</a>
+                    </div>
+
+                    <div class="purchase-block__item">
+                      <div class="availability-item">
+                        <div class="successfully-icon">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#checkbox"></use>
+                          </svg>
+                        </div>
+                        <p>В наличии 8 шт.</p>
+                      </div>
+
+                      <div class="availability-item">
+                        <div class="successfully-icon expectation-icon">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#time"></use>
+                          </svg>
+                        </div>
+                        <p>Под заказ 8 шт.</p>
+                        <span>через 3 дня</span>
+                      </div>
+
+                      <a href="#" class="links-dashed color-grey">Посмотреть склады</a>
+                    </div>
+
+                    <div class="amount-wrapper">
+                      <p>Количество</p>
+
+                      <div class="amount">
+                        <span class="down"></span>
+                        <input type="text" value="4"/>
+                        <span class="up"></span>
+                      </div>
+
+                    </div>
+
+                    <div class="total-sum">= 21 120 ₽</div>
+
+                    <a href="#" class="btn btn-accent btn-in-card">В корзину</a>
+                    <a href="#" class="btn btn-border">Покупка в кредит</a>
+                  </div>
+
+                  <div class="d-none d-sm-block">
+                    <div class="greeting-manager-box">
+                      <div class="callback-manager__item">
+                        <p>Добрый день! <img src="img/hand.png" alt=""></p>
+                        <p>Если Вам нужна помощь в подборе, мы всегда на связи.</p>
+                        <strong>Николай - <br> Менеджер компании</strong>
+
+                        <a href="#" class="btn btn-border">Связаться</a>
+                      </div>
+                      <div class="greeting-manager-box__photo">
+                        <img src="img/manager-ava.png" alt="">
+                      </div>
+                    </div>
+
+                    <div class="services-additionally">
+                      <div class="services-additionally-box">
+                        <div class="services-additionally-box__img"><img src="img/serv1.png" alt=""></div>
+                        <div class="services-additionally-box__body">
+                          <h3>Шиномонтажный сервис</h3>
+                          <p>Специалисты с опытом работы более 5 лет со специальной подготовкой</p>
+                        </div>
+                      </div>
+
+                      <div class="services-additionally-box">
+                        <div class="services-additionally-box__img"><img src="img/serv2.png" alt=""></div>
+                        <div class="services-additionally-box__body">
+                          <h3>Хранение колес</h3>
+                          <p>На территории специально подготовленных помещений при соблюдении температурных норм</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-xl-9 col-lg-7 col-md-7 col-sm-6">
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-md-7 col-lg-5">
+                    <div class="product-photo"><img src="img/product-card.png" alt=""></div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-5 col-lg-7">
+                    <div class="product-mini-info">
+                      <div class="title-pc">
+                        <h1>Автошина R18 235/50R18 Nokian Hakka Black 2 XL 101Y</h1>
+                        <div class="article">Код товара: T430533</div>
+                      </div>
+
+                      <ul class="list-characteristics">
+                        <li>
+                          <div class="form-group__title">Ширина
+                            <div class="tooltip-wrapper">
+                              <div class="tooltip-btn">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#question-icon"></use>
+                                </svg>
+                              </div>
+                              <div class="tooltip-box">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <div class="tooltip-box__header">
+                                        <h4>Посадочный диаметр - R</h4>
+                                        <div class="btn-close">
+                                          <svg class="svg-icon">
+                                            <use xlink:href="img/sprite.svg#close"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                      <div class="tooltip-box__img"><img src="img/tooltip1.png" alt=""></div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-8">
+                                      <div class="tooltip-box__content">
+                                        <div class="description">
+                                          <p>Маркировка на шине:</p>
+                                          <strong>XXX/XX R<span class="bg-accent">X</span></strong>
+                                          <p>Например: <strong>235/50 <span class="color-accent">R18</span></strong></p>
+                                        </div>
+                                        <div class="box-text">
+                                          <p>При установке шин большего диаметра не стоит покупать покрышки, сильно
+                                            отличающиеся
+                                            от тех, что уже установлены на автомобиле — это может негативно сказаться на
+                                            безопасности движения. Обычно бывает достаточно шин на один, максимум два
+                                            размера
+                                            больше стандартных.</p>
+                                        </div>
+
+                                        <div class="tooltip-box__footer">
+                                          <a href="#" class="links-dashed">Подробнее</a>
+                                          <a href="#" class="links-dashed">Всё равно не ясно</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <span>235</span>
+                        </li>
+                        <li>
+                          <div class="form-group__title">Профиль
+                            <div class="tooltip-wrapper">
+                              <div class="tooltip-btn">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#question-icon"></use>
+                                </svg>
+                              </div>
+                              <div class="tooltip-box">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <div class="tooltip-box__header">
+                                        <h4>Посадочный диаметр - R</h4>
+                                        <div class="btn-close">
+                                          <svg class="svg-icon">
+                                            <use xlink:href="img/sprite.svg#close"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                      <div class="tooltip-box__img"><img src="img/tooltip1.png" alt=""></div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-8">
+                                      <div class="tooltip-box__content">
+                                        <div class="description">
+                                          <p>Маркировка на шине:</p>
+                                          <strong>XXX/XX R<span class="bg-accent">X</span></strong>
+                                          <p>Например: <strong>235/50 <span class="color-accent">R18</span></strong></p>
+                                        </div>
+                                        <div class="box-text">
+                                          <p>При установке шин большего диаметра не стоит покупать покрышки, сильно
+                                            отличающиеся
+                                            от тех, что уже установлены на автомобиле — это может негативно сказаться на
+                                            безопасности движения. Обычно бывает достаточно шин на один, максимум два
+                                            размера
+                                            больше стандартных.</p>
+                                        </div>
+
+                                        <div class="tooltip-box__footer">
+                                          <a href="#" class="links-dashed">Подробнее</a>
+                                          <a href="#" class="links-dashed">Всё равно не ясно</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <span>50</span>
+                        </li>
+                        <li>
+                          <div class="form-group__title">Диаметр
+                            <div class="tooltip-wrapper">
+                              <div class="tooltip-btn">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#question-icon"></use>
+                                </svg>
+                              </div>
+                              <div class="tooltip-box">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <div class="tooltip-box__header">
+                                        <h4>Посадочный диаметр - R</h4>
+                                        <div class="btn-close">
+                                          <svg class="svg-icon">
+                                            <use xlink:href="img/sprite.svg#close"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                      <div class="tooltip-box__img"><img src="img/tooltip1.png" alt=""></div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-8">
+                                      <div class="tooltip-box__content">
+                                        <div class="description">
+                                          <p>Маркировка на шине:</p>
+                                          <strong>XXX/XX R<span class="bg-accent">X</span></strong>
+                                          <p>Например: <strong>235/50 <span class="color-accent">R18</span></strong></p>
+                                        </div>
+                                        <div class="box-text">
+                                          <p>При установке шин большего диаметра не стоит покупать покрышки, сильно
+                                            отличающиеся
+                                            от тех, что уже установлены на автомобиле — это может негативно сказаться на
+                                            безопасности движения. Обычно бывает достаточно шин на один, максимум два
+                                            размера
+                                            больше стандартных.</p>
+                                        </div>
+
+                                        <div class="tooltip-box__footer">
+                                          <a href="#" class="links-dashed">Подробнее</a>
+                                          <a href="#" class="links-dashed">Всё равно не ясно</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <span>18</span>
+                        </li>
+                        <li>
+                          <div class="form-group__title">Изготовитель
+                            <div class="tooltip-wrapper">
+                              <div class="tooltip-btn">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#question-icon"></use>
+                                </svg>
+                              </div>
+                              <div class="tooltip-box">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <div class="tooltip-box__header">
+                                        <h4>Посадочный диаметр - R</h4>
+                                        <div class="btn-close">
+                                          <svg class="svg-icon">
+                                            <use xlink:href="img/sprite.svg#close"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                      <div class="tooltip-box__img"><img src="img/tooltip1.png" alt=""></div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-8">
+                                      <div class="tooltip-box__content">
+                                        <div class="description">
+                                          <p>Маркировка на шине:</p>
+                                          <strong>XXX/XX R<span class="bg-accent">X</span></strong>
+                                          <p>Например: <strong>235/50 <span class="color-accent">R18</span></strong></p>
+                                        </div>
+                                        <div class="box-text">
+                                          <p>При установке шин большего диаметра не стоит покупать покрышки, сильно
+                                            отличающиеся
+                                            от тех, что уже установлены на автомобиле — это может негативно сказаться на
+                                            безопасности движения. Обычно бывает достаточно шин на один, максимум два
+                                            размера
+                                            больше стандартных.</p>
+                                        </div>
+
+                                        <div class="tooltip-box__footer">
+                                          <a href="#" class="links-dashed">Подробнее</a>
+                                          <a href="#" class="links-dashed">Всё равно не ясно</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <span>Nokian</span>
+                        </li>
+                        <li>
+                          <div class="form-group__title">Модель
+                            <div class="tooltip-wrapper">
+                              <div class="tooltip-btn">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#question-icon"></use>
+                                </svg>
+                              </div>
+                              <div class="tooltip-box">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <div class="tooltip-box__header">
+                                        <h4>Посадочный диаметр - R</h4>
+                                        <div class="btn-close">
+                                          <svg class="svg-icon">
+                                            <use xlink:href="img/sprite.svg#close"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                      <div class="tooltip-box__img"><img src="img/tooltip1.png" alt=""></div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-8">
+                                      <div class="tooltip-box__content">
+                                        <div class="description">
+                                          <p>Маркировка на шине:</p>
+                                          <strong>XXX/XX R<span class="bg-accent">X</span></strong>
+                                          <p>Например: <strong>235/50 <span class="color-accent">R18</span></strong></p>
+                                        </div>
+                                        <div class="box-text">
+                                          <p>При установке шин большего диаметра не стоит покупать покрышки, сильно
+                                            отличающиеся
+                                            от тех, что уже установлены на автомобиле — это может негативно сказаться на
+                                            безопасности движения. Обычно бывает достаточно шин на один, максимум два
+                                            размера
+                                            больше стандартных.</p>
+                                        </div>
+
+                                        <div class="tooltip-box__footer">
+                                          <a href="#" class="links-dashed">Подробнее</a>
+                                          <a href="#" class="links-dashed">Всё равно не ясно</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <span>HAKKA BLACK 2</span>
+                        </li>
+                        <li>
+                          <div class="form-group__title">Сезонность товара
+                            <div class="tooltip-wrapper">
+                              <div class="tooltip-btn">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#question-icon"></use>
+                                </svg>
+                              </div>
+                              <div class="tooltip-box">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <div class="tooltip-box__header">
+                                        <h4>Посадочный диаметр - R</h4>
+                                        <div class="btn-close">
+                                          <svg class="svg-icon">
+                                            <use xlink:href="img/sprite.svg#close"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                      <div class="tooltip-box__img"><img src="img/tooltip1.png" alt=""></div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-8">
+                                      <div class="tooltip-box__content">
+                                        <div class="description">
+                                          <p>Маркировка на шине:</p>
+                                          <strong>XXX/XX R<span class="bg-accent">X</span></strong>
+                                          <p>Например: <strong>235/50 <span class="color-accent">R18</span></strong></p>
+                                        </div>
+                                        <div class="box-text">
+                                          <p>При установке шин большего диаметра не стоит покупать покрышки, сильно
+                                            отличающиеся
+                                            от тех, что уже установлены на автомобиле — это может негативно сказаться на
+                                            безопасности движения. Обычно бывает достаточно шин на один, максимум два
+                                            размера
+                                            больше стандартных.</p>
+                                        </div>
+
+                                        <div class="tooltip-box__footer">
+                                          <a href="#" class="links-dashed">Подробнее</a>
+                                          <a href="#" class="links-dashed">Всё равно не ясно</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <span>Лето</span>
+                        </li>
+                        <li>
+                          <div class="form-group__title">Индекс грузоподъёмности
+                            и скорости
+                            <div class="tooltip-wrapper">
+                              <div class="tooltip-btn">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#question-icon"></use>
+                                </svg>
+                              </div>
+                              <div class="tooltip-box">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <div class="tooltip-box__header">
+                                        <h4>Посадочный диаметр - R</h4>
+                                        <div class="btn-close">
+                                          <svg class="svg-icon">
+                                            <use xlink:href="img/sprite.svg#close"></use>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                      <div class="tooltip-box__img"><img src="img/tooltip1.png" alt=""></div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-8">
+                                      <div class="tooltip-box__content">
+                                        <div class="description">
+                                          <p>Маркировка на шине:</p>
+                                          <strong>XXX/XX R<span class="bg-accent">X</span></strong>
+                                          <p>Например: <strong>235/50 <span class="color-accent">R18</span></strong></p>
+                                        </div>
+                                        <div class="box-text">
+                                          <p>При установке шин большего диаметра не стоит покупать покрышки, сильно
+                                            отличающиеся
+                                            от тех, что уже установлены на автомобиле — это может негативно сказаться на
+                                            безопасности движения. Обычно бывает достаточно шин на один, максимум два
+                                            размера
+                                            больше стандартных.</p>
+                                        </div>
+
+                                        <div class="tooltip-box__footer">
+                                          <a href="#" class="links-dashed">Подробнее</a>
+                                          <a href="#" class="links-dashed">Всё равно не ясно</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <span>101Y</span>
+                        </li>
+                      </ul>
+
+                      <div class="share-wrapper">
+                        <div class="share-title">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#share"></use>
+                          </svg>
+                          <p>Поделиться страницей:</p></div>
+                        <div class="share-item"><img src="img/share.png" alt=""></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="details-information">
+
+                      <div class="details-information__box">
+                        <h3>Описание</h3>
+                        <div class="box-text box-hidden-text">
+                          <p>Nokian Hakka Black 2 — летняя легковая шина выступающая как новинка 2018 года. Модель
+                            относится к классу Ultra High Performance, которая отличается стабильностью своей
+                            производительности при различных погодных условиях. Она гарантирует отточенную управляемость
+                            на высокой скорости и эффективность торможения при совершении любых маневров. Для повышения
+                            управляемости и ускорения отклика на рулевое управление летняя шина «Nokian Hakka Black 2»
+                            оснащена современным асимметричным протекторным рисунком с усиленной внутренней частью. Она
+                            отвечает за взаимодействие с неровностями дороги. Внешняя плечевая зона оснащена несквозными
+                            канавками и ламелями, поддерживающими постоянную площадь контакта при маневрировании. Также
+                            управляемость и отклик повышаются за счет работы трех широких радиальных ребер, которые
+                            обеспечивают курсовую устойчивость в любую погоду и даже на высокой скорости.</p>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cum deleniti eos expedita
+                            harum nostrum pariatur quo temporibus tenetur vel! Accusantium atque dolores, eos impedit
+                            perferendis repudiandae voluptatem voluptates voluptatum.</p>
+                        </div>
+
+                        <a href="#" class="btn-view-all links-dashed">Читать полное описание</a>
+                      </div>
+
+                      <div class="details-information__box">
+                        <h3>Наличие</h3>
+
+                        <div class="table-availability">
+                          <div class="table-head">
+                            <div class="tr">
+                              <div class="td">Адрес</div>
+                              <div class="td">Телефон</div>
+                              <div class="td">Остаток</div>
+                            </div>
+                          </div>
+                          <div class="table-body">
+                            <div class="tr">
+                              <div class="td">
+                                <div class="list-contacts__item">
+                                  <div class="list-contacts__icon">
+                                    <svg class="svg-icon">
+                                      <use xlink:href="img/sprite.svg#location-icon"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="list-contacts__text">г.Нижний Тагил, ул. Пархоменко, 19</div>
+                                </div>
+                              </div>
+                              <div class="td">
+                                <div class="phone-list">7 (3435) 46-52-52, 7-953-381-98-55</div>
+                              </div>
+                              <div class="td">
+                                <div class="availability-item">
+                                  <div class="successfully-icon">
+                                    <svg class="svg-icon">
+                                      <use xlink:href="img/sprite.svg#checkbox"></use>
+                                    </svg>
+                                  </div>
+                                  <p>8 шт.</p>
+                                </div>
+                              </div>
+                              <div class="td"><a href="#" class="btn-clock">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#clock-icon"></use>
+                                </svg>
+                              </a></div>
+                            </div>
+                            <div class="tr">
+                              <div class="td">
+                                <div class="list-contacts__item">
+                                  <div class="list-contacts__icon">
+                                    <svg class="svg-icon">
+                                      <use xlink:href="img/sprite.svg#location-icon"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="list-contacts__text">г. Нижний Тагил, Черноисточинское шоссе, 70</div>
+                                </div>
+                              </div>
+                              <div class="td">
+                                <div class="phone-list">+7 (3435) 23-07-77</div>
+                              </div>
+                              <div class="td">
+                                <div class="availability-item">
+                                  <div class="successfully-icon">
+                                    <svg class="svg-icon">
+                                      <use xlink:href="img/sprite.svg#checkbox"></use>
+                                    </svg>
+                                  </div>
+                                  <p>8 шт.</p>
+                                </div>
+                              </div>
+                              <div class="td"><a href="#" class="btn-clock">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#clock-icon"></use>
+                                </svg>
+                              </a></div>
+                            </div>
+                            <div class="tr">
+                              <div class="td">
+                                <div class="list-contacts__item">
+                                  <div class="list-contacts__icon">
+                                    <svg class="svg-icon">
+                                      <use xlink:href="img/sprite.svg#location-icon"></use>
+                                    </svg>
+                                  </div>
+                                  <div class="list-contacts__text">Склад - срок поставки 3 дня</div>
+                                </div>
+                              </div>
+                              <div class="td">
+                                <div class="phone-list">+7 (3435) 23-07-77</div>
+                              </div>
+                              <div class="td">
+                                <div class="availability-item">
+                                  <div class="expectation-icon successfully-icon">
+                                    <svg class="svg-icon">
+                                      <use xlink:href="img/sprite.svg#time"></use>
+                                    </svg>
+                                  </div>
+                                  <p>8 шт.</p>
+                                </div>
+                              </div>
+                              <div class="td"><a href="#" class="btn-clock">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#clock-icon"></use>
+                                </svg>
+                              </a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="sales-slider-wrapper">
+              <div class="sales-slider w-100">
+                <div class="slide">
+                  <div class="sales-slider-box sales-slider-box-center">
+                    <img src="img/sale-bg1.jpg" alt="" class="sales-slider__img">
+                    <div class="sales-slider-box__content color-white">
+                      <h3>Бесплатный
+                        шиномонтаж</h3>
+                      <div class="bg-white box-condition">-при покупке от 2х дисков-</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="sales-slider-box">
+                    <img src="img/sale-bg2.jpg" alt="" class="sales-slider__img">
+                    <div class="sales-slider-box__content">
+                      <h3>скидка
+                        на комплект</h3>
+                      <div class="bg-white box-condition">-при покупке от 2х шин-</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="sales-slider-box sales-slider-box-center">
+                    <img src="img/sale-bg1.jpg" alt="" class="sales-slider__img">
+                    <div class="sales-slider-box__content color-white">
+                      <h3>Бесплатный
+                        шиномонтаж</h3>
+                      <div class="bg-white box-condition">-при покупке от 2х дисков-</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="sales-slider-box">
+                    <img src="img/sale-bg2.jpg" alt="" class="sales-slider__img">
+                    <div class="sales-slider-box__content">
+                      <h3>скидка
+                        на комплект</h3>
+                      <div class="bg-white box-condition">-при покупке от 2х шин-</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider-nav sales-slider__nav"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="other-goods">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Другие шины в размере 235/50R18</h2>
+          </div>
+
+          <div class="col-12">
+            <div class="sorting-wrapper">
+              <ul class="list-checkbox">
+                <li>
+                  <label class="checkbox checkbox-default">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox" checked>
+                    <span class="checkbox-custom"><svg class="svg-icon"><use xlink:href="img/sprite.svg#checkbox"></use></svg></span>
+                    <span class="label">Показать розничные цены</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="checkbox checkbox-default">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox" checked>
+                    <span class="checkbox-custom"><svg class="svg-icon"><use xlink:href="img/sprite.svg#checkbox"></use></svg></span>
+                    <span class="label">Есть в наличии</span>
+                  </label>
+                </li>
+
+                <li>
+                  <label class="checkbox checkbox-default">
+                    <input class="checkbox-inp" type="checkbox" name="checkbox">
+                    <span class="checkbox-custom"><svg class="svg-icon"><use xlink:href="img/sprite.svg#checkbox"></use></svg></span>
+                    <span class="label">В наличии 4 и более</span>
+                  </label>
+                </li>
+              </ul>
+
+              <div class="sorting-box">
+                <div class="sorting-box__title">
+                  <p>Сортировать по:</p>
+                </div>
+                <select name="select" class="select-view">
+                  <option value="Цена шт.">Цена шт.</option>
+                  <option value="Сначала дешевые">Сначала дешевые</option>
+                  <option value="Сначала дорогие">Сначала дорогие</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="table-products">
+              <div class="table-head">
+                <div class="tr">
+                  <div class="td td-photo">
+                    <p>Фото</p>
+                  </div>
+                  <div class="td td-name">
+                    <div class="table-sorting-box">
+                      <p>Наименование</p>
+                      <div class="button-sorting">
+                        <a href="#" class="btn-up">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#arrow-up"></use>
+                          </svg>
+                        </a>
+                        <a href="#" class="btn-down">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#arrow-down"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="td td-season">
+                    <p>Сезон</p>
+                  </div>
+
+                  <div class="td td-remainder">
+                    <div class="table-sorting-box">
+                      <p>Остаток</p>
+                      <div class="button-sorting">
+                        <a href="#" class="btn-up">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#arrow-up"></use>
+                          </svg>
+                        </a>
+                        <a href="#" class="btn-down">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#arrow-down"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="td td-price">
+                    <div class="table-sorting-box">
+                      <p>Цена розн., шт.</p>
+                      <div class="button-sorting">
+                        <a href="#" class="btn-up">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#arrow-up"></use>
+                          </svg>
+                        </a>
+                        <a href="#" class="btn-down">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#arrow-down"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="td td-price">
+                    <div class="table-sorting-box">
+                      <p>Цена опт., шт.</p>
+                      <div class="button-sorting">
+                        <a href="#" class="btn-up">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#arrow-up"></use>
+                          </svg>
+                        </a>
+                        <a href="#" class="btn-down">
+                          <svg class="svg-icon">
+                            <use xlink:href="img/sprite.svg#arrow-down"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="table-body">
+                <div class="tr">
+                  <div class="td td-photo">
+                    <a href="product.html" class="table-products__photo"><img src="img/product-card.png" alt=""></a>
+                  </div>
+                  <div class="td td-name">
+                    <a href="product.html" class="table-products__name">Автошина R18 235/50R18 Nokian Hakka Black 2 XL 101Y</a>
+                  </div>
+                  <div class="td td-season">
+                    <div class="td-hidden">Сезон:</div>
+                    <p>Лето</p>
+                  </div>
+
+                  <div class="td td-remainder">
+                    <ul class="list-remainder">
+                      <li>
+                        <div class="availability-item">
+                          <div class="successfully-icon">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#checkbox"></use>
+                            </svg>
+                          </div>
+                          <p>4 шт.</p>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div class="availability-item expectation-item">
+                          <div class="successfully-icon expectation-icon">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#time"></use>
+                            </svg>
+                          </div>
+                          <p>23 шт.</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="td td-price">
+                    <div class="price-table">
+                      <p>10 560 ₽</p>
+                    </div>
+                  </div>
+
+                  <div class="td td-price">
+                    <div class="price-table">
+                      <p>10 560 ₽</p>
+                    </div>
+                  </div>
+
+                  <div class="td td-button">
+                    <a href="#" class="btn btn-grey">В корзину</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="table-footer">
+              <a href="#" class="btn btn-border load-more">Показать ещё</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xl-4 col-lg-5 col-sm-5">
+            <a href="index.html" class="logo">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+
+            <div class="d-none d-sm-flex flex-wrap">
+              <div class="copyright">© 2009-2019 kolesavtagile.ru</div>
+              <div class="box-text"><p>Все предложения на сайте не являются публичной офертой, носят информационный
+                характер и нуждаются в подтверждении по телефону
+              </p></div>
+              <a href="#" class="links-doc">Политика конфиденциальности</a>
+              <div class="developer">
+                <p>Сайт разработан в</p>
+                <a href="#" class="logo-developer"><img src="img/logo-developer.svg" alt=""></a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-12 d-flex flex-wrap d-sm-none">
+            <div class="footer-box">
+              <h3>Каталог</h3>
+              <ul class="navigation">
+                <li class="nav-item">
+                  <a href="catalog.html" class="nav-links">
+                    <span class="nav-links__icon"><img src="img/menu2.png" alt=""></span><span class="nav-links__text">Шины</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-links">
+                    <span class="nav-links__icon"><img src="img/menu3.png" alt=""></span><span
+                      class="nav-links__text">Диски</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 d-flex flex-wrap d-sm-none">
+            <div class="footer-box">
+              <h3>Покупателям</h3>
+              <ul class="header-menu">
+                <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                    class="header-menu__links-icon"><img src="img/menu4.png" alt=""></span><span
+                    class="header-menu__links-text">Шинный калькулятор</span></a>
+                </li>
+                <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                    class="header-menu__links-icon"><img src="img/menu5.png" alt=""></span><span
+                    class="header-menu__links-text">Услуги</span></a>
+                </li>
+                <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                    class="header-menu__links-icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#location-icon"></use></svg></span><span
+                    class="header-menu__links-text">Магазины</span></a>
+                </li>
+                <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                    class="header-menu__links-icon"><svg class="svg-icon stroke-none"><use
+                    xlink:href="img/sprite.svg#percent-icon"></use></svg></span><span
+                    class="header-menu__links-text">Акции</span></a>
+                </li>
+                <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                    class="header-menu__links-icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#payment-icon"></use></svg></span><span
+                    class="header-menu__links-text">Оплата и доставка</span></a>
+                </li>
+
+                <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                    class="header-menu__links-icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#revers-icon"></use></svg></span><span
+                    class="header-menu__links-text">Гарантии и возврат</span></a>
+                </li>
+                <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                    class="header-menu__links-icon"><svg class="svg-icon stroke-none"><use
+                    xlink:href="img/sprite.svg#help-icon"></use></svg></span><span
+                    class="header-menu__links-text">Помощь</span></a>
+                </li>
+                <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                    class="header-menu__links-icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#reviews-icon"></use></svg></span><span
+                    class="header-menu__links-text">Отзывы</span></a>
+                </li>
+                <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+                    class="header-menu__links-icon"><svg class="svg-icon stroke-none"><use
+                    xlink:href="img/sprite.svg#info-icon"></use></svg></span><span
+                    class="header-menu__links-text">О нас</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-xl-8 col-lg-7 col-sm-7">
+            <div class="footer-wrapper">
+              <div class="footer-row-menu d-none d-sm-flex">
+                <div class="footer-col">
+                  <h3>Каталог</h3>
+                  <ul class="footer-menu">
+                    <li><a href="#">Шины</a></li>
+                    <li><a href="#">Диски</a></li>
+                  </ul>
+
+                  <div class="footer-menu-last">
+                    <h3>Услуги</h3>
+                    <ul class="footer-menu">
+                      <li><a href="#">Шиномонтажный сервис</a></li>
+                      <li><a href="#">Сервис по хранению колес</a></li>
+                    </ul>
+                  </div>
+
+                  <a href="#" class="links-calc">Шинный калькулятор</a>
+                </div>
+                <div class="footer-col">
+                  <h3>Информация</h3>
+                  <ul class="footer-menu">
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Магазины</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Доставка и самовывоз</a></li>
+                    <li><a href="#">Возврат</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Отзывы и предложения</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="footer-row-info">
+                <div class="footer-item">
+                  <h3>Телефон</h3>
+                  <a href="tel:+73435465252" class="phone">8 3435 46 52 52</a>
+                  <a href="#" class="links-callback color-white" data-toggle="modal" data-target="#callbackModal">
+                    <span class="links-callback__icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#phone-icon"></use></svg></span>
+                    <span class="links-callback__text">Заказать
+                    звонок</span>
+                  </a>
+                </div>
+
+                <div class="footer-item">
+                  <h3>E-mail:</h3>
+                  <a href="mailto:info@kolesa.ru" class="mail">info@kolesa.ru</a>
+                </div>
+
+                <div class="footer-item">
+                  <ul class="list-social">
+                    <li><a href="#">
+                      <span class="list-social__icon"><svg class="svg-icon"><use
+                          xlink:href="img/sprite.svg#vk"></use></svg></span>
+                      <span class="list-social__text">Вконтакте</span>
+                    </a></li>
+                  </ul>
+                </div>
+
+                <div class="footer-item d-flex flex-wrap d-sm-none">
+                  <div class="copyright">© 2009-2019 kolesavtagile.ru</div>
+                  <div class="box-text"><p>Все предложения на сайте не являются публичной офертой, носят информационный
+                    характер и нуждаются в подтверждении по телефону
+                  </p></div>
+                  <a href="#" class="links-doc">Политика конфиденциальности</a>
+                  <div class="developer">
+                    <p>Сайт разработан в</p>
+                    <a href="#" class="logo-developer"><img src="img/logo-developer.svg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<div class="mobile-fixed">
+  <ul class="mobile-menu">
+    <li class="mobile-menu__item">
+      <a href="index.html" class="mobile-menu__links">
+        <span class="mobile-menu__icon"><svg class="svg-icon"><use
+            xlink:href="img/sprite.svg#menu-icon1"></use></svg></span>
+        <span class="mobile-menu__text">Главная</span>
+      </a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#" class="mobile-menu__links mobile-menu__drop-item" data-item="mobile-menu1">
+        <span class="mobile-menu__icon"><svg class="svg-icon"><use
+            xlink:href="img/sprite.svg#menu-icon2"></use></svg></span>
+        <span class="mobile-menu__text">Каталог</span>
+      </a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#" class="mobile-menu__links mobile-menu__drop-item" data-item="mobile-menu2">
+        <span class="mobile-menu__icon"><svg class="svg-icon"><use
+            xlink:href="img/sprite.svg#menu-icon3"></use></svg></span>
+        <span class="mobile-menu__text">Еще</span>
+      </a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#" class="mobile-menu__links mobile-menu__drop-item" data-item="mobile-menu3">
+        <span class="mobile-menu__icon"><svg class="svg-icon"><use
+            xlink:href="img/sprite.svg#menu-icon4"></use></svg></span>
+        <span class="mobile-menu__text">Кабинет</span>
+      </a>
+    </li>
+    <li class="mobile-menu__item">
+      <a href="#" class="mobile-menu__links">
+        <span class="mobile-menu__icon"><svg class="svg-icon"><use
+            xlink:href="img/sprite.svg#menu-icon5"></use></svg></span>
+        <span class="mobile-menu__text">Корзина</span>
+      </a>
+    </li>
+  </ul>
+
+</div>
+
+<div class="mobile-menu__dropdown" data-item="mobile-menu1">
+  <div class="mobile-menu__header">
+    <h4>Каталог</h4>
+    <div class="btn-close">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </div>
+  </div>
+  <div class="mobile-menu__body">
+    <ul class="navigation">
+      <li class="nav-item">
+        <a href="catalog.html" class="nav-links">
+          <span class="nav-links__icon"><img src="img/menu2.png" alt=""></span><span class="nav-links__text">Шины</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-links">
+          <span class="nav-links__icon"><img src="img/menu3.png" alt=""></span><span
+            class="nav-links__text">Диски</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="mobile-menu__dropdown" data-item="mobile-menu2">
+  <div class="mobile-menu__header">
+    <h4>Покупателям</h4>
+    <div class="btn-close">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </div>
+  </div>
+  <div class="mobile-menu__body">
+    <ul class="header-menu">
+      <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+          class="header-menu__links-icon"><img src="img/menu4.png" alt=""></span><span
+          class="header-menu__links-text">Шинный калькулятор</span></a>
+      </li>
+      <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+          class="header-menu__links-icon"><img src="img/menu5.png" alt=""></span><span
+          class="header-menu__links-text">Услуги</span></a>
+      </li>
+      <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+          class="header-menu__links-icon"><svg class="svg-icon"><use
+          xlink:href="img/sprite.svg#location-icon"></use></svg></span><span
+          class="header-menu__links-text">Магазины</span></a>
+      </li>
+      <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+          class="header-menu__links-icon"><svg class="svg-icon stroke-none"><use
+          xlink:href="img/sprite.svg#percent-icon"></use></svg></span><span
+          class="header-menu__links-text">Акции</span></a>
+      </li>
+      <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+          class="header-menu__links-icon"><svg class="svg-icon"><use
+          xlink:href="img/sprite.svg#payment-icon"></use></svg></span><span
+          class="header-menu__links-text">Оплата и доставка</span></a>
+      </li>
+
+      <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+          class="header-menu__links-icon"><svg class="svg-icon"><use
+          xlink:href="img/sprite.svg#revers-icon"></use></svg></span><span
+          class="header-menu__links-text">Гарантии и возврат</span></a>
+      </li>
+      <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+          class="header-menu__links-icon"><svg class="svg-icon stroke-none"><use
+          xlink:href="img/sprite.svg#help-icon"></use></svg></span><span
+          class="header-menu__links-text">Помощь</span></a>
+      </li>
+      <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+          class="header-menu__links-icon"><svg class="svg-icon"><use
+          xlink:href="img/sprite.svg#reviews-icon"></use></svg></span><span
+          class="header-menu__links-text">Отзывы</span></a>
+      </li>
+      <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+          class="header-menu__links-icon"><svg class="svg-icon stroke-none"><use
+          xlink:href="img/sprite.svg#info-icon"></use></svg></span><span
+          class="header-menu__links-text">О нас</span></a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="mobile-menu__dropdown" data-item="mobile-menu3">
+  <div class="mobile-menu__header">
+    <h4>Личный кабинет</h4>
+    <div class="btn-close">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </div>
+  </div>
+  <div class="mobile-menu__body">
+    <ul class="header-menu header-menu-cabinet">
+      <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+          class="header-menu__links-icon"><svg class="svg-icon stroke-none"><use
+          xlink:href="img/sprite.svg#menu-icon4"></use></svg></span><span
+          class="header-menu__links-text">Личные данные</span></a>
+      </li>
+      <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+          class="header-menu__links-icon"><svg class="svg-icon"><use
+          xlink:href="img/sprite.svg#list-icon"></use></svg></span><span
+          class="header-menu__links-text">Мои заказы</span></a>
+      </li>
+      <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+          class="header-menu__links-icon"><svg class="svg-icon"><use
+          xlink:href="img/sprite.svg#star-icon"></use></svg></span><span
+          class="header-menu__links-text">Избранные товары</span></a>
+      </li>
+      <li class="header-menu__item"><a href="#" class="header-menu__links"><span
+          class="header-menu__links-icon"><svg class="svg-icon"><use
+          xlink:href="img/sprite.svg#exit-icon"></use></svg></span><span
+          class="header-menu__links-text">Выйти из профиля</span></a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="btn-scroll-up">
+  <svg class="svg-icon">
+    <use xlink:href="img/sprite.svg#arrow-top"></use>
+  </svg>
+</div>
+
+<a href="#" class="btn-basket btn-basket-fixed header-box__links">
+  <svg class="svg-icon">
+    <use xlink:href="img/sprite.svg#basket-icon"></use>
+  </svg>
+  <span class="header-box__links-val">1</span>
+</a>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Заказ звонка</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form method="post" class="form-callback">
+          <label>
+            <span class="input-title">Имя</span>
+            <input type="text" placeholder="Введите ваше имя" name="name" required>
+          </label>
+          <label class="label-phone">
+            <span class="input-title">Телефон <span class="necessarily-icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#snowflake"></use></svg></span></span>
+            <input type="text" placeholder="+7 (___) ___-__-__" name="phone" required>
+          </label>
+
+          <div class="necessarily"><span class="necessarily-icon"><svg class="svg-icon"><use
+              xlink:href="img/sprite.svg#snowflake"></use></svg></span> Поля обязательные для заполнения
+          </div>
+          <div class="consent">Нажимая кнопку «Перезвонить мне», я даю свое согласие на обработку моих персональных
+            данных, в соответствии с <a href="#" class="links">политикой конфиденциальности</a>
+          </div>
+
+          <button type="submit" class="btn btn-accent">Перезвонить мне</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

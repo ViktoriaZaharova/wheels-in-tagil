@@ -1,0 +1,365 @@
+@import "vars"
+
+.product
+  h1
+    margin: 0 0 23px
+
+.article
+  color: #828282
+  font-family: $font
+  font-size: 15px
+  letter-spacing: 0.005em
+
+
+.list-characteristics
+  margin: 40px 0
+  width: 100%
+  font-size: 15px
+  span
+    color: #828282
+  li
+    width: 100%
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    padding: 20px 0
+    border-top: 1px solid #E0E0E0
+    &:last-child
+      border-bottom: 1px solid #E0E0E0
+  .form-group__title
+    min-width: 320px
+    padding: 0 40px 0 0
+    margin: 0
+    max-width: 320px
+    align-items: flex-start
+  .tooltip-btn
+    background: #F7F7F7
+    fill: $text
+
+.share-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.share-title
+  display: flex
+  align-items: center
+  .svg-icon
+    margin: 0 8px 0 0
+    width: 14px
+    height: 16px
+    fill: none
+
+.share-item
+  margin: 0 0 0 8px
+
+.product-photo
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 1px solid rgba(0, 0, 0, 0.1)
+  background: #fff
+  box-sizing: border-box
+  box-shadow: 0px 34px 59px -45px rgba(0, 0, 0, 0.25)
+  border-radius: 4px
+  padding: 20px
+
+.product-mini-info
+  padding: 0 30px
+
+.product-wrapper
+  margin-top: 20px
+
+.details-information
+  margin: 40px 0
+  h3
+    font-weight: bold
+    margin: 0 0 40px
+    font-size: 32px
+  .box-text
+    line-height: 28px
+    letter-spacing: 0.005em
+
+.details-information__box
+  margin: 0 0 60px
+  &:last-child
+    margin: 0
+
+.box-hidden-text
+  -webkit-line-clamp: 8
+  -webkit-box-orient: vertical
+  overflow: hidden
+  display: -webkit-box
+
+.box-hidden-text.active
+  display: inline-block
+  overflow: visible
+
+.btn-view-all
+  margin: 20px 0 0
+  font-size: 15px
+  color: #828282
+
+.table-availability
+  width: 100%
+  .td
+    &:nth-child(1)
+      width: 42%
+    &:nth-child(2)
+      width: 33%
+    &:nth-child(3)
+      width: 20%
+
+  .list-contacts__text
+    text-decoration: underline
+  .availability-item
+    margin: 0
+
+.table-head
+  width: 100%
+  background: #FAFAFA
+  font-size: 15px
+
+.table-body
+  .tr
+    border-bottom: 1px solid #E0E0E0
+  .td
+    &:last-child
+      margin: 0 0 0 auto
+
+.tr
+  padding: 20px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+
+.btn-clock
+  display: flex
+  align-items: center
+  justify-content: center
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.07)
+  border-radius: 4px
+  border: 1px solid #E0E0E0
+  background: #fff
+  padding: 8px
+  width: 40px
+  height: 40px
+  min-width: 40px
+  stroke: #000
+  fill: none
+  &:hover
+    background: $accent
+    stroke: #fff
+
+.information-product-orders
+  padding: 0 0 0 30px
+  overflow: hidden
+  position: relative
+  .greeting-manager-box
+    margin: 60px 0 69px
+    .btn
+      margin: 28px 0 -72px
+      height: 44px
+      max-width: 149px
+      background: #fff
+      border: 2px solid #000
+      padding: 0
+      font-size: 15px
+      &:hover
+        background: $accent
+  .greeting-manager-box__photo
+    top: -30px
+
+.services-additionally-box
+  display: flex
+  align-items: flex-start
+  margin: 0 0 40px
+  font-size: 12px
+  h3
+    margin: 0 0 10px
+    font-size: 15px
+  &:last-child
+    margin: 0
+  &__img
+    width: 100px
+    height: 94px
+    display: flex
+    align-items: center
+    justify-content: center
+  &__body
+    width: calc(100% - 100px)
+    padding: 0 0 0 27px
+
+.btn-in-card
+  margin: 0 auto 10px
+
+.purchase-block
+  .btn
+    height: 70px
+
+.amount-wrapper
+  margin: 30px 0
+  p
+    font-size: 15px
+    margin: 0 0 15px
+  .amount
+    height: 70px
+    width: 259px
+    span
+      width: 60px
+      &:before
+        width: 16px
+      &:after
+        height: 16px
+    input
+      width: 139px
+      font-size: 16px
+      height: 70px
+      border:
+        radius: 0
+        right: 1px solid #E0E0E0
+        left: 1px solid #E0E0E0
+
+.total-sum
+  margin: 0 0 20px
+  font-size: 48px
+  font-weight: 600
+
+.purchase-block__item
+  margin: 0 0 30px
+  font-size: 15px
+  .availability-item
+    font-size: 15px
+  span
+    border: none
+    color: #828282
+  .price
+    font-size: 36px
+    margin: 15px 0 0
+
+.purchase-block__item-top
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  margin: 0 0 15px
+
+.btn-favorite
+  width: 80px
+  height: 70px
+  background: #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  fill: none
+  stroke: #000
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.07)
+  border-radius: 4px
+  border: 1px solid #E0E0E0
+  padding: 19px 24px
+  &:hover
+    background: $accent
+    stroke: #fff
+
+.other-goods
+  margin: 40px 0
+  h2
+    text-align: left
+    margin: 0 0 40px
+    font-size: 36px
+  .sorting-wrapper
+    margin: 0 0 20px
+    .sorting-box
+      display: none
+  .list-checkbox
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    justify-content: flex-start
+    li
+      border: none
+      margin: 0 20px 0 0
+      &:last-child
+        margin: 0
+  .load-more
+    padding: 9px 20px
+    width: fit-content
+    margin: 0 auto
+    font-size: 15px
+    border: 2px solid #000
+
+.table-footer
+  box-shadow: 0px 23px 30px -34px rgba(0, 0, 0, 0.25)
+  background: #fff
+  padding: 23px 0
+  margin: 10px 0 0
+
+.button-sorting
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  margin: 0 0 0 5px
+
+  a
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 8px
+    height: 6px
+    margin: 0 0 2px
+    fill: #828282
+    &:hover
+      fill: $text
+    &:last-child
+      margin: 0
+
+.table-products
+  font-size: 15px
+  .availability-item
+    margin: 0
+
+.table-sorting-box
+  display: flex
+  align-items: center
+
+.td-photo
+  width: 5.5%
+
+.td-name
+  width: 33.5%
+
+.td-season
+  width: 11%
+
+.td-remainder
+  width: 17%
+
+.td-price
+  width: 11%
+
+.td-hidden
+  display: none
+
+.expectation-item
+  color: #828282
+
+.list-remainder
+  display: flex
+  align-items: center
+  li
+    margin: 0 15px 0 0
+    &:last-child
+      margin: 0
+
+.table-products__photo
+  width: 50px
+  display: flex
+  align-items: center
+  justify-content: flex-start
+
+.table-products__name
+  color: $text
+
