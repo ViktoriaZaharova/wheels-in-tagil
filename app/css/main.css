@@ -1168,7 +1168,10 @@ header .dropdown-menu-header {
     font-family: "Inter", sans-serif;
     font-weight: normal;
     color: #000;
-    padding: 0; }
+    padding: 0;
+    border-radius: 0;
+    border-left: 1px solid #E0E0E0;
+    border-right: 1px solid #E0E0E0; }
     .amount input::-webkit-input-placeholder {
       color: #000; }
     .amount input::-moz-placeholder {
@@ -3634,10 +3637,7 @@ button.close {
     .amount-wrapper .amount input {
       width: 139px;
       font-size: 16px;
-      height: 70px;
-      border-radius: 0;
-      border-right: 1px solid #E0E0E0;
-      border-left: 1px solid #E0E0E0; }
+      height: 70px; }
 
 .total-sum {
   margin: 0 0 20px;
@@ -3669,7 +3669,7 @@ button.close {
           justify-content: space-between;
   margin: 0 0 15px; }
 
-.btn-favorite {
+.btn-favorite-product {
   width: 80px;
   height: 70px;
   background: #fff;
@@ -3689,7 +3689,7 @@ button.close {
   border-radius: 4px;
   border: 1px solid #E0E0E0;
   padding: 19px 24px; }
-  .btn-favorite:hover {
+  .btn-favorite-product:hover {
     background: #FD700B;
     stroke: #fff; }
 
@@ -3790,16 +3790,50 @@ button.close {
   width: 33.5%; }
 
 .td-season {
-  width: 11%; }
+  width: 10%; }
 
 .td-remainder {
-  width: 17%; }
+  width: 15%; }
 
 .td-price {
-  width: 11%; }
+  width: 50%; }
+
+.td-row-price {
+  width: 23%; }
+
+.price-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .price-table span {
+    color: #828282; }
+  .price-table .symbol-calc {
+    margin: 0 5px; }
+
+.total-price-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #828282; }
+  .total-price-table span {
+    margin: 0 5px 0 0; }
 
 .td-hidden {
   display: none; }
+
+.td-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .expectation-item {
   color: #828282; }
@@ -3830,6 +3864,38 @@ button.close {
 
 .table-products__name {
   color: #000; }
+  .table-products__name:hover {
+    color: #FD700B; }
+
+.button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .button-wrapper .amount {
+    margin: 0 5px 0 0; }
+
+.btn-delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.07);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #E0E0E0;
+  padding: 14px;
+  fill: #828282; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
