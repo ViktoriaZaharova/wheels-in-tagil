@@ -245,11 +245,14 @@
               </ol>
             </nav>
           </div>
-          <div class="col-12 d-block d-md-none title-mobile"></div>
+          <div class="col-12 d-block d-xl-none title-mobile"></div>
+
+          <div class="col-12 d-block d-sm-none product-photo-mobile">
+          </div>
 
           <div class="col-12 product-wrapper">
             <div class="row">
-              <div class="col-12 col-xl-3 col-lg-5 col-sm-6 col-md-5 order-md-1">
+              <div class="col-12 col-xl-3 col-lg-5 col-sm-6 col-md-5 order-sm-1">
                 <div class="information-product-orders">
 
                   <div class="purchase-block">
@@ -340,20 +343,19 @@
                         </div>
                       </div>
                     </div>
-
                   </div>
                 </div>
               </div>
 
               <div class="col-12 col-xl-9 col-lg-7 col-md-7 col-sm-6">
                 <div class="row">
-                  <div class="col-12 col-sm-6 col-md-7 col-lg-5">
+                  <div class="col-12 col-xl-5 d-none d-sm-block">
                     <div class="product-photo"><img src="img/product-card.png" alt=""></div>
                   </div>
 
-                  <div class="col-12 col-sm-6 col-md-5 col-lg-7">
+                  <div class="col-12 col-xl-7">
                     <div class="product-mini-info">
-                      <div class="title-pc">
+                      <div class="title-pc d-none d-xl-block">
                         <h1>Автошина R18 235/50R18 Nokian Hakka Black 2 XL 101Y</h1>
                         <div class="article">Код товара: T430533</div>
                       </div>
@@ -751,7 +753,7 @@
                     </div>
                   </div>
 
-                  <div class="col-12">
+                  <div class="col-12 d-none d-lg-block">
                     <div class="details-information">
 
                       <div class="details-information__box">
@@ -889,6 +891,14 @@
             </div>
           </div>
 
+          <div class="col-12 d-lg-none d-block">
+            <div class="details-information-mobile"></div>
+          </div>
+
+          <div class="col-12 d-block d-sm-none">
+          <div class="block-manager-mobile"></div>
+          </div>
+
           <div class="col-12">
             <div class="sales-slider-wrapper">
               <div class="sales-slider w-100">
@@ -982,8 +992,8 @@
                 </div>
                 <select name="select" class="select-view">
                   <option value="Цена шт.">Цена шт.</option>
-                  <option value="Сначала дешевые">Сначала дешевые</option>
-                  <option value="Сначала дорогие">Сначала дорогие</option>
+                  <option value="Цена шт.">Цена шт.</option>
+                  <option value="Цена шт.">Цена шт.</option>
                 </select>
               </div>
             </div>
@@ -1081,7 +1091,39 @@
                   <div class="td td-name">
                     <a href="product.html" class="table-products__name">Автошина R18 235/50R18 Nokian Hakka Black 2 XL
                       101Y</a>
+
+                    <div class="table-hidden">
+                      <div class="td-season-mob">
+                        <p>Сезон</p><span>Лето</span>
+                      </div>
+                      <div class="td-remainder-mob">
+                        <ul class="list-remainder">
+                          <li>
+                            <div class="availability-item">
+                              <div class="successfully-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#checkbox"></use>
+                                </svg>
+                              </div>
+                              <p>4 шт.</p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="availability-item expectation-item">
+                              <div class="successfully-icon expectation-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#time"></use>
+                                </svg>
+                              </div>
+                              <p>23 шт.</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
+
                   <div class="td td-season">
                     <div class="td-hidden">Сезон:</div>
                     <p>Лето</p>
@@ -1141,6 +1183,36 @@
                   </div>
                   <div class="td td-name">
                     <a href="product.html" class="table-products__name">Автошина 10.00R20 Кама И-281 У-4 146/143J НС16 Универсальная</a>
+                    <div class="table-hidden">
+                      <div class="td-season-mob">
+                        <p>Сезон</p><span>Лето</span>
+                      </div>
+                      <div class="td-remainder-mob">
+                        <ul class="list-remainder">
+                          <li>
+                            <div class="availability-item">
+                              <div class="successfully-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#checkbox"></use>
+                                </svg>
+                              </div>
+                              <p>4 шт.</p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="availability-item expectation-item">
+                              <div class="successfully-icon expectation-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#time"></use>
+                                </svg>
+                              </div>
+                              <p>23 шт.</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div class="td td-season">
                     <div class="td-hidden">Сезон:</div>
@@ -1211,8 +1283,37 @@
                     <a href="product.html" class="table-products__photo"><img src="img/prod9.png" alt=""></a>
                   </div>
                   <div class="td td-name">
-                    <a href="product.html" class="table-products__name">Автошина 11.00R20 Кама 310 150/146K НС16 Универсальная
-                      101Y</a>
+                    <a href="product.html" class="table-products__name">Автошина 11.00R20 Кама 310 150/146K НС16 Универсальная</a>
+                    <div class="table-hidden">
+                      <div class="td-season-mob">
+                        <p>Сезон</p><span>Лето</span>
+                      </div>
+                      <div class="td-remainder-mob">
+                        <ul class="list-remainder">
+                          <li>
+                            <div class="availability-item">
+                              <div class="successfully-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#checkbox"></use>
+                                </svg>
+                              </div>
+                              <p>4 шт.</p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="availability-item expectation-item">
+                              <div class="successfully-icon expectation-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#time"></use>
+                                </svg>
+                              </div>
+                              <p>23 шт.</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div class="td td-season">
                     <div class="td-hidden">Сезон:</div>
@@ -1274,6 +1375,36 @@
                   <div class="td td-name">
                     <a href="product.html" class="table-products__name">Автошина 235/75R17.5 Orium ROAD GO T 143/141 J
                       101Y</a>
+                    <div class="table-hidden">
+                      <div class="td-season-mob">
+                        <p>Сезон</p><span>Лето</span>
+                      </div>
+                      <div class="td-remainder-mob">
+                        <ul class="list-remainder">
+                          <li>
+                            <div class="availability-item">
+                              <div class="successfully-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#checkbox"></use>
+                                </svg>
+                              </div>
+                              <p>4 шт.</p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="availability-item expectation-item">
+                              <div class="successfully-icon expectation-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#time"></use>
+                                </svg>
+                              </div>
+                              <p>23 шт.</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div class="td td-season">
                     <div class="td-hidden">Сезон:</div>
@@ -1322,6 +1453,36 @@
                   </div>
                   <div class="td td-name">
                     <a href="product.html" class="table-products__name">Автошина 215/75R17.5 Кама NF 202 126/124M Рулевая</a>
+                    <div class="table-hidden">
+                      <div class="td-season-mob">
+                        <p>Сезон</p><span>Лето</span>
+                      </div>
+                      <div class="td-remainder-mob">
+                        <ul class="list-remainder">
+                          <li>
+                            <div class="availability-item">
+                              <div class="successfully-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#checkbox"></use>
+                                </svg>
+                              </div>
+                              <p>4 шт.</p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="availability-item expectation-item">
+                              <div class="successfully-icon expectation-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#time"></use>
+                                </svg>
+                              </div>
+                              <p>23 шт.</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div class="td td-season">
                     <div class="td-hidden">Сезон:</div>
@@ -1392,6 +1553,36 @@
                   </div>
                   <div class="td td-name">
                     <a href="product.html" class="table-products__name">Автошина 10.00R20 Кама 407 146J НС16 Универсальная</a>
+                    <div class="table-hidden">
+                      <div class="td-season-mob">
+                        <p>Сезон</p><span>Лето</span>
+                      </div>
+                      <div class="td-remainder-mob">
+                        <ul class="list-remainder">
+                          <li>
+                            <div class="availability-item">
+                              <div class="successfully-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#checkbox"></use>
+                                </svg>
+                              </div>
+                              <p>4 шт.</p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="availability-item expectation-item">
+                              <div class="successfully-icon expectation-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#time"></use>
+                                </svg>
+                              </div>
+                              <p>23 шт.</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div class="td td-season">
                     <div class="td-hidden">Сезон:</div>
@@ -1452,6 +1643,36 @@
                   </div>
                   <div class="td td-name">
                     <a href="product.html" class="table-products__name">Автошина R18 235/50R18 Nokian Hakka Black 2 XL 101Y</a>
+                    <div class="table-hidden">
+                      <div class="td-season-mob">
+                        <p>Сезон</p><span>Лето</span>
+                      </div>
+                      <div class="td-remainder-mob">
+                        <ul class="list-remainder">
+                          <li>
+                            <div class="availability-item">
+                              <div class="successfully-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#checkbox"></use>
+                                </svg>
+                              </div>
+                              <p>4 шт.</p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="availability-item expectation-item">
+                              <div class="successfully-icon expectation-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#time"></use>
+                                </svg>
+                              </div>
+                              <p>23 шт.</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div class="td td-season">
                     <div class="td-hidden">Сезон:</div>
@@ -1512,6 +1733,36 @@
                   </div>
                   <div class="td td-name">
                     <a href="product.html" class="table-products__name">Автошина 10.00R20 Кама 407 146J НС16 Универсальная</a>
+                    <div class="table-hidden">
+                      <div class="td-season-mob">
+                        <p>Сезон</p><span>Лето</span>
+                      </div>
+                      <div class="td-remainder-mob">
+                        <ul class="list-remainder">
+                          <li>
+                            <div class="availability-item">
+                              <div class="successfully-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#checkbox"></use>
+                                </svg>
+                              </div>
+                              <p>4 шт.</p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="availability-item expectation-item">
+                              <div class="successfully-icon expectation-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#time"></use>
+                                </svg>
+                              </div>
+                              <p>23 шт.</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div class="td td-season">
                     <div class="td-hidden">Сезон:</div>
@@ -1562,6 +1813,36 @@
                   <div class="td td-name">
                     <a href="product.html" class="table-products__name">Автошина R18 235/50R18 Nokian Hakka Black 2 XL 101Y
                     </a>
+                    <div class="table-hidden">
+                      <div class="td-season-mob">
+                        <p>Сезон</p><span>Лето</span>
+                      </div>
+                      <div class="td-remainder-mob">
+                        <ul class="list-remainder">
+                          <li>
+                            <div class="availability-item">
+                              <div class="successfully-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#checkbox"></use>
+                                </svg>
+                              </div>
+                              <p>4 шт.</p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="availability-item expectation-item">
+                              <div class="successfully-icon expectation-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#time"></use>
+                                </svg>
+                              </div>
+                              <p>23 шт.</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div class="td td-season">
                     <div class="td-hidden">Сезон:</div>
@@ -1622,6 +1903,36 @@
                   <div class="td td-name">
                     <a href="product.html" class="table-products__name">Автошина R18 235/50R18 Nokian Hakka Black 2 XL 101Y
                     </a>
+                    <div class="table-hidden">
+                      <div class="td-season-mob">
+                        <p>Сезон</p><span>Лето</span>
+                      </div>
+                      <div class="td-remainder-mob">
+                        <ul class="list-remainder">
+                          <li>
+                            <div class="availability-item">
+                              <div class="successfully-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#checkbox"></use>
+                                </svg>
+                              </div>
+                              <p>4 шт.</p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="availability-item expectation-item">
+                              <div class="successfully-icon expectation-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#time"></use>
+                                </svg>
+                              </div>
+                              <p>23 шт.</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div class="td td-season">
                     <div class="td-hidden">Сезон:</div>
@@ -1682,6 +1993,36 @@
                   </div>
                   <div class="td td-name">
                     <a href="product.html" class="table-products__name">Автошина 10.00R20 Кама И-281 У-4 146/143J НС16 Универсальная</a>
+                    <div class="table-hidden">
+                      <div class="td-season-mob">
+                        <p>Сезон</p><span>Лето</span>
+                      </div>
+                      <div class="td-remainder-mob">
+                        <ul class="list-remainder">
+                          <li>
+                            <div class="availability-item">
+                              <div class="successfully-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#checkbox"></use>
+                                </svg>
+                              </div>
+                              <p>4 шт.</p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="availability-item expectation-item">
+                              <div class="successfully-icon expectation-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#time"></use>
+                                </svg>
+                              </div>
+                              <p>23 шт.</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div class="td td-season">
                     <div class="td-hidden">Сезон:</div>
@@ -1753,6 +2094,36 @@
                   </div>
                   <div class="td td-name">
                     <a href="product.html" class="table-products__name">Автошина 215/75R17.5 Кама NF 202 126/124M Рулевая</a>
+                    <div class="table-hidden">
+                      <div class="td-season-mob">
+                        <p>Сезон</p><span>Лето</span>
+                      </div>
+                      <div class="td-remainder-mob">
+                        <ul class="list-remainder">
+                          <li>
+                            <div class="availability-item">
+                              <div class="successfully-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#checkbox"></use>
+                                </svg>
+                              </div>
+                              <p>4 шт.</p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="availability-item expectation-item">
+                              <div class="successfully-icon expectation-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#time"></use>
+                                </svg>
+                              </div>
+                              <p>23 шт.</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div class="td td-season">
                     <div class="td-hidden">Сезон:</div>
@@ -1813,6 +2184,36 @@
                   <div class="td td-name">
                     <a href="product.html" class="table-products__name">Автошина 235/75R17.5 Orium ROAD GO T 143/141 J
                       101Y</a>
+                    <div class="table-hidden">
+                      <div class="td-season-mob">
+                        <p>Сезон</p><span>Лето</span>
+                      </div>
+                      <div class="td-remainder-mob">
+                        <ul class="list-remainder">
+                          <li>
+                            <div class="availability-item">
+                              <div class="successfully-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#checkbox"></use>
+                                </svg>
+                              </div>
+                              <p>4 шт.</p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="availability-item expectation-item">
+                              <div class="successfully-icon expectation-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#time"></use>
+                                </svg>
+                              </div>
+                              <p>23 шт.</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div class="td td-season">
                     <div class="td-hidden">Сезон:</div>
@@ -1861,6 +2262,36 @@
                   </div>
                   <div class="td td-name">
                     <a href="product.html" class="table-products__name">Автошина 10.00R20 Кама 407 146J НС16 Универсальная</a>
+                    <div class="table-hidden">
+                      <div class="td-season-mob">
+                        <p>Сезон</p><span>Лето</span>
+                      </div>
+                      <div class="td-remainder-mob">
+                        <ul class="list-remainder">
+                          <li>
+                            <div class="availability-item">
+                              <div class="successfully-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#checkbox"></use>
+                                </svg>
+                              </div>
+                              <p>4 шт.</p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="availability-item expectation-item">
+                              <div class="successfully-icon expectation-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#time"></use>
+                                </svg>
+                              </div>
+                              <p>23 шт.</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div class="td td-season">
                     <div class="td-hidden">Сезон:</div>
@@ -1931,6 +2362,36 @@
                   </div>
                   <div class="td td-name">
                     <a href="product.html" class="table-products__name">Автошина 10.00R20 Кама 407 146J НС16 Универсальная</a>
+                    <div class="table-hidden">
+                      <div class="td-season-mob">
+                        <p>Сезон</p><span>Лето</span>
+                      </div>
+                      <div class="td-remainder-mob">
+                        <ul class="list-remainder">
+                          <li>
+                            <div class="availability-item">
+                              <div class="successfully-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#checkbox"></use>
+                                </svg>
+                              </div>
+                              <p>4 шт.</p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="availability-item expectation-item">
+                              <div class="successfully-icon expectation-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#time"></use>
+                                </svg>
+                              </div>
+                              <p>23 шт.</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div class="td td-season">
                     <div class="td-hidden">Сезон:</div>
@@ -1991,6 +2452,36 @@
                   </div>
                   <div class="td td-name">
                     <a href="product.html" class="table-products__name">Автошина R18 235/50R18 Nokian Hakka Black 2 XL 101Y</a>
+                    <div class="table-hidden">
+                      <div class="td-season-mob">
+                        <p>Сезон</p><span>Лето</span>
+                      </div>
+                      <div class="td-remainder-mob">
+                        <ul class="list-remainder">
+                          <li>
+                            <div class="availability-item">
+                              <div class="successfully-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#checkbox"></use>
+                                </svg>
+                              </div>
+                              <p>4 шт.</p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="availability-item expectation-item">
+                              <div class="successfully-icon expectation-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#time"></use>
+                                </svg>
+                              </div>
+                              <p>23 шт.</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div class="td td-season">
                     <div class="td-hidden">Сезон:</div>
@@ -2051,6 +2542,36 @@
                   </div>
                   <div class="td td-name">
                     <a href="product.html" class="table-products__name">Автошина 10.00R20 Кама 407 146J НС16 Универсальная</a>
+                    <div class="table-hidden">
+                      <div class="td-season-mob">
+                        <p>Сезон</p><span>Лето</span>
+                      </div>
+                      <div class="td-remainder-mob">
+                        <ul class="list-remainder">
+                          <li>
+                            <div class="availability-item">
+                              <div class="successfully-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#checkbox"></use>
+                                </svg>
+                              </div>
+                              <p>4 шт.</p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="availability-item expectation-item">
+                              <div class="successfully-icon expectation-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#time"></use>
+                                </svg>
+                              </div>
+                              <p>23 шт.</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div class="td td-season">
                     <div class="td-hidden">Сезон:</div>
@@ -2101,6 +2622,36 @@
                   <div class="td td-name">
                     <a href="product.html" class="table-products__name">Автошина R18 235/50R18 Nokian Hakka Black 2 XL 101Y
                     </a>
+                    <div class="table-hidden">
+                      <div class="td-season-mob">
+                        <p>Сезон</p><span>Лето</span>
+                      </div>
+                      <div class="td-remainder-mob">
+                        <ul class="list-remainder">
+                          <li>
+                            <div class="availability-item">
+                              <div class="successfully-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#checkbox"></use>
+                                </svg>
+                              </div>
+                              <p>4 шт.</p>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="availability-item expectation-item">
+                              <div class="successfully-icon expectation-icon">
+                                <svg class="svg-icon">
+                                  <use xlink:href="img/sprite.svg#time"></use>
+                                </svg>
+                              </div>
+                              <p>23 шт.</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div class="td td-season">
                     <div class="td-hidden">Сезон:</div>

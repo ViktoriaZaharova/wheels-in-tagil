@@ -209,6 +209,31 @@ $(document).ready(function () {
 });
 
 
+// clone block
+if ($(".product .title-pc h1").length){
+    $('.product .title-pc h1').clone().appendTo('.title-mobile');
+}
+
+if ($(".product .title-pc .article").length){
+    $('.product .title-pc .article').clone().appendTo('.title-mobile');
+}
+
+if ($(".product .details-information").length){
+    $('.product .details-information').clone().appendTo('.details-information-mobile');
+}
+
+if ($(".product .greeting-manager-box").length){
+    $('.product .greeting-manager-box').clone().appendTo('.block-manager-mobile');
+}
+
+if ($(".product .services-additionally").length){
+    $('.product .services-additionally').clone().appendTo('.block-manager-mobile');
+}
+
+if ($(".product .product-photo").length){
+    $('.product .product-photo').clone().appendTo('.product-photo-mobile');
+}
+
 // show text
 $('.link-view').on('click', function(e){
     e.preventDefault();

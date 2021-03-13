@@ -86,6 +86,9 @@
   .card-product
     height: 380px
 
+  .information-product-orders
+    padding: 0
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1560px)
   .sidebar-wrapper
@@ -113,6 +116,27 @@
   .navigation .nav-item
     height: 121px
 
+  .table-availability
+    .phone-list
+      max-width: 150px
+
+  .table-availability .td:nth-child(2)
+    width: 25%
+
+  .table-availability .td:nth-child(1)
+    width: 53%
+
+  .table-availability .td:nth-child(3)
+    width: 15%
+
+  .details-information
+    max-width: 900px
+    width: 100%
+
+  .list-characteristics .form-group__title
+    min-width: 280px
+    max-width: 280px
+    padding: 0 25px 0 0
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 1500px)
@@ -140,6 +164,9 @@
 
   .footer-row-info
     margin: 0
+
+  .product-mini-info
+    padding: 0
 
 
 
@@ -174,6 +201,23 @@
       max-width: 140px
     strong
       font-size: 12px
+
+  .table-products .tr
+    padding: 10px 20px
+
+  .btn-favorite-product
+    display: none
+
+  .td-name
+    width: 27%
+
+  .table-products
+    .table-head
+      .td-price
+        .table-sorting-box
+          p
+            max-width: 75px
+
 
 @media only screen and (max-width: 1200px)
   .header-box__links
@@ -316,6 +360,82 @@
   .sorting-box
     width: 100%
     margin: 10px 0 0
+
+  .table-availability .td:nth-child(2)
+    width: 30%
+
+  .table-availability .td:nth-child(1)
+    width: 44%
+
+  .list-remainder
+    flex-direction: column
+    align-items: flex-start
+    li
+      margin: 0 0 10px
+
+  .total-sum
+    font-size: 40px
+
+  .amount-wrapper .amount
+    height: 50px
+    width: 100%
+    input
+      height: 100%
+      width: 70%
+    span
+      width: 15%
+
+  .product-wrapper
+    margin: 34px 0 0
+
+  .title-mobile
+    margin-top: 20px
+
+  .purchase-block__item
+    margin: 0 0 20px
+
+  .purchase-block .btn
+    height: 50px
+
+  .other-goods
+    margin: 40px 0 90px
+
+  .information-product-orders
+    .greeting-manager-box
+      padding: 30px
+      .btn
+        margin: 20px 0 0
+      .callback-manager__item p
+        max-width: none
+
+  .td-name
+    width: 22%
+
+  .td-row-price
+    width: 25%
+
+  .td-remainder
+    width: 13%
+
+  .td-season
+    width: 9%
+
+  .information-product-orders .greeting-manager-box
+    margin: 46px 0 52px
+
+  .services-additionally-box__img
+    width: 70px
+    height: 70px
+
+  .services-additionally-box__body
+    width: calc(100% - 70px)
+    padding: 0 0 0 20px
+
+  .services-additionally-box
+    margin: 0 0 20px
+
+  .price-table, .total-price-table
+    flex-wrap: wrap
 
 @media only screen and (max-width: 992px)
   .form-filter
@@ -500,7 +620,18 @@
     order: 1
     text-align: right
 
+  .share-item
+    width: 100%
+    margin: 8px 0 0
 
+  .details-information__box
+    margin: 0 0 30px
+
+  .table-products .tr
+    padding: 10px 0
+
+  .table-products
+    font-size: 13px
 
 @media only screen and (max-width: 850px)
   .reviews-opinion
@@ -515,6 +646,50 @@
   .container
     padding: 0 30px
 
+  .table-products
+    .table-head
+      display: none
+    .table-body
+      .td
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+
+      .tr
+        position: relative
+      .td-remainder, .td-season
+        display: none
+
+  .td-hidden
+    display: block
+    margin: 0 5px 0 0
+
+  .td-photo
+    width: 75px
+
+  .table-products__photo
+    max-width: 60px
+
+  .table-hidden
+    display: flex
+
+  .td-name
+    width: 38%
+
+  .list-remainder
+    flex-direction: row
+    align-items: center
+    li
+      margin: 0 10px 0 0
+      &:last-child
+        margin: 0
+
+  .td-row-price
+    flex-direction: column
+    align-items: flex-start
+
+  .td-price
+    width: 100%
 
 @media only screen and (max-width: 768px)
   .sidebar-wrapper
@@ -739,6 +914,34 @@
     top: 0
     margin: -41px 0 0
 
+  .product-photo
+    height: 539px
+
+  .other-goods .sorting-wrapper .sorting-box
+    display: flex
+    margin: 20px 0 0
+    .select-view
+      border-bottom-color: #E1E1E1
+      color: $text
+
+  .table-products
+    font-size: 12px
+
+  .list-characteristics .form-group__title
+    min-width: 200px
+    max-width: 200px
+
+@media only screen and (max-width: 710px)
+  .td-name
+    width: 32%
+
+  .td-season-mob
+    margin: 4px 0
+
+  .other-goods .list-checkbox li
+    width: 100%
+    margin: 0 0 10px
+
 @media only screen and (max-width: 680px)
   .card-product-col
     max-width: 33.3%
@@ -782,6 +985,39 @@
   .sorting-box
     width: 100%
     margin: 10px 0 0
+
+  .td-name
+    width: 100%
+
+  .table-products
+    .tr
+      position: relative
+      padding: 20px 0 20px 78px
+      align-items: flex-start
+    .table-body
+      .td-photo
+        align-items: flex-start
+    .td
+      margin: 0 0 4px
+      &:last-child
+        margin: 4px 0 0
+
+
+  .td-photo
+    position: absolute
+    left: 0
+    top: 20px
+    width: 63px
+    height: 93px
+    align-items: flex-start
+
+  .td-season-mob, .td-row-price
+    width: 100%
+
+
+
+  .table-products__photo
+    max-width: 63px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 575px)
@@ -1531,3 +1767,112 @@
   .reviews-page
     .catalog-footer
       margin: 10px 0 0
+
+  .other-goods
+    margin: 20px 0 0
+    h2
+      font-size: 25px
+      margin: 0 0 20px
+    .load-more
+      width: 100%
+
+  .table-footer
+    padding: 0
+    box-shadow: none
+    margin: 20px 0 0
+
+  .table-availability
+    font-size: 12px
+    .table-head
+      display: none
+    .tr
+      position: relative
+      padding: 10px 50px 10px 34px
+    .list-contacts__icon
+      width: 24px
+      height: 22px
+      left: 0
+      top: 50%
+      transform: translate(0,-50%)
+      position: absolute
+    .td
+      margin: 0 0 10px
+      &:last-child
+        margin: 0
+      &:first-child, &:nth-child(2), &:nth-child(3)
+        width: 100%
+    .availability-item
+      font-size: 12px
+    .btn-clock
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translate(0,-50%)
+
+  .details-information
+    margin: 0 0 20px
+    h3
+      margin: 0 0 10px
+      font-size: 25px
+
+  .details-information__box
+    .box-text
+      font-size: 12px
+      line-height: 14px
+
+  .details-information-mobile
+    margin: 33px 0 0
+
+  .share-title
+    font-size: 12px
+
+  .list-characteristics
+    margin: 20px 0
+    font-size: 12px
+    .form-group__title
+      max-width: 200px
+      min-width: 200px
+      padding: 0 40px 0 0
+
+  .product-photo
+    margin: 20px 0
+    width: 100%
+    height: 260px
+
+  .product-wrapper
+    margin: 0
+
+  .article
+    font-size: 12px
+
+  .purchase-block__item .price
+    font-size: 25px
+    margin: 5px 0 0
+
+  .purchase-block__item-top
+    font-size: 12px
+    margin: 0 0 5px
+
+  .purchase-block__item
+    margin: 0 0 15px
+
+  .amount-wrapper
+    margin: 15px 0
+    p
+      font-size: 12px
+      margin: 0 0 5px
+    .amount
+      height: 40px
+
+  .total-sum
+    font-size: 36px
+
+  .purchase-block .btn
+    font-size: 12px
+    height: 40px
+
+  .breadcrumb-item.active
+    display: none
+
+  .title-mobile
+    margin-top: 0
