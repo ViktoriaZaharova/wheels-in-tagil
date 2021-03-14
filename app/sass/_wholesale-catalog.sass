@@ -1,0 +1,212 @@
+@import "vars"
+
+.wholesale-catalog-wrapper
+  width: 100%
+  padding: 0
+  header
+    .header-box
+      width: auto
+      margin: 0 0 0 60px
+    .dropdown-phone
+      margin: 0 0 0 auto
+
+    .phone
+      font-size: 17px
+      font-weight: 600
+    .header-box__links
+      width: 65px
+      height: 50px
+  .header-bottom
+    padding: 27px 0
+  .form-filter-catalog
+    .dropdown-toggle
+      min-width: 165px
+  .tagging-filter
+    height: 40px
+  .other-goods
+    margin: 0 0 90px
+  .btn-load
+    margin: 20px 0
+    padding: 10px 0 20px
+    box-shadow: 0px 23px 30px -29px rgba(0, 0, 0, 0.25)
+  footer
+    padding: 0 0 47px
+    .logo
+      margin: 0
+
+.nav-catalog
+  margin: 0 0 0 60px
+
+.dropdown-toggle.phone
+  padding: 0
+  background: transparent
+  height: auto
+  box-shadow: none
+  &:after
+    border-top-color: #000
+    margin: 3px 0 -3px 10px
+
+.nav-catalog__list
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 15px
+  font-weight: 600
+
+.nav-catalog__links
+  display: flex
+  align-items: center
+  padding: 13px 20px
+  border-radius: 4px
+  color: $text
+  fill: none
+  stroke: #000
+  &:hover, &.active
+    background: #F7F7F7
+
+.nav-catalog__icon
+  width: 24px
+  height: 24px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 10px 0 0
+
+.form-search-catalog
+  margin: 20px 0 30px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  label
+    width: calc(100% - 160px)
+  input
+    height: 50px
+    padding: 0 20px 0 64px
+    color: #828282
+    font-size: 16px
+    font-weight: normal
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.04)
+    background: #fff
+    border: 2px solid #F7F7F7
+      radius: 4px
+    &::placeholder
+      color: #828282
+  .input-icon
+    width: 24px
+    height: 24px
+    top: 50%
+    transform: translate(0,-50%)
+    left: 20px
+    position: absolute
+    fill: none
+    stroke: $text
+  button
+    position: relative
+    width: 140px
+    top: 0
+    right: 0
+    transform: none
+    left: 0
+    height: 50px
+    margin: 0 0 0 auto
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.07)
+    border: 1px solid #E0E0E0
+    background: #fff
+
+.form-filter-catalog .radio-type .radio-inp:checked
+  + .radio-custom
+    border: none
+    background: #000
+  ~ .label
+    color: #fff
+
+.wholesale-catalog
+  margin: 0
+
+.sorting-wrapper
+  .list-checkbox
+    width: fit-content
+  .catalog-footer
+    width: fit-content
+  .pagination li a, .pagination li span
+    height: 30px
+    width: auto
+    padding: 5px
+    min-width: 30px
+    font-size: 16px
+  .pagination-list-arrow
+    li
+      &:after
+        margin: 0 40px
+      a
+        width: auto
+        height: auto
+
+  .nav-pagination
+    align-items: center
+  .catalog-views
+    display: flex
+    align-items: center
+    height: auto
+    margin: 0 40px 0 0
+    .select-view
+      margin: 0 0 0 5px
+      padding-bottom: 0
+      border-bottom: 1px solid #000
+      font-size: 15px
+  .catalog-footer
+    align-items: center
+
+.list-contacts-footer
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 18px
+  font-weight: 600
+  margin: 0 0 0 auto
+  p
+    color: #828282
+    font-size: 16px
+    margin: 0 25px 0 0
+  li
+    margin: 0 20px 0 0
+    display: flex
+    align-items: center
+    &:last-child
+      margin: 0
+  a
+    color: #000
+    &:hover
+      color: $accent
+
+.links-write
+  display: flex
+  align-items: center
+  color: #000
+  font-weight: normal
+  font-size: 15px
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    fill: none
+    stroke: #000
+    width: 14px
+    height: 14px
+    margin: 0 10px 0 0
+
+
+.footer-bottom-my
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 45px 0 0
+  font-size: 15px
+  color: #8D8D91
+
+  .copyright
+    margin: 0
+
+
