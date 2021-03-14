@@ -283,3 +283,50 @@
 
 .btn-reverse
   margin: 0 0 0 20px
+
+.cabinet-data-item
+  width: 100%
+  padding: 0 0 40px
+  margin: 0 0 40px
+  border-bottom: 1px solid #E6E6E6
+  &:last-child
+    border: none
+    padding: 0
+    margin: 0
+
+.cabinet-data-item__title
+  width: 100%
+  display: flex
+  align-items: center
+  margin: 0 0 40px
+  font-size: 24px
+  font-weight: bold
+  &-icon
+    fill: none
+    stroke: $text
+    width: 32px
+    height: 32px
+    min-width: 32px
+    margin: 0 20px 0 0
+
+.form-cabinet-data
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  .form-group
+    width: 100%
+    max-width: 49%
+    margin: 0 0 20px
+    &__title
+      margin: 0 0 16px
+  input
+    text-align: left
+    font-size: 15px
+  button
+    margin: 20px 0 0
+    height: 56px
+    width: fit-content
+
+    padding: 12px 40px

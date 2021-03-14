@@ -334,4 +334,13 @@
     </symbol>
 
 
+    <symbol id="lock-icon" viewBox="0 0 22 32">
+        <rect x="1.50012" y="13.5" width="19" height="17" rx="2.5" stroke-width="3"/>
+        <rect x="1.50012" y="13.5" width="19" height="17" rx="2.5" stroke-width="3"/>
+        <path d="M5.50012 7C5.50012 3.96243 7.96256 1.5 11.0001 1.5C14.0377 1.5 16.5001 3.96243 16.5001 7V13.5H5.50012V7Z" stroke-width="3"/>
+        <path d="M5.50012 7C5.50012 3.96243 7.96256 1.5 11.0001 1.5C14.0377 1.5 16.5001 3.96243 16.5001 7V13.5H5.50012V7Z" stroke-width="3"/>
+        <circle cx="11.0001" cy="22" r="3.5" stroke-width="3"/>
+        <circle cx="11.0001" cy="22" r="3.5" stroke-width="3"/>
+    </symbol>
+
 </svg>
