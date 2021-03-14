@@ -165,6 +165,14 @@ button
     border-color: $accent
     color: #fff
 
+.btn-border-accent
+  border: 2px solid $accent
+  &:hover
+    background: $accent
+    color: #fff
+    .btn-icon
+      stroke: #fff
+
 .btn-grey
   background: #FAFAFA
   padding: 11px 40px
@@ -943,6 +951,8 @@ header
   background: #FFD040
   padding: 4px 3px 5px 6px
 
+.availability-item-canceled
+  color: #828282
 
 .basket-card
   width: 100%
@@ -1336,5 +1346,6 @@ header
 @import "reviews"
 @import "product"
 @import "wholesale-catalog"
+@import "cabinet"
 @import "media"
 // Всегда в конце

@@ -1,0 +1,285 @@
+@import "vars"
+
+.cabinet
+  margin: 40px 0
+
+.cabinet-sidebar
+  width: 100%
+
+
+.cabinet-menu
+  width: 100%
+  border: 1px solid #F2F2F2
+  background: #fff
+  box-shadow: 0px 0px 26px rgba(0, 0, 0, 0.11)
+  border-radius: 4px
+  font-size: 15px
+  font-weight: 500
+  &__item
+    width: 100%
+    padding: 0 30px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 4px
+      height: 100%
+      background: transparent
+    &:last-child
+      .cabinet-menu__links
+        border: none
+  &__item.active
+    .cabinet-menu__links
+      color: $accent
+      &:after
+        border-left-color: $accent
+    &:before
+      background: $accent
+    .cabinet-menu__icon
+      stroke: $accent
+  &__links
+    padding: 30px 0
+    text-align: center
+    width: 100%
+    display: flex
+    align-items: center
+    color: $text
+    border-bottom: 1px solid #E6E6E6
+    position: relative
+    &:after
+      content: ''
+      margin: 0 0 0 auto
+      border:
+        left: 8px solid $text
+        top: 5.5px solid transparent
+        bottom: 5.5px solid transparent
+      display: inline-block
+    &:hover
+      color: $accent
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 24px
+    height: 24px
+    margin: 0 15px 0 0
+    fill: none
+    stroke: #000
+
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year
+  border: none
+    radius: 0
+  padding: 0
+  margin: 0
+  text-align: center
+  text-align-last: center
+
+.filter-orders
+  width: 100%
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 0 40px
+  label
+    margin: 0
+  input
+    padding: 0 32px 0 58px
+    text-align: left
+    color: $text
+    &::placeholder
+      color: #828282
+  .form-group
+    margin: 0
+    width: 37%
+  button
+    max-width: 214px
+    height: 56px
+  .input-icon
+    fill: none
+    stroke: $text
+    width: 24px
+    height: 24px
+    position: absolute
+    top: 50%
+    left: 24px
+    transform: translate(0,-50%)
+  .form-group__title
+    margin: 0 0 16px
+
+.input-icon, .input-icon-arrow
+  display: flex
+  align-items: center
+  justify-content: center
+
+.label-date
+  position: relative
+
+
+
+.input-icon-arrow
+  width: 11px
+  height: 8px
+  position: absolute
+  top: 50%
+  transform: translate(0,-50%)
+  right: 24px
+
+.card-order
+  font-size: 15px
+  width: 100%
+
+  &:last-child
+    border: none
+    .card-order-head
+      border: none
+  &-head
+    background: #FAFAFA
+    width: 100%
+    padding: 30px
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    border-bottom: 1px solid transparent
+  &-head.collapsed
+    border-bottom: 1px solid #E6E6E6
+  &__date
+    color: #828282
+    width: 15%
+  &__number
+    width: 10%
+  &__value-position
+    width: 15%
+  &__status
+    width: 25%
+    margin: 0 auto 0 0
+  &__sum
+    width: 12%
+  .availability-item
+    margin: 0
+    font-size: 15px
+  .successfully-icon
+    width: 24px
+    min-width: 24px
+    height: 24px
+    margin: 0 20px 0 0
+    padding: 8px
+
+.btn-details
+  display: flex
+  align-items: center
+  font-family: $default-font
+  &:after
+    content: ''
+    display: inline-block
+    border:
+      top: 5.5px solid #000
+      left: 4px solid transparent
+      right: 4px solid transparent
+    margin: 0 0 0 10px
+    transform: rotate(180deg)
+
+.collapsed
+  &::after
+    transform: rotate(0)
+
+.card-order-body
+  padding: 10px 30px 30px
+  width: 100%
+  border:
+    left: 2px solid #FAFAFA
+    right: 2px solid #FAFAFA
+
+.card-order-product
+  width: 100%
+  display: flex
+  align-items: center
+  padding: 20px 0
+  border-bottom: 1px solid #E6E6E6
+  font-size: 16px
+  &:last-child
+    border: none
+
+.card-order-product__img
+  width: 70px
+  height: 70px
+  min-width: 70px
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    max-height: 100%
+
+.card-order-product__name
+  width: 60%
+  padding: 0 27px
+
+.card-order-product__code
+  color: #828282
+
+.card-order-product__title
+  color: $text
+  margin: 0 0 5px
+  &:hover
+    color: $accent
+
+.card-order-product__price, .card-order-product__value, .card-order-product__sum
+  width: 11%
+
+.order-details
+  margin: 30px 0
+
+
+.order-details-group
+  font-size: 15px
+  h3
+    padding: 15px 0
+    font-weight: 500
+
+.order-details-list
+  li
+    width: 100%
+    display: flex
+    align-items: flex-start
+    border-bottom: 1px solid #E0E0E0
+    padding: 20px 0
+    span
+      color: #828282
+    p
+      min-width: 180px
+
+.order-footer
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  .btn
+    width: fit-content
+    padding: 12px 50px
+    height: 56px
+
+.btn-accent
+  .btn-icon
+    stroke: #fff
+  .stroke-none
+    stroke: none
+    fill: #fff
+
+.btn-icon
+  fill: none
+  stroke: #000
+  width: 20px
+  height: 20px
+  margin: 0 10px 0 0
+  display: flex
+  align-items: center
+  justify-content: center
+
+
+.btn-cancel
+  margin: 0 0 0 auto
+
+.btn-reverse
+  margin: 0 0 0 20px

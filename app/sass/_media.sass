@@ -89,6 +89,12 @@
   .information-product-orders
     padding: 0
 
+  .order-details-list li p
+    min-width: 150px
+
+  .filter-orders .form-group
+    width: 35%
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1560px)
   .sidebar-wrapper
@@ -490,6 +496,52 @@
   .wholesale-catalog .form-filter-catalog .form-group
     width: 24%
 
+  .cabinet-sidebar
+    margin: 0 0 40px
+
+  .cabinet-menu
+    display: flex
+    align-items: stretch
+
+  .cabinet-menu__item
+    flex: 1
+    padding: 0
+    &:after
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translate(0,-50%)
+      right: 0
+      width: 1px
+      height: 40px
+      background: #E6E6E6
+
+    &:before
+      width: 100%
+      height: 4px
+      left: 0
+      bottom: 0
+      top: auto
+    &:last-child
+      &:after
+        display: none
+
+
+  .cabinet-menu__links
+    border: none
+    flex-direction: column
+    align-items: center
+    padding: 18px 0
+    &:after
+      display: none
+
+  .cabinet-menu__icon
+    margin: 0 auto 15px
+
+  .card-order-product__name
+    width: 50%
+
+
 
 
 @media only screen and (max-width: 992px)
@@ -709,6 +761,12 @@
     .form-filter
       margin: 0 0 30px
 
+  .order-details-group
+    margin: 0 0 10px
+
+  .card-order-product__price, .card-order-product__value, .card-order-product__sum
+    width: 13%
+
 @media only screen and (max-width: 850px)
   .reviews-opinion
     padding: 12px 30px
@@ -766,6 +824,24 @@
 
   .td-price
     width: 100%
+
+  .filter-orders button
+    max-width: 174px
+
+  .btn-details
+    span
+      display: none
+    &:after
+      margin: 0
+
+  .card-order__sum
+    width: 16%
+
+  .card-order__status
+    width: 35%
+
+  .card-order__value-position, .card-order__date
+    width: 17%
 
 @media only screen and (max-width: 768px)
   .sidebar-wrapper
@@ -1022,6 +1098,9 @@
   .wholesale-catalog-wrapper .form-filter-catalog .dropdown-toggle
     min-width: auto
 
+  .cabinet
+    margin: 40px 0
+
 
 @media only screen and (max-width: 710px)
   .td-name
@@ -1038,6 +1117,11 @@
     font-size: 12px
     padding: 12px
 
+  .order-footer
+    .btn
+      font-size: 12px
+      height: 40px
+      padding: 8px 25px
 
 
 @media only screen and (max-width: 680px)
@@ -1072,6 +1156,44 @@
 
   .pagination-list-arrow
     margin: 0 0 0 10px
+
+  .filter-orders
+    margin: 0 0 20px
+    .form-group
+      width: 100%
+      max-width: none
+      margin: 0 0 10px
+    input
+      height: 40px
+      font-size: 12px
+    .form-group__title
+      font-size: 12px
+    button
+      height: 40px
+      max-width: none
+      font-size: 12px
+
+  .card-order-head
+    padding: 10px
+    font-size: 12px
+    .availability-item
+      font-size: 12px
+    .successfully-icon
+      margin: 0 10px 0 0
+
+  .card-order-body
+    padding: 0 20px 20px
+
+  .card-order-product
+    font-size: 12px
+
+  .order-details-list
+    font-size: 12px
+    li
+      padding: 7px 0
+
+  .order-details
+    margin: 10px 0
 
 @media only screen and (max-width: 640px)
   header .phone
@@ -2023,3 +2145,84 @@
       span
         border: none
         padding: 0
+
+  .cabinet
+    margin: 26px 0 20px
+
+  .btn-details
+    display: none
+
+  .card-order__status
+    order: 1
+    width: 60%
+    margin: 5px 0 0
+
+  .card-order__value-position
+    order: 1
+    margin: 5px 0 0
+    width: 40%
+
+  .card-order-head
+    flex-wrap: wrap
+
+  .card-order__number, .card-order__date, .card-order__sum
+    width: 33.3%
+
+  .card-order__number
+    display: flex
+    align-items: center
+    &:after
+      content: ''
+      display: inline-block
+      border:
+        top: 5.5px solid #000
+        left: 4px solid transparent
+        right: 4px solid transparent
+      margin: 0 0 0 10px
+      transform: rotate(180deg)
+
+  .collapsed
+    .card-order__number
+      &::after
+        transform: none
+
+  .card-order-product
+    position: relative
+    flex-wrap: wrap
+    padding: 20px 0 20px 60px
+    font-size: 10px
+
+  .card-order-product__code
+    font-size: 8px
+    margin: 0 0 5px
+
+  .card-order-product__price, .card-order-product__value, .card-order-product__sum
+    width: 33.3%
+
+  .card-order-product__img
+    width: 50px
+    height: 58px
+    min-width: 50px
+    position: absolute
+    left: 0
+    top: 20px
+
+  .card-order-product__name
+    padding: 0
+    width: 100%
+
+  .order-details-list
+    li
+      flex-wrap: wrap
+    p
+      min-width: auto
+      width: 100%
+
+  .order-footer
+    flex-direction: column
+    align-items: flex-start
+    .btn
+      width: 100%
+      margin: 0 0 10px
+      &:last-child
+        margin: 0
