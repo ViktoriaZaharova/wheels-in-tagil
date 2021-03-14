@@ -138,6 +138,9 @@
     max-width: 280px
     padding: 0 25px 0 0
 
+  .wholesale-catalog-wrapper
+    width: 100%
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 1500px)
   .links-callback
@@ -168,7 +171,25 @@
   .product-mini-info
     padding: 0
 
+  .wholesale-catalog
+    .form-filter-catalog
+      .form-group
+        width: 24%
 
+      .list-radio
+        li
+          width: 50%
+
+  .footer-bottom-my
+    p
+      width: 100%
+      margin: 10px 0 0
+
+  .wholesale-catalog-wrapper header .header-box
+    margin: 0 0 0 20px
+
+  .nav-catalog
+    margin: 0 0 0 20px
 
 @media only screen and (max-width: 1300px)
   .footer-col
@@ -218,6 +239,35 @@
           p
             max-width: 75px
 
+  .nav-catalog
+    width: 80%
+    order: -1
+    margin: 0 0 15px
+
+  .wholesale-catalog-wrapper header .phone
+    margin: 0
+    display: flex
+    justify-content: flex-end
+
+  .wholesale-catalog-wrapper header .dropdown-phone
+    order: -1
+    margin: 0 0 15px
+    width: 20%
+
+  .wholesale-catalog-wrapper header .header-box
+    margin: 0 0 0 auto
+
+  .wholesale-catalog-wrapper .header-bottom
+    padding: 20px 0 30px
+
+  .form-search-catalog
+    margin: 0 0 30px
+
+  .sorting-wrapper .nav-pagination
+    display: none
+
+  .sorting-wrapper .catalog-views
+    margin: 0
 
 @media only screen and (max-width: 1200px)
   .header-box__links
@@ -437,6 +487,11 @@
   .price-table, .total-price-table
     flex-wrap: wrap
 
+  .wholesale-catalog .form-filter-catalog .form-group
+    width: 24%
+
+
+
 @media only screen and (max-width: 992px)
   .form-filter
     justify-content: space-between
@@ -635,6 +690,24 @@
 
   .header-top
     background: transparent
+
+  .form-filter-catalog .radio
+    padding: 12px
+    height: 40px
+    .label
+      font-size: 12px
+
+
+  .form-filter-catalog .dropdown-toggle
+    height: 40px
+    font-size: 12px
+    padding: 12px 24px
+
+  .wholesale-catalog-wrapper
+    .tagging-filter
+      height: 30px
+    .form-filter
+      margin: 0 0 30px
 
 @media only screen and (max-width: 850px)
   .reviews-opinion
@@ -934,6 +1007,22 @@
     min-width: 200px
     max-width: 200px
 
+  .sorting-wrapper .catalog-footer
+    display: none
+
+  .wrapper-my
+    padding: 0
+
+  .wholesale-catalog
+    margin: 0
+
+  .dropdown-toggle.phone:after
+    display: none
+
+  .wholesale-catalog-wrapper .form-filter-catalog .dropdown-toggle
+    min-width: auto
+
+
 @media only screen and (max-width: 710px)
   .td-name
     width: 32%
@@ -944,6 +1033,12 @@
   .other-goods .list-checkbox li
     width: 100%
     margin: 0 0 10px
+
+  .nav-catalog__links
+    font-size: 12px
+    padding: 12px
+
+
 
 @media only screen and (max-width: 680px)
   .card-product-col
@@ -1624,7 +1719,7 @@
   .form-filter-catalog
     box-shadow: none
     margin: 0 0 25px
-    padding: 0 0 33px
+    padding: 0 0 30px
     .dropdown-toggle
       font-size: 12px
       height: 40px
@@ -1645,6 +1740,10 @@
       justify-content: center
       order: 1
       border-bottom: 2px dashed #E1E1E1
+      color: $text
+      .links-question__icon
+        fill: none
+        stroke: #000
     .clear-filter
       margin: 10px auto
       font-size: 12px
@@ -1879,3 +1978,48 @@
 
   .title-mobile
     margin-top: 0
+
+  .nav-catalog, .wholesale-catalog-wrapper header .dropdown-phone
+    display: none
+
+  .wholesale-catalog-wrapper header .phone
+    margin: 0 auto 0 0
+
+  .wholesale-catalog-wrapper .header-bottom
+    padding: 0
+
+  .wholesale-catalog
+    margin: 30px 0 0
+
+  .wholesale-catalog .form-filter-catalog .form-group
+    width: 49%
+    &:nth-child(-n+3)
+      width: 100%
+      max-width: none
+    &:nth-child(8)
+      width: 100%
+      max-width: none
+
+  .wholesale-catalog-wrapper
+    .form-filter
+      margin: 0
+    .other-goods
+      margin: 0 0 18px
+      .sorting-wrapper
+        margin: 0
+        padding: 0 0 20px
+        border-bottom: 1px solid #E0E0E0
+    footer
+      padding: 0
+      .logo
+        margin: 0 0 30px
+    .btn-load
+      padding: 10px 20px
+      margin: 20px auto
+      border: 2px solid #000
+        radius: 4px
+      font-size: 12px
+      height: 44px
+      span
+        border: none
+        padding: 0
